@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"DM Sans"', 'sans-serif'],
+      },
       colors: {
         ink: "#07111f",
         paper: "#f5f1e8",
@@ -15,6 +18,11 @@ const config: Config = {
         accentSoft: "#ffd5b8",
         moss: "#e8f0e3",
         steel: "#d7dde6",
+        primary: "#16171d",
+        slate: "#14121a",
+        nickel: "#3b3440",
+        grey: "#867e8e",
+        electric: "#6c3bff",
       },
       boxShadow: {
         soft: "0 20px 50px rgba(7, 17, 31, 0.12)",
