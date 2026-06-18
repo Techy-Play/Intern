@@ -4,61 +4,85 @@ const projects = [
   {
     title: "Sunday.ai Navbar Clone",
     description:
-      "A compact navigation-focused route that mirrors the first assessment task.",
+      "A compact navigation-focused route that mirrors the first assessment task, featuring intricate dropdowns and responsive design.",
     href: "/sunday",
-    accent: "from-orange-100 to-amber-50",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.4)]",
+    borderHover: "group-hover:border-orange-500/50",
+    textGradient: "from-orange-400 to-amber-300",
+    bgGradient: "from-orange-500/10 to-amber-500/5",
   },
   {
     title: "VoidZero Section Clone",
     description:
-      "A polished section-driven route for the second assessment task.",
+      "A polished, section-driven route for the second assessment task featuring deep dark mode aesthetics, interactive 3D elements, and complex layout grids.",
     href: "/voidzero",
-    accent: "from-slate-100 to-blue-50",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(56,189,248,0.4)]",
+    borderHover: "group-hover:border-sky-500/50",
+    textGradient: "from-sky-400 to-blue-500",
+    bgGradient: "from-sky-500/10 to-blue-500/5",
   },
 ];
 
 export default function HomePage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16 md:px-10">
-      <section className="space-y-8 rounded-[2rem] border border-black/10 bg-white/75 p-8 shadow-soft backdrop-blur md:p-12">
-        <div className="max-w-2xl space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            Frontend Assessment
-          </p>
-          <h1 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
-            One repository, two routed projects.
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#050505] font-sans text-white selection:bg-white/20">
+      {/* Dynamic Background Elements */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-purple-600/20 blur-[120px]" />
+        <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-cyan-600/15 blur-[150px]" />
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-20 md:px-10">
+        <div className="mb-16 md:mb-24 text-center space-y-6">
+          <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+              Frontend Assessment
+            </span>
+          </div>
+          <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
+            One Repository.<br />
+            <span className="bg-gradient-to-r from-purple-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              Two Masterpieces.
+            </span>
           </h1>
-          <p className="text-base leading-7 text-slate-600 md:text-lg">
-            This workspace keeps both tasks together so the reviewer can jump to
-            each implementation from a single landing page.
+          <p className="mx-auto max-w-2xl text-lg text-white/50 md:text-xl leading-relaxed">
+            This workspace elegantly houses both tasks, allowing reviewers to instantly jump into either polished implementation from a single point of entry.
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:gap-10">
           {projects.map((project) => (
-            <article
-              key={project.title}
-              className={`rounded-[1.75rem] border border-black/10 bg-gradient-to-br ${project.accent} p-6 transition hover:-translate-y-1 hover:shadow-soft`}
-            >
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-                Project
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold text-slate-950">
-                {project.title}
-              </h2>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                {project.description}
-              </p>
-              <Link
-                href={project.href}
-                className="mt-6 inline-flex items-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            <Link href={project.href} key={project.title} className={`group block outline-none rounded-[2rem] transition-all duration-500 ease-out hover:-translate-y-2 ${project.glow}`}>
+              <article
+                className={`relative flex h-full flex-col justify-between overflow-hidden rounded-[2rem] border border-white/10 bg-[#111111] p-8 transition-colors duration-500 ${project.borderHover}`}
               >
-                Open Project
-              </Link>
-            </article>
+                {/* Background Subtle Gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.bgGradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+                
+                <div className="relative z-10 space-y-4">
+                  <h2 className={`text-3xl font-bold tracking-tight bg-gradient-to-br ${project.textGradient} bg-clip-text text-transparent`}>
+                    {project.title}
+                  </h2>
+                  <p className="text-base leading-relaxed text-white/60">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div className="relative z-10 mt-12 flex items-center justify-between">
+                  <span className="text-sm font-semibold tracking-wide text-white/80 group-hover:text-white transition-colors">
+                    Explore Project
+                  </span>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-transform duration-500 group-hover:translate-x-2 group-hover:bg-white/20">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
-      </section>
+      </div>
     </main>
   );
 }
