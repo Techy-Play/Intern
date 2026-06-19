@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'APK Protocol';
+  font-weight: 500;
+  src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'KH Teka Mono';
+  font-weight: 400;
+  src: url(../fonts/KHTekaMono-Regular.CiZ9ZkmZ.woff2) format("woff2");
+}
+
 @theme {
   --font-sans: "DM Sans", sans-serif;
-  --font-apk: var(--font-apk), monospace;
+  --font-apk: 'APK Protocol', monospace;
+  --font-mono: 'KH Teka Mono', monospace;
   --color-ink: #07111f;
   --color-paper: #f5f1e8;
   --color-sand: #d9c7a4;
