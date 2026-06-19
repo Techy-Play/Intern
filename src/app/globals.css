@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import 'tailwindcss';
 
+/* ── APK Protocol — exact @font-face from VoidZero production ── */
 @font-face {
   font-family: 'APK Protocol';
   font-weight: 500;
-  src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
+  src: url(../fonts/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  font-weight: 600;
+  src: url(../fonts/APK-Protocol-Semi-Bold.CC2BASA5.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -14,8 +22,9 @@
 }
 
 @theme {
-  --font-sans: "DM Sans", sans-serif;
-  --font-apk: 'APK Protocol', monospace;
+  /* Real VoidZero: --font-sans IS APK Protocol (not DM Sans) */
+  --font-sans: 'APK Protocol', sans-serif;
+  --font-apk: 'APK Protocol', sans-serif;
   --font-mono: 'KH Teka Mono', monospace;
   --color-ink: #07111f;
   --color-paper: #f5f1e8;
@@ -30,7 +39,7 @@
   --color-grey: #867e8e;
   --color-electric: #6c3bff;
   --shadow-soft: 0 20px 50px rgba(7, 17, 31, 0.12);
-  --background-image-hero-grid: radial-gradient(circle at top, rgba(255,255,255,0.75), rgba(245,241,232,0.95) 35%, rgba(235,228,214,1) 100%);
+  --background-image-hero-grid: radial-gradient(circle at top, rgba(255, 255, 255, 0.75), rgba(245, 241, 232, 0.95) 35%, rgba(235, 228, 214, 1) 100%);
 }
 
 :root {
@@ -39,6 +48,11 @@
 
 html {
   scroll-behavior: smooth;
+  /* Real VoidZero: html { font-family: var(--font-sans) } where --font-sans = APK Protocol */
+  font-family: 'APK Protocol', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
 }
 
 body {
@@ -46,11 +60,40 @@ body {
   min-height: 100vh;
   background-color: #16171d;
   color: #ffffff;
+  font-family: 'APK Protocol', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Exact utilities from VoidZero production CSS */
+@property --tw-drop-shadow-alpha {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+@property --tw-text-shadow-alpha {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+.drop-shadow-md\/70 {
+  --tw-drop-shadow-alpha: 70%;
+  --tw-drop-shadow-size: drop-shadow(0 3px 3px var(--tw-drop-shadow-color, oklab(0% 0 0 / .7)));
+  --tw-drop-shadow: var(--tw-drop-shadow-size);
+  filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+}
+
+.text-shadow-md\/50 {
+  --tw-text-shadow-alpha: 50%;
+  text-shadow:
+    0px 1px 1px var(--tw-text-shadow-color, oklab(0% 0 0 / .5)),
+    0px 1px 2px var(--tw-text-shadow-color, oklab(0% 0 0 / .5)),
+    0px 2px 4px var(--tw-text-shadow-color, oklab(0% 0 0 / .5));
 }
 
 * {
@@ -61,6 +104,7 @@ a {
 .ticks {
   position: relative;
 }
+
 .ticks::before,
 .ticks::after {
   content: '';
@@ -72,13 +116,44 @@ a {
   border-bottom: 4px solid transparent;
   pointer-events: none;
 }
+
 .ticks::before {
   left: -1px;
   border-left: 4px solid #3b3440;
 }
+
 .ticks::after {
   right: -1px;
   border-right: 4px solid #3b3440;
+}
+
+/* Light version for navbar mega menu */
+.ticks-light {
+  position: relative;
+}
+
+.ticks-light::before,
+.ticks-light::after {
+  content: '';
+  position: absolute;
+  top: -4.5px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  pointer-events: none;
+}
+
+.ticks-light::before {
+  left: -1px;
+  border-left: 4px solid #e5e7eb;
+  /* Tailwind gray-200 */
+}
+
+.ticks-light::after {
+  right: -1px;
+  border-right: 4px solid #e5e7eb;
+  /* Tailwind gray-200 */
 }
 
 /* Custom Scrollbar for Desktop */
@@ -87,16 +162,20 @@ a {
     width: 8px;
     height: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: #111111;
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: #3b3440;
     border-radius: 4px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background-color: #867e8e;
   }
+
   html {
     scrollbar-width: thin;
     scrollbar-color: #3b3440 #111111;
@@ -107,15 +186,206 @@ a {
 .bg-viteplus {
   background: url('/assets/texture-viteplus.jpg') center/cover no-repeat;
 }
+
 .bg-vite {
   background: url('/assets/texture-vite.jpg') center/cover no-repeat;
 }
+
 .bg-vitest {
   background: url('/assets/texture-vitest.jpg') center/cover no-repeat;
 }
+
 .bg-rolldown {
   background: url('/assets/texture-rolldown.jpg') center/cover no-repeat;
 }
+
 .bg-oxc {
   background: url('/assets/texture-oxc.jpg') center/cover no-repeat;
+}
+
+/* Banner overlay effects — exact CSS from VoidZero production */
+.banner-gradient {
+  mix-blend-mode: color;
+  background:
+    linear-gradient(90deg, #8c00ff8a 0% 38%, #ba189a94 48%, #f4563adb 60%, #fa7444fa 64% 100%),
+    radial-gradient(circle at 9%, #a200ffb3, #0000 24%),
+    radial-gradient(circle at 74%, #fa7444e6, #0000 36%);
+}
+
+.banner-shine {
+  background:
+    linear-gradient(90deg, #08060dad, #08060d2e 44%, #08060d3d),
+    linear-gradient(#ffffff2e, #ffffff05);
+}
+
+.banner-background {
+  filter: saturate(1.22) contrast(1.08);
+  object-position: center 52%;
+}
+
+.top-banner>a>img {
+  object-position: center 20%;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   VoidZero Navbar & Megamenu
+   All values sourced directly from VoidZero production CSS / HTML
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Centered wrapper with side borders (mirrors VoidZero .wrapper) ─────── */
+.vz-wrapper {
+  margin-inline: auto;
+  position: relative;
+  width: 100%;
+  overflow-x: clip;
+  /* --color-stroke: #e5e4e7 — exact value from VoidZero :root */
+  border-color: #e5e4e7;
+}
+
+/* At ≥768px: add left/right 1px borders, constrain to viewport-minus-1rem */
+@media (min-width: 48rem) {
+  .vz-wrapper {
+    border-left: 1px solid #e5e4e7;
+    border-right: 1px solid #e5e4e7;
+    max-width: calc(100vw - 2rem);
+  }
+}
+
+/* At ≥1440px: hard cap at 90rem (1440px) */
+@media (min-width: 90rem) {
+  .vz-wrapper {
+    max-width: 90rem;
+  }
+}
+
+/* ── Nav link style ─────────────────────────────────────────────────────── */
+/* Real site: --font-sans: "APK Protocol" → html inherits it → all nav      */
+/* links render in APK Protocol weight 500 (the only loaded weight).         */
+.vz-nav-link {
+  font-family: 'APK Protocol', var(--font-apk), sans-serif;
+  font-size: 1rem;
+  /* 15px */
+  font-weight: 500;
+  color: #08060D;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.vz-nav-link:hover {
+  opacity: 0.6;
+}
+
+/* ── Megamenu animated shadow (exact VoidZero keyframe) ─────────────────── */
+.megamenu-shadow {
+  animation: 0.3s ease-out forwards vz-shadow-in;
+  box-shadow:
+    0 100px 200px -10px #32325d50,
+    0 60px 120px -20px #0000005d;
+}
+
+@keyframes vz-shadow-in {
+  from {
+    box-shadow:
+      0 25px 50px -20px #32325d1a,
+      0 15px 30px -30px #00000026;
+  }
+
+  to {
+    box-shadow:
+      0 100px 200px -10px #32325d50,
+      0 60px 120px -20px #0000005d;
+  }
+}
+
+/* ── Megamenu OPEN animation ────────────────────────────────────────────── */
+.vz-menu-in {
+  animation: 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards vz-menu-enter;
+}
+
+@keyframes vz-menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Megamenu CLOSE animation ───────────────────────────────────────────── */
+.vz-menu-out {
+  animation: 0.22s ease-in forwards vz-menu-leave;
+  /* keep shadow while closing */
+  box-shadow:
+    0 50px 100px -20px #32325d40,
+    0 30px 60px -30px #0000004d;
+}
+
+@keyframes vz-menu-leave {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+/* ── Mobile overlay: fade-in (used by real site on the wrapper section) ─── */
+.animate-fade-in {
+  animation: 0.2s ease-out forwards vz-fade-in;
+}
+
+@keyframes vz-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Tick corner decorations for dark (mobile) theme — nickel color ──────── */
+/* The real site uses tick-left / tick-right on the mobile footer dividers.  */
+/* .ticks-light already covers light-mode ticks in globals.                  */
+.tick-dark-left::before {
+  content: "";
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #3b3440;
+  /* --color-nickel */
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.tick-dark-right::after {
+  content: "";
+  border-top: 5px solid transparent;
+  border-right: 5px solid #3b3440;
+  /* --color-nickel */
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+
+/* Hide scrollbar for mobile drawer (cross-browser) */
+.mobile-scroll::-webkit-scrollbar {
+  display: none;
 }
