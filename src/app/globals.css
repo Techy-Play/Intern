@@ -1,8 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-apk: var(--font-apk), monospace;
+  --color-ink: #07111f;
+  --color-paper: #f5f1e8;
+  --color-sand: #d9c7a4;
+  --color-accent: #ff8a3d;
+  --color-accent-soft: #ffd5b8;
+  --color-moss: #e8f0e3;
+  --color-steel: #d7dde6;
+  --color-primary: #16171d;
+  --color-slate: #14121a;
+  --color-nickel: #3b3440;
+  --color-grey: #867e8e;
+  --color-electric: #6c3bff;
+  --shadow-soft: 0 20px 50px rgba(7, 17, 31, 0.12);
+  --background-image-hero-grid: radial-gradient(circle at top, rgba(255,255,255,0.75), rgba(245,241,232,0.95) 35%, rgba(235,228,214,1) 100%);
+}
 
 :root {
   color-scheme: light;

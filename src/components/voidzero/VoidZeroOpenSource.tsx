@@ -93,13 +93,13 @@ export function VoidZeroOpenSource() {
   }, []);
 
   return (
-    <section className="bg-transparent text-white min-h-screen font-sans w-full px-2vw md:px-3 sm:px-0vw lg:px-7vw" data-theme="dark">
+    <section className="bg-transparent text-white min-h-screen font-apk w-full px-2vw md:px-3 sm:px-0vw lg:px-7vw" data-theme="dark">
       {/* Top Header */}
       <section className="border-t border-x border-nickel p-5 md:pl-10 w-full max-w-7xl mx-auto ticks">
-        <span className="text-[#a1a1aa] text-xs font-medium font-mono uppercase tracking-wide">OSS</span>
+        <span className="text-white text-xs font-bold font-mono uppercase tracking-wide">OSS</span>
       </section>
 
-      <section className="border-t border-x border-nickel px-6 md:px-10 h-48 sm:h-64 md:h-90 flex flex-col justify-center gap-4 md:gap-5 w-full max-w-7xl mx-auto ticks">
+      <section className="border-t border-x border-nickel pl-10 pr-6 md:px-10 h-48 sm:h-64 md:h-90 flex flex-col justify-center gap-4 md:gap-5 w-full max-w-7xl mx-auto ticks">
         <h2 className="text-start text-white text-3xl sm:text-4xl md:text-[3.5rem] font-medium tracking-tight">Open Source</h2>
         <p className="max-w-md text-balance text-white/70 text-base md:text-lg leading-relaxed">
           We are the creators, maintainers, and contributors of some of the most critical infrastructure projects in the JavaScript ecosystem.
@@ -135,7 +135,7 @@ export function VoidZeroOpenSource() {
               className={`grid lg:grid-cols-2 w-full ${idx > 0 ? "border-t border-nickel" : ""}`}
             >
               {/* Text Area */}
-              <div className="flex flex-col p-8 md:p-12 lg:p-16 justify-between gap-10 lg:gap-20">
+              <div className="flex flex-col pl-10 pr-6 py-10 sm:px-10 md:p-12 lg:p-16 justify-between gap-10 lg:gap-20">
                 <div className="flex flex-col gap-4 md:gap-5 max-w-[22rem]">
                   <span className="text-[#888] text-xs font-mono uppercase tracking-wider">{p.title}</span>
                   <h4 className="text-white text-2xl sm:text-3xl font-medium tracking-tight text-pretty">{p.heading}</h4>
@@ -182,7 +182,7 @@ export function VoidZeroOpenSource() {
 
               {/* Graphic Area */}
               <div className={`flex flex-col ${p.id === 'viteplus' || p.id === 'vite' ? 'min-h-[16rem] sm:min-h-[30rem]' : p.id === 'vitest' ? 'min-h-[18rem] sm:min-h-[30rem]' : 'min-h-[22rem] sm:min-h-[30rem]'}`}>
-                <div className={`relative pl-3 sm:pl-6 lg:pl-10 h-full flex flex-col ${p.id === 'vitest' ? 'justify-end pt-10 sm:pt-0' : p.id === 'rolldown' ? 'justify-center py-10 sm:py-0' : 'justify-center'} overflow-clip`}>
+                <div className={`relative pl-10 sm:pl-10 lg:pl-10 h-full flex flex-col ${p.id === 'vitest' ? 'justify-end pt-10 sm:pt-0' : p.id === 'rolldown' ? 'justify-center py-10 sm:py-0' : 'justify-center'} overflow-clip`}>
                   <div className={`absolute inset-0 bg-${p.id} transition-opacity duration-700 ease-out opacity-100 scale-[1.05]`}></div>
                   {p.id === 'oxc' ? (
                     <div className="relative transition-transform duration-700 ease-out z-10 translate-x-0 w-full flex items-center justify-center">
