@@ -39,6 +39,15 @@ const projects = [
     textGradient: "from-green-400 to-emerald-500",
     bgGradient: "from-green-500/10 to-emerald-500/5",
   },
+  {
+    title: "VoidZero Other Components",
+    description: "Various reusable modular components extracted from the VoidZero landing page including trusted teams, dev stats, investors, and resources.",
+    href: "/voidzero/other-components",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(236,72,153,0.4)]",
+    borderHover: "group-hover:border-pink-500/50",
+    textGradient: "from-pink-400 to-rose-500",
+    bgGradient: "from-pink-500/10 to-rose-500/5",
+  },
 ];
 
 export default function HomePage() {

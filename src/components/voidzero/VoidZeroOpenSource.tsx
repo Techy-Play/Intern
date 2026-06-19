@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Rive from "@rive-app/react-canvas";
+import { VoidZeroBorder } from './VoidZeroBorder';
 
 const projects = [
   {

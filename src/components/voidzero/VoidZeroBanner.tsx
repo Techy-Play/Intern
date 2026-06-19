@@ -6,7 +6,7 @@ export function VoidZeroBanner({ showBanner, setShowBanner }: { showBanner: bool
   if (!showBanner) return null;
 
   return (
-    <div className="top-banner hidden md:block relative w-full overflow-hidden lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-60 bg-[#08060d]" data-theme="dark">
+    <div className="top-banner hidden md:block relative w-full overflow-hidden z-50 bg-[#08060d]" data-theme="dark">
       <a href="https://voidzero.dev/posts/voidzero-cloudflare" target="_blank" rel="noopener noreferrer" className="group block relative w-full no-underline text-white">
         {/* Banner background image */}
         <img src="/assets/footer.C-44yuQw.jpg" alt="" aria-hidden="true" className="banner-background absolute inset-0 size-full object-cover" loading="eager" />
