@@ -73,7 +73,7 @@ const projects = [
 
 export function VoidZeroOpenSource() {
   const [activeProject, setActiveProject] = useState("viteplus");
-  const [revealedProjects, setRevealedProjects] = useState<string[]>(["viteplus"]);
+  const [revealedProjects, setRevealedProjects] = useState<string[]>([]);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -87,7 +87,7 @@ export function VoidZeroOpenSource() {
           }
         });
       },
-      { rootMargin: "-40% 0px -40% 0px" }
+      { rootMargin: "-20% 0px -20% 0px" }
     );
 
     const elements = document.querySelectorAll("[data-project-id]");
