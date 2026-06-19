@@ -21,6 +21,24 @@ const projects = [
     textGradient: "from-sky-400 to-blue-500",
     bgGradient: "from-sky-500/10 to-blue-500/5",
   },
+  {
+    title: "VoidZero Navbar",
+    description: "The complete implementation of the responsive, dynamic VoidZero navigation bar with animated mega menus and perfect dark/light theme switching.",
+    href: "/voidzero/navbar",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.4)]",
+    borderHover: "group-hover:border-purple-500/50",
+    textGradient: "from-purple-400 to-fuchsia-500",
+    bgGradient: "from-purple-500/10 to-fuchsia-500/5",
+  },
+  {
+    title: "VoidZero Banner",
+    description: "The hero banner implementation for the VoidZero landing page featuring animated glows and seamless responsiveness.",
+    href: "/voidzero/banner",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)]",
+    borderHover: "group-hover:border-green-500/50",
+    textGradient: "from-green-400 to-emerald-500",
+    bgGradient: "from-green-500/10 to-emerald-500/5",
+  },
 ];
 
 export default function HomePage() {
@@ -49,7 +67,7 @@ export default function HomePage() {
               >
                 {/* Background Subtle Gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.bgGradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
-                
+
                 <div className="relative z-10 space-y-4">
                   <h2 className={`text-3xl font-bold tracking-tight bg-gradient-to-br ${project.textGradient} bg-clip-text text-transparent`}>
                     {project.title}
@@ -65,7 +83,7 @@ export default function HomePage() {
                   </span>
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-transform duration-500 group-hover:translate-x-2 group-hover:bg-white/20">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </div>
                 </div>
