@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 interface VoidZeroBorderProps {
-  children: ReactNode;
+  children?: ReactNode;
   /**
    * The theme controls the border color and the tick color.
    * 'dark' uses nickel (#3b3440)
@@ -39,11 +39,7 @@ export function VoidZeroBorder({
   return (
     <section className={`w-full ${className}`}>
       <div 
-        className={`relative mx-auto w-full ${topBorderClass} border-x-0 md:border-x ${borderColor} ${tickClass} ${containerClassName}`}
-        style={{
-          // Matches the vz-wrapper behavior: max 1440px, with 1rem margin on each side for md screens
-          maxWidth: 'min(1440px, calc(100vw - 2rem))'
-        }}
+        className={`relative mx-auto w-full md:w-[calc(100%-2rem)] max-w-[1440px] ${topBorderClass} border-x-0 md:border-x ${borderColor} ${tickClass} ${containerClassName}`}
       >
         {children}
       </div>
