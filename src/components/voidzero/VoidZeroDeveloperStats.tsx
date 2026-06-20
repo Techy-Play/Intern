@@ -130,7 +130,7 @@ export function VoidZeroDeveloperStats() {
       if (ctx) {
         const w = canvas.width;
         const h = canvas.height;
-        const bottomMargin = 40;
+        const bottomMargin = h * 0.15;
 
         // Generate points for smooth exponential curve with realistic dips
         const points: { x: number, y: number }[] = [];
@@ -179,14 +179,14 @@ export function VoidZeroDeveloperStats() {
           }
 
           ctx.strokeStyle = activeProject.color;
-          ctx.lineWidth = 3;
+          ctx.lineWidth = 6;
           ctx.stroke();
 
           // Gradient fill (from the line down to graphHeight)
           const gradient = ctx.createLinearGradient(0, 0, 0, h - bottomMargin);
           gradient.addColorStop(0, `${activeProject.color}40`);
           gradient.addColorStop(1, `${activeProject.color}00`);
-            
+
           ctx.lineTo(lastX, h - bottomMargin);
           ctx.lineTo(0, h - bottomMargin);
           ctx.closePath();
