@@ -177,7 +177,7 @@ export function VoidZeroNavbar() {
                     {ossOpen && (
                       <div className="w-full bg-[#14121a]">
                         <div className="px-4 h-12 flex items-center" style={{ borderTop: `1px solid ${NICKEL}` }}>
-                          <p className="font-mono text-xs font-medium uppercase tracking-widest" style={{ color: GREY }}>Products //</p>
+                          <p className="font-apk text-xs font-medium uppercase tracking-widest" style={{ color: GREY }}>Products //</p>
                         </div>
                         <div className="flex flex-col" style={{ borderBottom: `1px solid ${NICKEL}` }}>
                           {PROJECTS.map(p => (
