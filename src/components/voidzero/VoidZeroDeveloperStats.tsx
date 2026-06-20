@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useMemo } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { VoidZeroBorder } from './VoidZeroBorder';
 import NumberFlow from '@number-flow/react';
 
@@ -27,8 +27,8 @@ function AnimatedCounter({ value, formatOptions, suffix = "" }: { value: number,
   }, []);
 
   return (
-    <span ref={ref}>
-      <NumberFlow value={inView ? value : 0} format={formatOptions} />
+    <span ref={ref} className="font-apk" style={{ fontVariantNumeric: 'tabular-nums' }}>
+      <NumberFlow value={inView ? value : 0} format={formatOptions} className="font-apk" />
       {suffix}
     </span>
   );
@@ -92,12 +92,6 @@ const PROJECT_STATS = [
   }
 ];
 
-// Simple seeded random to keep chart consistent for a project
-function seededRandom(seed: number) {
-  const x = Math.sin(seed++) * 10000;
-  return x - Math.floor(x);
-}
-
 export function VoidZeroDeveloperStats() {
   const [activeProjectIdx, setActiveProjectIdx] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +99,6 @@ export function VoidZeroDeveloperStats() {
   
   const activeProject = PROJECT_STATS[activeProjectIdx];
 
-  // Close dropdown when clicking outside
   const dropdownRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -125,34 +118,44 @@ export function VoidZeroDeveloperStats() {
       if (ctx) {
         const w = canvas.width;
         const h = canvas.height;
+        const bottomMargin = 40;
         
-        // Generate points once per project
-        let seed = activeProjectIdx + 1;
+        // Generate points for smooth exponential curve with realistic dips
         const points: {x: number, y: number}[] = [];
-        for (let i = 0; i <= w; i += 10) {
+        for (let i = 0; i <= w; i += 4) {
           const progress = i / w;
-          const y = (h - 20) - Math.pow(progress, 4) * (h - 100);
-          points.push({ x: i, y: y + seededRandom(seed++) * 20 - 10 });
+          // Steep exponential curve
+          let base = Math.pow(progress, 6) * (h - bottomMargin - 20);
+          
+          // Realistic "dips" in the graph near the end
+          if (progress > 0.88 && progress < 0.885) base -= 15;
+          if (progress > 0.93 && progress < 0.935) base -= 40;
+          if (progress > 0.97 && progress < 0.975) base -= 90;
+          
+          // Smooth sine wave noise
+          const noise = Math.sin(progress * 150) * 2 + Math.sin(progress * 400) * 1;
+          
+          const y = (h - bottomMargin) - base + noise;
+          points.push({ x: i, y });
         }
         
         let startTimestamp: number | null = null;
-        const duration = 1000; // 1 second drawing animation
+        const duration = 1200; 
         
         const render = (timestamp: number) => {
           if (!startTimestamp) startTimestamp = timestamp;
           const elapsed = timestamp - startTimestamp;
           const progress = Math.min(elapsed / duration, 1);
           
-          // Easing function (easeOutExpo)
           const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
           const currentWidth = w * easeProgress;
           
           ctx.clearRect(0, 0, w, h);
           ctx.beginPath();
-          ctx.moveTo(0, h - 20);
+          ctx.moveTo(0, h - bottomMargin);
           
           let lastX = 0;
-          let lastY = h - 20;
+          let lastY = h - bottomMargin;
           for (const point of points) {
             if (point.x <= currentWidth) {
               ctx.lineTo(point.x, point.y);
@@ -163,15 +166,18 @@ export function VoidZeroDeveloperStats() {
             }
           }
           
-          // Draw the current line up to the animated width
           ctx.strokeStyle = activeProject.color; 
-          ctx.lineWidth = 3;
+          ctx.lineWidth = 2.5;
           ctx.stroke();
 
-          // Fill underneath the drawn portion
-          ctx.lineTo(lastX, h);
-          ctx.lineTo(0, h);
-          ctx.fillStyle = activeProject.color + '1A'; // 10% opacity
+          // Gradient fill
+          const gradient = ctx.createLinearGradient(0, 0, 0, h - bottomMargin);
+          gradient.addColorStop(0, activeProject.color + '33'); // 20% opacity at top
+          gradient.addColorStop(1, activeProject.color + '00'); // 0% opacity at bottom
+
+          ctx.lineTo(lastX, h - bottomMargin);
+          ctx.lineTo(0, h - bottomMargin);
+          ctx.fillStyle = gradient;
           ctx.fill();
           
           if (progress < 1) {
@@ -208,7 +214,7 @@ export function VoidZeroDeveloperStats() {
       
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-2 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
         <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px] lg:min-h-[450px]">
-          <h6 className="flex gap-2 items-center text-sm font-medium font-apk">
+          <h6 className="flex gap-2 items-center text-base md:text-lg font-medium font-apk text-zinc-800">
             <span>Total downloads</span>
           </h6>
           <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
@@ -225,7 +231,7 @@ export function VoidZeroDeveloperStats() {
                 className="bg-white border border-ceramic text-primary rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer shadow-sm text-sm hover:bg-slate-50 transition-colors"
               >
                 <img src={activeProject.icon} className="size-5" alt="" />
-                <span className="font-medium">{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
+                <span className="font-medium text-sm">{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
                 <svg className={`size-3 ml-1 fill-primary transition-transform ${isOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" aria-hidden="true">
                   <path d="M1.41 0L6 4.58 10.59 0 12 1.42l-6 6-6-6z"></path>
                 </svg>
@@ -261,8 +267,8 @@ export function VoidZeroDeveloperStats() {
           <div className="w-full h-full relative">
             <canvas ref={canvasRef} id="chart-canvas" width="1438" height="1007" style={{ display: 'block', boxSizing: 'border-box', height: '100%', width: '100%', objectFit: 'cover' }}></canvas>
             <div className="flex justify-between absolute bottom-4 md:bottom-6 left-6 md:left-10 right-6 md:right-10 pointer-events-none">
-              <p key={`${activeProject.id}-date`} className="font-mono text-xs text-nickel tracking-wide animate-fade-in-stats">{activeProject.startDate}</p>
-              <p key={`${activeProject.id}-today`} className="font-mono text-xs text-nickel tracking-wide animate-fade-in-stats">Today</p>
+              <p key={`${activeProject.id}-date`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">{activeProject.startDate}</p>
+              <p key={`${activeProject.id}-today`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">Today</p>
             </div>
           </div>
         </div>
@@ -270,34 +276,34 @@ export function VoidZeroDeveloperStats() {
       
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-3 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
         <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
             <AnimatedCounter 
               value={activeProject.weekly.value} 
               formatOptions={{ minimumFractionDigits: activeProject.weekly.maxFractionDigits, maximumFractionDigits: activeProject.weekly.maxFractionDigits }} 
               suffix={activeProject.weekly.suffix} 
             />
           </h2>
-          <p key={`${activeProject.id}-lbl1`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">Weekly NPM downloads</p>
+          <p key={`${activeProject.id}-lbl1`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
         </div>
         <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
             <AnimatedCounter 
               value={activeProject.stars.value} 
               formatOptions={{ minimumFractionDigits: activeProject.stars.maxFractionDigits, maximumFractionDigits: activeProject.stars.maxFractionDigits }} 
               suffix={activeProject.stars.suffix} 
             />
           </h2>
-          <p key={`${activeProject.id}-lbl2`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">GitHub Stars</p>
+          <p key={`${activeProject.id}-lbl2`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
         </div>
         <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
             <AnimatedCounter 
               value={activeProject.contributors.value} 
               formatOptions={{ minimumFractionDigits: activeProject.contributors.maxFractionDigits, maximumFractionDigits: activeProject.contributors.maxFractionDigits }} 
               suffix={activeProject.contributors.suffix} 
             />
           </h2>
-          <p key={`${activeProject.id}-lbl3`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">Contributors</p>
+          <p key={`${activeProject.id}-lbl3`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
         </div>
       </VoidZeroBorder>
     </>
