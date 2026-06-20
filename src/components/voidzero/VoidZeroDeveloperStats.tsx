@@ -219,7 +219,7 @@ export function VoidZeroDeveloperStats() {
 
       {/* Header Section */}
       <VoidZeroBorder theme="light" showTopBorder={false} containerClassName="px-5 md:px-10 h-36 md:h-48 sm:h-80 flex flex-col justify-center gap-5">
-        <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight font-apk text-zinc-900">
+        <h3 className="text-start max-w-lg text-balance text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight font-apk text-zinc-900">
           Trusted by millions of developers around the world
         </h3>
       </VoidZeroBorder>
