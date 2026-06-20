@@ -2,10 +2,9 @@
 
 /* ── APK Protocol — exact @font-face from VoidZero production ── */
 @font-face {
-  font-family: 'APK Protocol';
-  font-weight: 500;
-  src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
-  font-display: swap;
+    font-family: APK Protocol;
+    font-weight: 500;
+    src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2)format("woff2");
 }
 
 @font-face {
