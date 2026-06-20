@@ -44,11 +44,6 @@ export function VoidZeroFeaturedResources() {
   return (
     <>
       <style>{`
-        @font-face {
-          font-family: 'APK Protocol';
-          font-weight: 500;
-          src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
-        }
         .carousel__viewport { overflow: hidden; }
         .carousel__track { display: flex; touch-action: pan-y pinch-zoom; }
         .carousel__slide { flex: 0 0 auto; min-width: 0; }

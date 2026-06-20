@@ -5,11 +5,6 @@ export function VoidZeroMission() {
   return (
     <>
       <style>{`
-        @font-face {
-          font-family: 'APK Protocol';
-          font-weight: 500;
-          src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
-        }
         .marketing-heading {
           font-family: 'APK Protocol', sans-serif;
           font-size: 1.5rem; /* fallback for var(--text-2xl) */

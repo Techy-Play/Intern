@@ -7,6 +7,7 @@ import { VoidZeroOpenSource } from "@/components/voidzero/VoidZeroOpenSource";
 import { VoidZeroMission } from "@/components/voidzero/VoidZeroMission";
 
 import { VoidZeroFeaturedResources } from "@/components/voidzero/VoidZeroFeaturedResources";
+import { VoidZeroDeveloperStats } from "@/components/voidzero/VoidZeroDeveloperStats";
 
 function VoidZeroHeaderWrapper() {
   const [showBanner, setShowBanner] = useState(true);
@@ -26,6 +27,7 @@ export default function VoidZeroOtherComponentsPage() {
 
       <main className="flex flex-col w-full pt-16 md:pt-0 pb-20">
         <VoidZeroOpenSource />
+        <VoidZeroDeveloperStats />
         <VoidZeroMission />
 
         <VoidZeroFeaturedResources />
