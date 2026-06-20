@@ -75,8 +75,8 @@ export function VoidZeroDeveloperStats() {
       
       <div aria-live="polite" aria-atomic="true" className="sr-only"></div>
       
-      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-2 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
-        <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px]">
+      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-2 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
+        <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px] lg:min-h-[450px]">
           <h6 className="flex gap-2 items-center text-sm font-medium font-apk">
             <span>Total downloads</span>
           </h6>
@@ -105,20 +105,20 @@ export function VoidZeroDeveloperStats() {
         </div>
       </VoidZeroBorder>
       
-      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-3 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
-        <div className="flex flex-col gap-2 p-6 md:p-10">
+      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-3 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
+        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
             <AnimatedCounter value={121.4} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="M+" />
           </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">Weekly NPM downloads</p>
         </div>
-        <div className="flex flex-col gap-2 p-6 md:p-10">
+        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
             <AnimatedCounter value={81.3} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="K+" />
           </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">GitHub Stars</p>
         </div>
-        <div className="flex flex-col gap-2 p-6 md:p-10">
+        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
             <AnimatedCounter value={1.3} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="K+" />
           </h2>
