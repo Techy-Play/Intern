@@ -281,7 +281,7 @@ export function VoidZeroDeveloperStats() {
         
         {/* Bottom Row: Stats Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-stroke divide-y lg:divide-y-0 lg:divide-x divide-stroke">
-          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.weekly.value} 
@@ -291,7 +291,7 @@ export function VoidZeroDeveloperStats() {
             </h2>
             <p key={`${activeProject.id}-lbl1`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
           </div>
-          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.stars.value} 
@@ -301,7 +301,7 @@ export function VoidZeroDeveloperStats() {
             </h2>
             <p key={`${activeProject.id}-lbl2`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
           </div>
-          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.contributors.value} 
