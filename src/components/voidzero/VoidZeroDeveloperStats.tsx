@@ -21,25 +21,25 @@ function AnimatedCounter({ value, formatOptions, suffix = "" }: { value: number,
       },
       { threshold: 0.1 }
     );
-    
+
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <span 
-      ref={ref} 
-      className="font-apk" 
-      style={{ 
-        fontFamily: "'APK Protocol', sans-serif", 
-        fontWeight: 500, 
-        fontVariantNumeric: 'tabular-nums' 
+    <span
+      ref={ref}
+      className="font-apk"
+      style={{
+        fontFamily: "'APK Protocol', sans-serif",
+        fontWeight: 500,
+        fontVariantNumeric: 'tabular-nums'
       }}
     >
-      <NumberFlow 
-        value={inView ? value : 0} 
-        format={formatOptions} 
-        style={{ fontFamily: "'APK Protocol', sans-serif", fontWeight: 500 }} 
+      <NumberFlow
+        value={inView ? value : 0}
+        format={formatOptions}
+        style={{ fontFamily: "'APK Protocol', sans-serif", fontWeight: 500 }}
       />
       {suffix}
     </span>
@@ -108,7 +108,7 @@ export function VoidZeroDeveloperStats() {
   const [activeProjectIdx, setActiveProjectIdx] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  
+
   const activeProject = PROJECT_STATS[activeProjectIdx];
 
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -131,41 +131,41 @@ export function VoidZeroDeveloperStats() {
         const w = canvas.width;
         const h = canvas.height;
         const bottomMargin = 40;
-        
+
         // Generate points for smooth exponential curve with realistic dips
-        const points: {x: number, y: number}[] = [];
+        const points: { x: number, y: number }[] = [];
         for (let i = 0; i <= w; i += 4) {
           const progress = i / w;
           // Steep exponential curve
           let base = Math.pow(progress, 6) * (h - bottomMargin - 20);
-          
+
           // Realistic "dips" in the graph near the end
           if (progress > 0.88 && progress < 0.885) base -= 15;
           if (progress > 0.93 && progress < 0.935) base -= 40;
           if (progress > 0.97 && progress < 0.975) base -= 90;
-          
+
           // Smooth sine wave noise
           const noise = Math.sin(progress * 150) * 2 + Math.sin(progress * 400) * 1;
-          
+
           const y = (h - bottomMargin) - base + noise;
           points.push({ x: i, y });
         }
-        
+
         let startTimestamp: number | null = null;
-        const duration = 1200; 
-        
+        const duration = 1200;
+
         const render = (timestamp: number) => {
           if (!startTimestamp) startTimestamp = timestamp;
           const elapsed = timestamp - startTimestamp;
           const progress = Math.min(elapsed / duration, 1);
-          
+
           const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
           const currentWidth = w * easeProgress;
-          
+
           ctx.clearRect(0, 0, w, h);
           ctx.beginPath();
           ctx.moveTo(0, h - bottomMargin);
-          
+
           let lastX = 0;
           let lastY = h - bottomMargin;
           for (const point of points) {
@@ -177,9 +177,9 @@ export function VoidZeroDeveloperStats() {
               break;
             }
           }
-          
-          ctx.strokeStyle = activeProject.color; 
-          ctx.lineWidth = 3;
+
+          ctx.strokeStyle = activeProject.color;
+          ctx.lineWidth = 6;
           ctx.stroke();
 
           // Gradient fill
@@ -191,12 +191,12 @@ export function VoidZeroDeveloperStats() {
           ctx.lineTo(0, h - bottomMargin);
           ctx.fillStyle = gradient;
           ctx.fill();
-          
+
           if (progress < 1) {
             animationId = requestAnimationFrame(render);
           }
         };
-        
+
         animationId = requestAnimationFrame(render);
       }
     }
@@ -223,9 +223,9 @@ export function VoidZeroDeveloperStats() {
           Trusted by millions of developers around the world
         </h3>
       </VoidZeroBorder>
-      
+
       <div aria-live="polite" aria-atomic="true" className="sr-only"></div>
-      
+
       {/* Stats Grid Section - Single outer border wrapper with ticks */}
       <VoidZeroBorder theme="light" containerClassName="flex flex-col">
         {/* Top Row: Total Downloads and Chart */}
@@ -234,17 +234,17 @@ export function VoidZeroDeveloperStats() {
             <h6 className="flex gap-2 items-center text-sm md:text-lg font-medium font-apk text-zinc-800">
               <span>Total downloads</span>
             </h6>
-            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-[4.2rem] xl:text-[4.5rem] font-medium tracking-tight lg:mt-auto font-apk">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[3.5rem] font-medium tracking-tight lg:mt-auto font-apk">
               <AnimatedCounter value={activeProject.total} />
             </h1>
           </div>
-          
+
           <div className="relative w-full aspect-[5/3.5] bg-white">
             <div className="absolute top-4 md:top-6 left-4 md:left-6 z-20 project-dropdown" ref={dropdownRef}>
               <div className="relative">
-                <button 
+                <button
                   onClick={() => setIsOpen(!isOpen)}
-                  aria-expanded={isOpen} 
+                  aria-expanded={isOpen}
                   className="bg-white border border-stroke text-primary rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer shadow-sm text-sm hover:bg-slate-50 transition-colors"
                 >
                   <img src={activeProject.icon} className="size-5" alt="" />
@@ -253,7 +253,7 @@ export function VoidZeroDeveloperStats() {
                     <path d="M1.41 0L6 4.58 10.59 0 12 1.42l-6 6-6-6z"></path>
                   </svg>
                 </button>
-                
+
                 {isOpen && (
                   <ul role="listbox" className="absolute top-full left-0 mt-1 w-48 bg-white border border-stroke rounded-lg shadow-lg overflow-hidden py-1 select-none">
                     {PROJECT_STATS.map((project, idx) => (
@@ -290,35 +290,35 @@ export function VoidZeroDeveloperStats() {
             </div>
           </div>
         </div>
-        
+
         {/* Bottom Row: Stats Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-stroke divide-y lg:divide-y-0 lg:divide-x divide-stroke">
           <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-              <AnimatedCounter 
-                value={activeProject.weekly.value} 
-                formatOptions={{ minimumFractionDigits: activeProject.weekly.maxFractionDigits, maximumFractionDigits: activeProject.weekly.maxFractionDigits }} 
-                suffix={activeProject.weekly.suffix} 
+              <AnimatedCounter
+                value={activeProject.weekly.value}
+                formatOptions={{ minimumFractionDigits: activeProject.weekly.maxFractionDigits, maximumFractionDigits: activeProject.weekly.maxFractionDigits }}
+                suffix={activeProject.weekly.suffix}
               />
             </h2>
             <p key={`${activeProject.id}-lbl1`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
           </div>
           <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-              <AnimatedCounter 
-                value={activeProject.stars.value} 
-                formatOptions={{ minimumFractionDigits: activeProject.stars.maxFractionDigits, maximumFractionDigits: activeProject.stars.maxFractionDigits }} 
-                suffix={activeProject.stars.suffix} 
+              <AnimatedCounter
+                value={activeProject.stars.value}
+                formatOptions={{ minimumFractionDigits: activeProject.stars.maxFractionDigits, maximumFractionDigits: activeProject.stars.maxFractionDigits }}
+                suffix={activeProject.stars.suffix}
               />
             </h2>
             <p key={`${activeProject.id}-lbl2`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
           </div>
           <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-              <AnimatedCounter 
-                value={activeProject.contributors.value} 
-                formatOptions={{ minimumFractionDigits: activeProject.contributors.maxFractionDigits, maximumFractionDigits: activeProject.contributors.maxFractionDigits }} 
-                suffix={activeProject.contributors.suffix} 
+              <AnimatedCounter
+                value={activeProject.contributors.value}
+                formatOptions={{ minimumFractionDigits: activeProject.contributors.maxFractionDigits, maximumFractionDigits: activeProject.contributors.maxFractionDigits }}
+                suffix={activeProject.contributors.suffix}
               />
             </h2>
             <p key={`${activeProject.id}-lbl3`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
