@@ -54,7 +54,7 @@ const PROJECT_STATS = [
     weekly: { value: 121.4, suffix: "M+", maxFractionDigits: 1 },
     stars: { value: 81.3, suffix: "K+", maxFractionDigits: 1 },
     contributors: { value: 1.3, suffix: "K+", maxFractionDigits: 1 },
-    color: "#8c52ff",
+    color: "#6c3bff",
     startDate: "April 2020",
     icon: "/assets/vite-dark.CJsR88Md.svg"
   },
@@ -179,16 +179,17 @@ export function VoidZeroDeveloperStats() {
           }
 
           ctx.strokeStyle = activeProject.color;
-          ctx.lineWidth = 6;
+          ctx.lineWidth = 3;
           ctx.stroke();
 
-          // Gradient fill
+          // Gradient fill (from the line down to graphHeight)
           const gradient = ctx.createLinearGradient(0, 0, 0, h - bottomMargin);
-          gradient.addColorStop(0, activeProject.color + '33'); // 20% opacity at top
-          gradient.addColorStop(1, activeProject.color + '00'); // 0% opacity at bottom
-
+          gradient.addColorStop(0, `${activeProject.color}40`);
+          gradient.addColorStop(1, `${activeProject.color}00`);
+            
           ctx.lineTo(lastX, h - bottomMargin);
           ctx.lineTo(0, h - bottomMargin);
+          ctx.closePath();
           ctx.fillStyle = gradient;
           ctx.fill();
 
