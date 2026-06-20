@@ -38,7 +38,7 @@ export function VoidZeroDeveloperStats() {
   return (
     <>
       <VoidZeroBorder theme="light" showTopBorder={false} containerClassName="px-5 md:px-10 h-36 md:h-48 sm:h-80 flex flex-col justify-center gap-5">
-        <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight">
+        <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight font-apk">
           Trusted by millions of developers around the world
         </h3>
       </VoidZeroBorder>
@@ -47,10 +47,10 @@ export function VoidZeroDeveloperStats() {
       
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-2 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
         <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px]">
-          <h6 className="flex gap-2 items-center text-sm font-medium">
+          <h6 className="flex gap-2 items-center text-sm font-medium font-apk">
             <span>Total downloads</span>
           </h6>
-          <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto">
+          <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
             4,664,021,084
           </h1>
         </div>
@@ -77,16 +77,16 @@ export function VoidZeroDeveloperStats() {
       
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-3 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight">121.4M+</h2>
-          <p className="lead text-sm font-medium text-nickel">Weekly NPM downloads</p>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">121.4M+</h2>
+          <p className="lead text-sm font-medium font-apk text-nickel">Weekly NPM downloads</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight">81.3K+</h2>
-          <p className="lead text-sm font-medium text-nickel">GitHub Stars</p>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">81.3K+</h2>
+          <p className="lead text-sm font-medium font-apk text-nickel">GitHub Stars</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight">1.3K+</h2>
-          <p className="lead text-sm font-medium text-nickel">Contributors</p>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">1.3K+</h2>
+          <p className="lead text-sm font-medium font-apk text-nickel">Contributors</p>
         </div>
       </VoidZeroBorder>
     </>
