@@ -2,9 +2,10 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { VoidZeroBorder } from './VoidZeroBorder';
+import NumberFlow from '@number-flow/react';
 
-function AnimatedCounter({ value, format }: { value: number, format: (val: number) => string }) {
-  const [count, setCount] = useState(0);
+function AnimatedCounter({ value, formatOptions, suffix = "" }: { value: number, formatOptions?: any, suffix?: string }) {
+  const [inView, setInView] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -14,20 +15,7 @@ function AnimatedCounter({ value, format }: { value: number, format: (val: numbe
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          let start = 0;
-          const end = value;
-          const duration = 2000;
-          const startTime = performance.now();
-          
-          const step = (timestamp: number) => {
-            const progress = Math.min((timestamp - startTime) / duration, 1);
-            const easeProgress = 1 - Math.pow(1 - progress, 4);
-            setCount(start + easeProgress * (end - start));
-            if (progress < 1) {
-              requestAnimationFrame(step);
-            }
-          };
-          requestAnimationFrame(step);
+          setInView(true);
           observer.disconnect();
         }
       },
@@ -36,9 +24,14 @@ function AnimatedCounter({ value, format }: { value: number, format: (val: numbe
     
     observer.observe(node);
     return () => observer.disconnect();
-  }, [value]);
+  }, []);
 
-  return <span ref={ref}>{format(count)}</span>;
+  return (
+    <span ref={ref}>
+      <NumberFlow value={inView ? value : 0} format={formatOptions} />
+      {suffix}
+    </span>
+  );
 }
 
 export function VoidZeroDeveloperStats() {
@@ -88,7 +81,7 @@ export function VoidZeroDeveloperStats() {
             <span>Total downloads</span>
           </h6>
           <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
-            <AnimatedCounter value={4664021084} format={(val) => Math.floor(val).toLocaleString()} />
+            <AnimatedCounter value={4664021084} />
           </h1>
         </div>
         
@@ -115,19 +108,19 @@ export function VoidZeroDeveloperStats() {
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-3 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
         <div className="flex flex-col gap-2 p-6 md:p-10">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
-            <AnimatedCounter value={121.4} format={(val) => val.toFixed(1) + "M+"} />
+            <AnimatedCounter value={121.4} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="M+" />
           </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">Weekly NPM downloads</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
-            <AnimatedCounter value={81.3} format={(val) => val.toFixed(1) + "K+"} />
+            <AnimatedCounter value={81.3} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="K+" />
           </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">GitHub Stars</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
-            <AnimatedCounter value={1.3} format={(val) => val.toFixed(1) + "K+"} />
+            <AnimatedCounter value={1.3} formatOptions={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix="K+" />
           </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">Contributors</p>
         </div>
