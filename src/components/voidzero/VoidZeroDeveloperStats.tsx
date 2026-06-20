@@ -27,8 +27,20 @@ function AnimatedCounter({ value, formatOptions, suffix = "" }: { value: number,
   }, []);
 
   return (
-    <span ref={ref} className="font-apk" style={{ fontVariantNumeric: 'tabular-nums' }}>
-      <NumberFlow value={inView ? value : 0} format={formatOptions} className="font-apk" />
+    <span 
+      ref={ref} 
+      className="font-apk" 
+      style={{ 
+        fontFamily: "'APK Protocol', sans-serif", 
+        fontWeight: 500, 
+        fontVariantNumeric: 'tabular-nums' 
+      }}
+    >
+      <NumberFlow 
+        value={inView ? value : 0} 
+        format={formatOptions} 
+        style={{ fontFamily: "'APK Protocol', sans-serif", fontWeight: 500 }} 
+      />
       {suffix}
     </span>
   );
