@@ -4,21 +4,21 @@
 @font-face {
   font-family: 'APK Protocol';
   font-weight: 500;
-  src: url(../fonts/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
+  src: url(/assets/APK-Protocol-Medium.C7Mq9oGh.woff2) format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: 'APK Protocol';
   font-weight: 600;
-  src: url(../fonts/APK-Protocol-Semi-Bold.CC2BASA5.woff2) format("woff2");
+  src: url(/assets/APK-Protocol-Semi-Bold.CC2BASA5.woff2) format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: 'KH Teka Mono';
   font-weight: 400;
-  src: url(../fonts/KHTekaMono-Regular.CiZ9ZkmZ.woff2) format("woff2");
+  src: url(/assets/KHTekaMono-Regular.CiZ9ZkmZ.woff2) format("woff2");
 }
 
 @theme {
