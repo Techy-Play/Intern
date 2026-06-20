@@ -204,106 +204,113 @@ export function VoidZeroDeveloperStats() {
           animation: fadeInStats 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
       `}</style>
+
+      {/* Header Section */}
       <VoidZeroBorder theme="light" showTopBorder={false} containerClassName="px-5 md:px-10 h-36 md:h-48 sm:h-80 flex flex-col justify-center gap-5">
-        <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight font-apk">
+        <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight font-apk text-zinc-900">
           Trusted by millions of developers around the world
         </h3>
       </VoidZeroBorder>
       
       <div aria-live="polite" aria-atomic="true" className="sr-only"></div>
       
-      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-2 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
-        <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px] lg:min-h-[450px]">
-          <h6 className="flex gap-2 items-center text-base md:text-lg font-medium font-apk text-zinc-800">
-            <span>Total downloads</span>
-          </h6>
-          <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
-            <AnimatedCounter value={activeProject.total} />
-          </h1>
+      {/* Stats Grid Section - Single outer border wrapper with ticks */}
+      <VoidZeroBorder theme="light" containerClassName="flex flex-col">
+        {/* Top Row: Total Downloads and Chart */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-stroke">
+          <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px] lg:min-h-[450px]">
+            <h6 className="flex gap-2 items-center text-base md:text-lg font-medium font-apk text-zinc-800">
+              <span>Total downloads</span>
+            </h6>
+            <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
+              <AnimatedCounter value={activeProject.total} />
+            </h1>
+          </div>
+          
+          <div className="relative w-full aspect-[5/3.5] bg-white">
+            <div className="absolute top-4 md:top-6 left-4 md:left-6 z-20 project-dropdown" ref={dropdownRef}>
+              <div className="relative">
+                <button 
+                  onClick={() => setIsOpen(!isOpen)}
+                  aria-expanded={isOpen} 
+                  className="bg-white border border-stroke text-primary rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer shadow-sm text-sm hover:bg-slate-50 transition-colors"
+                >
+                  <img src={activeProject.icon} className="size-5" alt="" />
+                  <span className="font-medium text-sm">{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
+                  <svg className={`size-3 ml-1 fill-primary transition-transform ${isOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" aria-hidden="true">
+                    <path d="M1.41 0L6 4.58 10.59 0 12 1.42l-6 6-6-6z"></path>
+                  </svg>
+                </button>
+                
+                {isOpen && (
+                  <ul role="listbox" className="absolute top-full left-0 mt-1 w-48 bg-white border border-stroke rounded-lg shadow-lg overflow-hidden py-1 select-none">
+                    {PROJECT_STATS.map((project, idx) => (
+                      <li key={project.id} role="option" aria-selected={idx === activeProjectIdx}>
+                        <button
+                          onClick={() => {
+                            setActiveProjectIdx(idx);
+                            setIsOpen(false);
+                          }}
+                          className={`w-full px-3 py-2 text-left flex items-center justify-between transition-colors text-base cursor-pointer focus:outline-none focus:bg-stroke/20 hover:text-primary focus:text-primary ${idx === activeProjectIdx ? 'bg-slate-50' : 'hover:bg-stroke/20'}`}
+                        >
+                          <div className="flex items-center gap-2">
+                            <img src={project.icon} className="size-5" alt="" />
+                            <span className="font-medium text-sm">{project.name}</span>
+                          </div>
+                          {idx === activeProjectIdx && (
+                            <svg className="size-4 text-primary ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          )}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            <div className="w-full h-full relative">
+              <canvas ref={canvasRef} id="chart-canvas" width="1438" height="1007" style={{ display: 'block', boxSizing: 'border-box', height: '100%', width: '100%', objectFit: 'cover' }}></canvas>
+              <div className="flex justify-between absolute bottom-4 md:bottom-6 left-6 md:left-10 right-6 md:right-10 pointer-events-none">
+                <p key={`${activeProject.id}-date`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">{activeProject.startDate}</p>
+                <p key={`${activeProject.id}-today`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">Today</p>
+              </div>
+            </div>
+          </div>
         </div>
         
-        <div className="relative w-full aspect-[5/3.5] bg-white">
-          <div className="absolute top-4 md:top-6 left-4 md:left-6 z-20 project-dropdown" ref={dropdownRef}>
-            <div className="relative">
-              <button 
-                onClick={() => setIsOpen(!isOpen)}
-                aria-expanded={isOpen} 
-                className="bg-white border border-ceramic text-primary rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer shadow-sm text-sm hover:bg-slate-50 transition-colors"
-              >
-                <img src={activeProject.icon} className="size-5" alt="" />
-                <span className="font-medium text-sm">{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
-                <svg className={`size-3 ml-1 fill-primary transition-transform ${isOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" aria-hidden="true">
-                  <path d="M1.41 0L6 4.58 10.59 0 12 1.42l-6 6-6-6z"></path>
-                </svg>
-              </button>
-              
-              {isOpen && (
-                <ul role="listbox" className="absolute top-full left-0 mt-1 w-48 bg-white border border-ceramic rounded-lg shadow-lg overflow-hidden py-1 select-none">
-                  {PROJECT_STATS.map((project, idx) => (
-                    <li key={project.id} role="option" aria-selected={idx === activeProjectIdx}>
-                      <button
-                        onClick={() => {
-                          setActiveProjectIdx(idx);
-                          setIsOpen(false);
-                        }}
-                        className={`w-full px-3 py-2 text-left flex items-center justify-between transition-colors text-base cursor-pointer focus:outline-none focus:bg-ceramic/20 hover:text-primary focus:text-primary ${idx === activeProjectIdx ? 'bg-slate-50' : 'hover:bg-ceramic/20'}`}
-                      >
-                        <div className="flex items-center gap-2">
-                          <img src={project.icon} className="size-5" alt="" />
-                          <span className="font-medium text-sm">{project.name}</span>
-                        </div>
-                        {idx === activeProjectIdx && (
-                          <svg className="size-4 text-primary ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        )}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+        {/* Bottom Row: Stats Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-stroke divide-y lg:divide-y-0 lg:divide-x divide-stroke">
+          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
+              <AnimatedCounter 
+                value={activeProject.weekly.value} 
+                formatOptions={{ minimumFractionDigits: activeProject.weekly.maxFractionDigits, maximumFractionDigits: activeProject.weekly.maxFractionDigits }} 
+                suffix={activeProject.weekly.suffix} 
+              />
+            </h2>
+            <p key={`${activeProject.id}-lbl1`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
           </div>
-          <div className="w-full h-full relative">
-            <canvas ref={canvasRef} id="chart-canvas" width="1438" height="1007" style={{ display: 'block', boxSizing: 'border-box', height: '100%', width: '100%', objectFit: 'cover' }}></canvas>
-            <div className="flex justify-between absolute bottom-4 md:bottom-6 left-6 md:left-10 right-6 md:right-10 pointer-events-none">
-              <p key={`${activeProject.id}-date`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">{activeProject.startDate}</p>
-              <p key={`${activeProject.id}-today`} className="font-mono text-sm text-zinc-500 tracking-wide animate-fade-in-stats">Today</p>
-            </div>
+          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
+              <AnimatedCounter 
+                value={activeProject.stars.value} 
+                formatOptions={{ minimumFractionDigits: activeProject.stars.maxFractionDigits, maximumFractionDigits: activeProject.stars.maxFractionDigits }} 
+                suffix={activeProject.stars.suffix} 
+              />
+            </h2>
+            <p key={`${activeProject.id}-lbl2`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
           </div>
-        </div>
-      </VoidZeroBorder>
-      
-      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 lg:grid-cols-3 border-t border-ceramic divide-y lg:divide-y-0 lg:divide-x divide-ceramic">
-        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-            <AnimatedCounter 
-              value={activeProject.weekly.value} 
-              formatOptions={{ minimumFractionDigits: activeProject.weekly.maxFractionDigits, maximumFractionDigits: activeProject.weekly.maxFractionDigits }} 
-              suffix={activeProject.weekly.suffix} 
-            />
-          </h2>
-          <p key={`${activeProject.id}-lbl1`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
-        </div>
-        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-            <AnimatedCounter 
-              value={activeProject.stars.value} 
-              formatOptions={{ minimumFractionDigits: activeProject.stars.maxFractionDigits, maximumFractionDigits: activeProject.stars.maxFractionDigits }} 
-              suffix={activeProject.stars.suffix} 
-            />
-          </h2>
-          <p key={`${activeProject.id}-lbl2`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
-        </div>
-        <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
-            <AnimatedCounter 
-              value={activeProject.contributors.value} 
-              formatOptions={{ minimumFractionDigits: activeProject.contributors.maxFractionDigits, maximumFractionDigits: activeProject.contributors.maxFractionDigits }} 
-              suffix={activeProject.contributors.suffix} 
-            />
-          </h2>
-          <p key={`${activeProject.id}-lbl3`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
+          <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
+              <AnimatedCounter 
+                value={activeProject.contributors.value} 
+                formatOptions={{ minimumFractionDigits: activeProject.contributors.maxFractionDigits, maximumFractionDigits: activeProject.contributors.maxFractionDigits }} 
+                suffix={activeProject.contributors.suffix} 
+              />
+            </h2>
+            <p key={`${activeProject.id}-lbl3`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
+          </div>
         </div>
       </VoidZeroBorder>
     </>
