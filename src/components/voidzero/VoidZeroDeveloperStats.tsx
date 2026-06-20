@@ -230,11 +230,11 @@ export function VoidZeroDeveloperStats() {
       <VoidZeroBorder theme="light" containerClassName="flex flex-col">
         {/* Top Row: Total Downloads and Chart */}
         <div className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-stroke">
-          <div className="p-6 md:p-10 flex flex-col justify-between min-h-[300px] lg:min-h-[450px]">
-            <h6 className="flex gap-2 items-center text-base md:text-lg font-medium font-apk text-zinc-800">
+          <div className="p-6 md:p-10 flex flex-col justify-start lg:justify-between gap-2 lg:gap-0 lg:min-h-[450px]">
+            <h6 className="flex gap-2 items-center text-sm md:text-lg font-medium font-apk text-zinc-800">
               <span>Total downloads</span>
             </h6>
-            <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight lg:mt-auto font-apk">
               <AnimatedCounter value={activeProject.total} />
             </h1>
           </div>
@@ -293,7 +293,7 @@ export function VoidZeroDeveloperStats() {
         
         {/* Bottom Row: Stats Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-stroke divide-y lg:divide-y-0 lg:divide-x divide-stroke">
-          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
+          <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.weekly.value} 
@@ -301,9 +301,9 @@ export function VoidZeroDeveloperStats() {
                 suffix={activeProject.weekly.suffix} 
               />
             </h2>
-            <p key={`${activeProject.id}-lbl1`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
+            <p key={`${activeProject.id}-lbl1`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Weekly NPM downloads</p>
           </div>
-          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
+          <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.stars.value} 
@@ -311,9 +311,9 @@ export function VoidZeroDeveloperStats() {
                 suffix={activeProject.stars.suffix} 
               />
             </h2>
-            <p key={`${activeProject.id}-lbl2`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
+            <p key={`${activeProject.id}-lbl2`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">GitHub Stars</p>
           </div>
-          <div className="flex flex-col justify-start gap-4 md:gap-5 p-6 md:p-10 min-h-[160px] md:min-h-[220px]">
+          <div className="flex flex-col justify-start gap-2 lg:gap-5 p-6 md:p-10 min-h-0 lg:min-h-[220px]">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight font-apk text-zinc-900">
               <AnimatedCounter 
                 value={activeProject.contributors.value} 
@@ -321,7 +321,7 @@ export function VoidZeroDeveloperStats() {
                 suffix={activeProject.contributors.suffix} 
               />
             </h2>
-            <p key={`${activeProject.id}-lbl3`} className="lead text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
+            <p key={`${activeProject.id}-lbl3`} className="lead text-sm lg:text-base font-medium font-apk text-zinc-500 animate-fade-in-stats">Contributors</p>
           </div>
         </div>
       </VoidZeroBorder>
