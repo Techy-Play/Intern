@@ -100,18 +100,18 @@ export function VoidZeroOpenSource() {
   return (
     <section className="bg-primary text-white min-h-screen w-full flex flex-col items-center" data-theme="dark">
       {/* Top Header */}
-      <section className="border-t border-x-0 md:border-x border-nickel p-5 md:pl-10 w-full md:max-w-[calc(100vw-2rem)] min-[1440px]:max-w-[90rem] mx-auto ticks overflow-x-clip">
+      <section className="vz-wrapper border-t border-nickel p-5 md:pl-10 ticks" style={{ borderColor: '#3b3440', borderLeftColor: '#3b3440', borderRightColor: '#3b3440' }}>
         <span className="text-nickel dark:text-white text-xs font-bold font-mono uppercase tracking-wide">OSS</span>
       </section>
 
-      <section className="border-t border-x-0 md:border-x border-nickel px-5 md:px-10 h-48 sm:h-90 flex flex-col justify-center gap-5 w-full md:max-w-[calc(100vw-2rem)] min-[1440px]:max-w-[90rem] mx-auto ticks overflow-x-clip">
+      <section className="vz-wrapper border-t border-nickel px-5 md:px-10 h-48 sm:h-90 flex flex-col justify-center gap-5 ticks" style={{ borderColor: '#3b3440', borderLeftColor: '#3b3440', borderRightColor: '#3b3440' }}>
         <h2 className="text-start text-white text-4xl md:text-5xl lg:text-[4rem] font-medium tracking-tight">Open Source</h2>
         <p className="font-apk max-w-md text-balance text-white/70 text-base md:text-lg leading-relaxed">
           We are the creators, maintainers, and contributors of some of the most critical infrastructure projects in the JavaScript ecosystem.
         </p>
       </section>
 
-      <section className="border-t border-x-0 md:border-x border-nickel flex flex-col md:flex-row relative w-full md:max-w-[calc(100vw-2rem)] min-[1440px]:max-w-[90rem] mx-auto ticks overflow-x-clip">
+      <section className="vz-wrapper border-t border-nickel flex flex-col md:flex-row relative ticks" style={{ borderColor: '#3b3440', borderLeftColor: '#3b3440', borderRightColor: '#3b3440' }}>
 
         {/* Sticky Sidebar (Hidden on mobile <768px, shown on md and larger) */}
         <div className="w-72 p-10 sticky top-0 self-start hidden md:flex flex-col">
