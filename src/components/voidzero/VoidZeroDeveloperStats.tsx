@@ -179,7 +179,7 @@ export function VoidZeroDeveloperStats() {
           }
           
           ctx.strokeStyle = activeProject.color; 
-          ctx.lineWidth = 2.5;
+          ctx.lineWidth = 3;
           ctx.stroke();
 
           // Gradient fill
@@ -234,7 +234,7 @@ export function VoidZeroDeveloperStats() {
             <h6 className="flex gap-2 items-center text-sm md:text-lg font-medium font-apk text-zinc-800">
               <span>Total downloads</span>
             </h6>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight lg:mt-auto font-apk">
+            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-[4.2rem] xl:text-[4.5rem] font-medium tracking-tight lg:mt-auto font-apk">
               <AnimatedCounter value={activeProject.total} />
             </h1>
           </div>
