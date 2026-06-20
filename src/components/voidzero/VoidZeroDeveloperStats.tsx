@@ -44,7 +44,7 @@ const PROJECT_STATS = [
     contributors: { value: 1.3, suffix: "K+", maxFractionDigits: 1 },
     color: "#8c52ff",
     startDate: "April 2020",
-    hueRotate: "0deg"
+    icon: "/assets/vite-dark.CJsR88Md.svg"
   },
   {
     id: "viteplus",
@@ -55,7 +55,7 @@ const PROJECT_STATS = [
     contributors: { value: 70, suffix: "+", maxFractionDigits: 0 },
     color: "#4f46e5",
     startDate: "January 2026",
-    hueRotate: "-40deg"
+    icon: "/assets/viteplus-dark.vBqu3gSt.svg"
   },
   {
     id: "vitest",
@@ -66,7 +66,7 @@ const PROJECT_STATS = [
     contributors: { value: 764, suffix: "+", maxFractionDigits: 0 },
     color: "#22c55e",
     startDate: "December 2021",
-    hueRotate: "-140deg"
+    icon: "/assets/vitest-dark.DLkIIEUp.svg"
   },
   {
     id: "rolldown",
@@ -77,7 +77,7 @@ const PROJECT_STATS = [
     contributors: { value: 185, suffix: "+", maxFractionDigits: 0 },
     color: "#ef4444",
     startDate: "March 2024",
-    hueRotate: "150deg"
+    icon: "/assets/rolldown-dark.BaXpewsT.svg"
   },
   {
     id: "oxc",
@@ -88,7 +88,7 @@ const PROJECT_STATS = [
     contributors: { value: 395, suffix: "+", maxFractionDigits: 0 },
     color: "#06b6d4",
     startDate: "December 2023",
-    hueRotate: "100deg"
+    icon: "/assets/oxc-dark.BJRSsXEd.svg"
   }
 ];
 
@@ -105,39 +105,99 @@ export function VoidZeroDeveloperStats() {
   
   const activeProject = PROJECT_STATS[activeProjectIdx];
 
+  // Close dropdown when clicking outside
+  const dropdownRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    let animationId: number;
     if (canvasRef.current) {
-      const ctx = canvasRef.current.getContext('2d');
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext('2d');
       if (ctx) {
-        const w = canvasRef.current.width;
-        const h = canvasRef.current.height;
-        ctx.clearRect(0, 0, w, h);
-        ctx.beginPath();
-        ctx.moveTo(0, h - 20);
+        const w = canvas.width;
+        const h = canvas.height;
         
+        // Generate points once per project
         let seed = activeProjectIdx + 1;
+        const points: {x: number, y: number}[] = [];
         for (let i = 0; i <= w; i += 10) {
           const progress = i / w;
           const y = (h - 20) - Math.pow(progress, 4) * (h - 100);
-          ctx.lineTo(i, y + seededRandom(seed++) * 20 - 10);
+          points.push({ x: i, y: y + seededRandom(seed++) * 20 - 10 });
         }
         
-        ctx.strokeStyle = activeProject.color; 
-        ctx.lineWidth = 3;
-        ctx.stroke();
-
-        ctx.lineTo(w, h);
-        ctx.lineTo(0, h);
+        let startTimestamp: number | null = null;
+        const duration = 1000; // 1 second drawing animation
         
-        // Add semi transparent fill
-        ctx.fillStyle = activeProject.color + '1A'; // 10% opacity in hex
-        ctx.fill();
+        const render = (timestamp: number) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const elapsed = timestamp - startTimestamp;
+          const progress = Math.min(elapsed / duration, 1);
+          
+          // Easing function (easeOutExpo)
+          const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+          const currentWidth = w * easeProgress;
+          
+          ctx.clearRect(0, 0, w, h);
+          ctx.beginPath();
+          ctx.moveTo(0, h - 20);
+          
+          let lastX = 0;
+          let lastY = h - 20;
+          for (const point of points) {
+            if (point.x <= currentWidth) {
+              ctx.lineTo(point.x, point.y);
+              lastX = point.x;
+              lastY = point.y;
+            } else {
+              break;
+            }
+          }
+          
+          // Draw the current line up to the animated width
+          ctx.strokeStyle = activeProject.color; 
+          ctx.lineWidth = 3;
+          ctx.stroke();
+
+          // Fill underneath the drawn portion
+          ctx.lineTo(lastX, h);
+          ctx.lineTo(0, h);
+          ctx.fillStyle = activeProject.color + '1A'; // 10% opacity
+          ctx.fill();
+          
+          if (progress < 1) {
+            animationId = requestAnimationFrame(render);
+          }
+        };
+        
+        animationId = requestAnimationFrame(render);
       }
     }
+    return () => {
+      if (animationId) cancelAnimationFrame(animationId);
+    };
   }, [activeProjectIdx, activeProject.color]);
 
   return (
     <>
+      <style>{`
+        @keyframes fadeInStats {
+          from { opacity: 0; transform: translateY(5px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-stats {
+          animation: fadeInStats 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+      `}</style>
       <VoidZeroBorder theme="light" showTopBorder={false} containerClassName="px-5 md:px-10 h-36 md:h-48 sm:h-80 flex flex-col justify-center gap-5">
         <h3 className="text-start max-w-lg text-balance text-4xl font-medium tracking-tight font-apk">
           Trusted by millions of developers around the world
@@ -157,51 +217,52 @@ export function VoidZeroDeveloperStats() {
         </div>
         
         <div className="relative w-full aspect-[5/3.5] bg-white">
-          <div className="absolute top-4 md:top-6 left-4 md:left-6 z-20 project-dropdown">
+          <div className="absolute top-4 md:top-6 left-4 md:left-6 z-20 project-dropdown" ref={dropdownRef}>
             <div className="relative">
               <button 
                 onClick={() => setIsOpen(!isOpen)}
                 aria-expanded={isOpen} 
-                className="bg-white border border-stroke text-primary rounded-md px-3 py-1.5 flex items-center gap-2 cursor-pointer shadow-sm text-sm font-medium hover:bg-slate-50 transition-colors"
+                className="bg-white border border-ceramic text-primary rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer shadow-sm text-sm hover:bg-slate-50 transition-colors"
               >
-                <img src="/assets/vite.5rp3iChU.svg" className="size-5" alt="" style={{ filter: `hue-rotate(${activeProject.hueRotate})` }} />
-                <span>{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
+                <img src={activeProject.icon} className="size-5" alt="" />
+                <span className="font-medium">{activeProject.name} <span className="hidden md:inline-block">Downloads</span></span>
                 <svg className={`size-3 ml-1 fill-primary transition-transform ${isOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" aria-hidden="true">
                   <path d="M1.41 0L6 4.58 10.59 0 12 1.42l-6 6-6-6z"></path>
                 </svg>
               </button>
               
               {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-stroke rounded-md shadow-lg overflow-hidden py-1">
+                <ul role="listbox" className="absolute top-full left-0 mt-1 w-48 bg-white border border-ceramic rounded-lg shadow-lg overflow-hidden py-1 select-none">
                   {PROJECT_STATS.map((project, idx) => (
-                    <button
-                      key={project.id}
-                      onClick={() => {
-                        setActiveProjectIdx(idx);
-                        setIsOpen(false);
-                      }}
-                      className="w-full px-3 py-2 text-left flex items-center justify-between hover:bg-slate-50 transition-colors text-sm font-medium"
-                    >
-                      <div className="flex items-center gap-2">
-                        <img src="/assets/vite.5rp3iChU.svg" className="size-4" alt="" style={{ filter: `hue-rotate(${project.hueRotate})` }} />
-                        <span>{project.name}</span>
-                      </div>
-                      {idx === activeProjectIdx && (
-                        <svg className="size-3 text-nickel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      )}
-                    </button>
+                    <li key={project.id} role="option" aria-selected={idx === activeProjectIdx}>
+                      <button
+                        onClick={() => {
+                          setActiveProjectIdx(idx);
+                          setIsOpen(false);
+                        }}
+                        className={`w-full px-3 py-2 text-left flex items-center justify-between transition-colors text-base cursor-pointer focus:outline-none focus:bg-ceramic/20 hover:text-primary focus:text-primary ${idx === activeProjectIdx ? 'bg-slate-50' : 'hover:bg-ceramic/20'}`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <img src={project.icon} className="size-5" alt="" />
+                          <span className="font-medium text-sm">{project.name}</span>
+                        </div>
+                        {idx === activeProjectIdx && (
+                          <svg className="size-4 text-primary ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        )}
+                      </button>
+                    </li>
                   ))}
-                </div>
+                </ul>
               )}
             </div>
           </div>
           <div className="w-full h-full relative">
             <canvas ref={canvasRef} id="chart-canvas" width="1438" height="1007" style={{ display: 'block', boxSizing: 'border-box', height: '100%', width: '100%', objectFit: 'cover' }}></canvas>
             <div className="flex justify-between absolute bottom-4 md:bottom-6 left-6 md:left-10 right-6 md:right-10 pointer-events-none">
-              <p className="font-mono text-xs text-nickel tracking-wide">{activeProject.startDate}</p>
-              <p className="font-mono text-xs text-nickel tracking-wide">Today</p>
+              <p key={`${activeProject.id}-date`} className="font-mono text-xs text-nickel tracking-wide animate-fade-in-stats">{activeProject.startDate}</p>
+              <p key={`${activeProject.id}-today`} className="font-mono text-xs text-nickel tracking-wide animate-fade-in-stats">Today</p>
             </div>
           </div>
         </div>
@@ -216,7 +277,7 @@ export function VoidZeroDeveloperStats() {
               suffix={activeProject.weekly.suffix} 
             />
           </h2>
-          <p className="lead text-sm font-medium font-apk text-nickel">Weekly NPM downloads</p>
+          <p key={`${activeProject.id}-lbl1`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">Weekly NPM downloads</p>
         </div>
         <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
@@ -226,7 +287,7 @@ export function VoidZeroDeveloperStats() {
               suffix={activeProject.stars.suffix} 
             />
           </h2>
-          <p className="lead text-sm font-medium font-apk text-nickel">GitHub Stars</p>
+          <p key={`${activeProject.id}-lbl2`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">GitHub Stars</p>
         </div>
         <div className="flex flex-col justify-between p-6 md:p-10 min-h-[200px] md:min-h-[280px]">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
@@ -236,7 +297,7 @@ export function VoidZeroDeveloperStats() {
               suffix={activeProject.contributors.suffix} 
             />
           </h2>
-          <p className="lead text-sm font-medium font-apk text-nickel">Contributors</p>
+          <p key={`${activeProject.id}-lbl3`} className="lead text-sm font-medium font-apk text-nickel animate-fade-in-stats">Contributors</p>
         </div>
       </VoidZeroBorder>
     </>
