@@ -1,7 +1,45 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { VoidZeroBorder } from './VoidZeroBorder';
+
+function AnimatedCounter({ value, format }: { value: number, format: (val: number) => string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          let start = 0;
+          const end = value;
+          const duration = 2000;
+          const startTime = performance.now();
+          
+          const step = (timestamp: number) => {
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            const easeProgress = 1 - Math.pow(1 - progress, 4);
+            setCount(start + easeProgress * (end - start));
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          };
+          requestAnimationFrame(step);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [value]);
+
+  return <span ref={ref}>{format(count)}</span>;
+}
 
 export function VoidZeroDeveloperStats() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -16,14 +54,13 @@ export function VoidZeroDeveloperStats() {
         ctx.beginPath();
         ctx.moveTo(0, h - 20);
         
-        // Simple exponential-like curve for chart
         for (let i = 0; i <= w; i += 10) {
           const progress = i / w;
           const y = (h - 20) - Math.pow(progress, 4) * (h - 100);
           ctx.lineTo(i, y + Math.random() * 20 - 10);
         }
         
-        ctx.strokeStyle = '#8c52ff'; // Vite-like purple
+        ctx.strokeStyle = '#8c52ff'; 
         ctx.lineWidth = 3;
         ctx.stroke();
 
@@ -51,7 +88,7 @@ export function VoidZeroDeveloperStats() {
             <span>Total downloads</span>
           </h6>
           <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-medium tracking-tight mt-auto font-apk">
-            4,664,021,084
+            <AnimatedCounter value={4664021084} format={(val) => Math.floor(val).toLocaleString()} />
           </h1>
         </div>
         
@@ -77,15 +114,21 @@ export function VoidZeroDeveloperStats() {
       
       <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-3 border-t border-ceramic divide-y md:divide-y-0 md:divide-x divide-ceramic">
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">121.4M+</h2>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+            <AnimatedCounter value={121.4} format={(val) => val.toFixed(1) + "M+"} />
+          </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">Weekly NPM downloads</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">81.3K+</h2>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+            <AnimatedCounter value={81.3} format={(val) => val.toFixed(1) + "K+"} />
+          </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">GitHub Stars</p>
         </div>
         <div className="flex flex-col gap-2 p-6 md:p-10">
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">1.3K+</h2>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight font-apk">
+            <AnimatedCounter value={1.3} format={(val) => val.toFixed(1) + "K+"} />
+          </h2>
           <p className="lead text-sm font-medium font-apk text-nickel">Contributors</p>
         </div>
       </VoidZeroBorder>
