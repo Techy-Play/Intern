@@ -89,6 +89,16 @@ export default function ViteHero() {
           </div>
         </div>
       </VoidZeroBorder>
+
+      {/* Terminal Image Placeholder Section */}
+      <section className="w-full border-t border-[#e5e4e7] flex justify-center pt-10 sm:pt-20">
+        <div className="w-full relative flex justify-center">
+          {/* Image Placeholder */}
+          <div className="w-full h-[30rem] sm:h-[40rem] bg-gray-100 border-y border-gray-200 flex items-center justify-center text-gray-400">
+            Image Placeholder
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

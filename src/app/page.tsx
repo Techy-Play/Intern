@@ -48,6 +48,24 @@ const projects = [
     textGradient: "from-pink-400 to-rose-500",
     bgGradient: "from-pink-500/10 to-rose-500/5",
   },
+  {
+    title: "OAorg Landing",
+    description: "The OAorg landing page implementation featuring a clean, responsive layout and structured content sections.",
+    href: "/OAorg",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(250,204,21,0.4)]",
+    borderHover: "group-hover:border-yellow-500/50",
+    textGradient: "from-yellow-400 to-amber-500",
+    bgGradient: "from-yellow-500/10 to-amber-500/5",
+  },
+  {
+    title: "Vite+ Hero",
+    description: "The Vite+ unified toolchain hero section featuring dynamic gradient text, subtle animations, and complex background layers.",
+    href: "/vite-hero",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(99,102,241,0.4)]",
+    borderHover: "group-hover:border-indigo-500/50",
+    textGradient: "from-indigo-400 to-violet-500",
+    bgGradient: "from-indigo-500/10 to-violet-500/5",
+  },
 ];
 
 export default function HomePage() {
