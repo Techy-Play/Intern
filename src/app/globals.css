@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+    font-family: apkProtocol;
+    src: url(../media/APK_Protocol_Regular-s.p.27rvegtrhm866.otf)format("opentype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ── APK Protocol — exact @font-face from VoidZero production ── */
 @font-face {
@@ -418,4 +427,160 @@ a {
 
 .button:hover {
   background-color: #f8fafc; /* hover:bg-slate-50 */
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@media (min-width: 359px) {
+  .hidden-above-359 {
+    display: none !important;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Vite+ Hero Section Styles
+   Extracted from viteplus.dev production CSS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Shine-text gradient heading animation ─────────────────────────────── */
+.vite-hero-shine-text {
+  background: linear-gradient(
+    110deg,
+    var(--color-primary) 0%,
+    var(--color-primary) 40%,
+    #6254fe 48%,
+    #6254fe 50%,
+    #6254fe 52%,
+    var(--color-primary) 60%,
+    var(--color-primary) 100%
+  );
+  background-size: 400% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: vite-hero-shine 5s ease-in-out 0s 1 forwards;
+}
+
+@keyframes vite-hero-shine {
+  to {
+    background-position: 35% 0;
+  }
+}
+
+/* ── Primary button with gradient animated border ──────────────────────── */
+.vite-hero-btn-primary {
+  position: relative;
+  overflow: visible;
+  color: #ffffff;
+  outline: none;
+  transition: transform 0.2s ease-in-out;
+  transform: translateZ(0);
+}
+
+.vite-hero-btn-primary:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+/* Gradient border layer (::before) */
+.vite-hero-btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -2;
+  background-color: #ccc;
+  background-image: url('/assets/primary-button-background.jpg');
+  background-position: 50%;
+  background-size: 150% 150%;
+  border-radius: calc(0.5rem + 3px);
+  transition: all 0.2s ease-in-out;
+  animation: vite-hero-move-bg 16s ease-in-out infinite;
+}
+
+.vite-hero-btn-primary:hover::before {
+  filter: brightness(130%);
+  transform: scaleX(1.0125) scaleY(1.025);
+}
+
+/* Solid dark inner layer (::after) */
+.vite-hero-btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.vite-hero-btn-primary:hover::after {
+  transform: scaleX(0.98) scaleY(0.96);
+}
+
+@keyframes vite-hero-move-bg {
+  0%, 100% {
+    background-position: 40% 40%;
+  }
+  50% {
+    background-position: 60% 60%;
+  }
 }
