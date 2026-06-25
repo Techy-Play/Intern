@@ -24,7 +24,7 @@ export function VoidZeroMission() {
         }
       `}</style>
 
-      <VoidZeroBorder theme="light" showTopBorder={true} containerClassName="px-5 md:px-10 py-10 md:py-40 flex flex-col items-center gap-10 bg-[#FBFAF7]">
+      <VoidZeroBorder theme="light" showTopBorder={true} containerClassName="px-5 md:px-10 py-10 md:py-40 flex flex-col items-center gap-10 bg-[#FBFAF7]" tickSize={10}>
         <h3 className="marketing-heading max-w-[45rem] text-center text-balance mx-auto"> Our mission is to make the next generation of JavaScript developers more productive than ever before. </h3>
         <div className="flex flex-row gap-6 items-baseline">
           <a href="/about" className="button">Learn more</a>

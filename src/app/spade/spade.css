@@ -1,0 +1,358 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Spade.com Design System — Colors, Typography, Utilities
+   Uses local fonts from src/fonts and src/media
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Local Font Faces ────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'SpadeHeading';
+  src: url('../../fonts/APK-Protocol-Semi-Bold.CC2BASA5.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpadeBody';
+  src: url('../../fonts/APK-Protocol-Medium.C7Mq9oGh.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpadeBody';
+  src: url('../../media/APK_Protocol_Regular-s.p.27rvegtrhm866.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpadeMono';
+  src: url('../../fonts/KHTekaMono-Regular.CiZ9ZkmZ.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Spade Color Palette via Tailwind v4 @theme ──────────────────────────── */
+@theme {
+  --color-forest: #18280E;
+  --color-sage-1: #F2F5EB;
+  --color-sage-3: #C4CEBC;
+  --color-sage-5: #3D5A2E;
+  --color-lemongrass: #C5E84D;
+  --color-moss: #4A6741;
+  --color-gold: #8B6914;
+  --color-earth: #5C3D2E;
+  --color-sun: #E8B931;
+  --color-sand: #D4A574;
+}
+
+/* ── Spade Page Scope ────────────────────────────────────────────────────── */
+.spade-page {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  background: #fff;
+  --header-height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .spade-page {
+    --header-height: 4.4375rem;
+  }
+}
+
+@font-face {
+  font-family: 'naNSuperX';
+  src: url('/media/NaNSuperXSansDisplay_VF_TRIAL-s.p.55b41e97.woff2') format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'polar';
+  src: url('/media/FTPolar_Regular-s.p.61d92bfa.woff2') format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ── Typography Classes ──────────────────────────────────────────────────── */
+.text-84px-heading {
+  font-family: 'naNSuperX', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 560;
+  font-synthesis: none;
+  font-variation-settings: "slnt" 0, "ital" 0;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  
+  --mobile: 34;
+  --desktop: 84;
+  --min-vp: 480;
+  --max-vp: 1280;
+  --min: var(--mobile);
+  --max: var(--desktop);
+  --vp-diff: calc(var(--max-vp) - var(--min-vp));
+  --vi-multiplier: calc((var(--max) - var(--min)) / var(--vp-diff));
+  --base-offset: calc(var(--min) - (var(--vi-multiplier) * var(--min-vp)));
+  --mobile-font-size: calc(var(--mobile) / 16 * 1rem);
+  --desktop-font-size: calc(var(--desktop) / 16 * 1rem);
+}
+
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  .text-84px-heading {
+      font-size: clamp(
+        min(var(--mobile-font-size), var(--desktop-font-size)), 
+        calc((var(--vi-multiplier) * 100vi) + (var(--base-offset) / 16 * 1rem)), 
+        max(var(--mobile-font-size), var(--desktop-font-size))
+      );
+  }
+}
+
+@media (min-width: 48rem) {
+  .text-84px-heading {
+      line-height: 1.05;
+  }
+}
+
+.text-78px-footer-cta {
+  font-family: 'naNSuperX', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 560;
+  font-synthesis: none;
+  font-variation-settings: "slnt" 0, "ital" 0;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  
+  --mobile: 40;
+  --desktop: 78;
+  --min-vp: 480;
+  --max-vp: 1280;
+  --min: var(--mobile);
+  --max: var(--desktop);
+  --vp-diff: calc(var(--max-vp) - var(--min-vp));
+  --vi-multiplier: calc((var(--max) - var(--min)) / var(--vp-diff));
+  --base-offset: calc(var(--min) - (var(--vi-multiplier) * var(--min-vp)));
+  --mobile-font-size: calc(var(--mobile) / 16 * 1rem);
+  --desktop-font-size: calc(var(--desktop) / 16 * 1rem);
+}
+
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  .text-78px-footer-cta {
+      font-size: clamp(
+        min(var(--mobile-font-size), var(--desktop-font-size)), 
+        calc((var(--vi-multiplier) * 100vi) + (var(--base-offset) / 16 * 1rem)), 
+        max(var(--mobile-font-size), var(--desktop-font-size))
+      );
+  }
+}
+
+.text-48px-heading {
+  font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.text-40px-heading {
+  font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-40px-heading-thin {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-28px-heading {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.text-24px-heading {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.2vw + 0.5rem, 1.5rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.text-20px-heading {
+  font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+@font-face {
+  font-family: 'polarMono';
+  src: url('/media/FTPolarMono_Regular-s.p.23bb8712.woff2') format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-16px-body {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-15px-btn {
+  font-family: 'polarMono', ui-monospace;
+  font-weight: 520;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  
+  --mobile: 14;
+  --desktop: 15;
+  --min-vp: 480;
+  --max-vp: 1280;
+  --min: var(--mobile);
+  --max: var(--desktop);
+  --vp-diff: calc(var(--max-vp) - var(--min-vp));
+  --vi-multiplier: calc((var(--max) - var(--min)) / var(--vp-diff));
+  --base-offset: calc(var(--min) - (var(--vi-multiplier) * var(--min-vp)));
+  --mobile-font-size: calc(var(--mobile) / 16 * 1rem);
+  --desktop-font-size: calc(var(--desktop) / 16 * 1rem);
+}
+
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  .text-15px-btn {
+      font-size: clamp(
+        min(var(--mobile-font-size), var(--desktop-font-size)), 
+        calc((var(--vi-multiplier) * 100vi) + (var(--base-offset) / 16 * 1rem)), 
+        max(var(--mobile-font-size), var(--desktop-font-size))
+      );
+  }
+}
+
+.text-14px-eyebrow {
+  font-family: 'polarMono', ui-monospace;
+  font-weight: 520;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+
+  --mobile: 14;
+  --desktop: 14;
+  --min-vp: 480;
+  --max-vp: 1280;
+  --min: var(--mobile);
+  --max: var(--desktop);
+  --vp-diff: calc(var(--max-vp) - var(--min-vp));
+  --vi-multiplier: calc((var(--max) - var(--min)) / var(--vp-diff));
+  --base-offset: calc(var(--min) - (var(--vi-multiplier) * var(--min-vp)));
+  --mobile-font-size: calc(var(--mobile) / 16 * 1rem);
+  --desktop-font-size: calc(var(--desktop) / 16 * 1rem);
+}
+
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  .text-14px-eyebrow {
+      font-size: clamp(
+        min(var(--mobile-font-size), var(--desktop-font-size)), 
+        calc((var(--vi-multiplier) * 100vi) + (var(--base-offset) / 16 * 1rem)), 
+        max(var(--mobile-font-size), var(--desktop-font-size))
+      );
+  }
+}
+
+.text-13px-eyebrow-caps {
+  font-family: 'SpadeMono', 'KH Teka Mono', monospace;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text-11px-eyebrow-caps {
+  font-family: 'SpadeMono', 'KH Teka Mono', monospace;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-20px-stat {
+  font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.text-64px-stat {
+  font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.text-11px-stat-description {
+  font-family: 'SpadeMono', 'KH Teka Mono', monospace;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.text-10px-stat-description {
+  font-family: 'SpadeMono', 'KH Teka Mono', monospace;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+/* ── Container ───────────────────────────────────────────────────────────── */
+.spade-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .spade-container { padding-inline: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .spade-container { padding-inline: 2rem; }
+}
+
+/* ── Prose Styling ───────────────────────────────────────────────────────── */
+.spade-prose {
+  font-family: 'SpadeBody', 'APK Protocol', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.spade-prose p { margin: 0; }
+
+/* ── Cut Corner Helpers ──────────────────────────────────────────────────── */
+.spade-cut-corner {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}

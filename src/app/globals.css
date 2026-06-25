@@ -49,6 +49,18 @@
   --color-stroke: #e5e4e7;
   --shadow-soft: 0 20px 50px rgba(7, 17, 31, 0.12);
   --background-image-hero-grid: radial-gradient(circle at top, rgba(255, 255, 255, 0.75), rgba(245, 241, 232, 0.95) 35%, rgba(235, 228, 214, 1) 100%);
+  
+  /* Spade colors */
+  --color-forest: #18280E;
+  --color-sage-1: #F2F5EB;
+  --color-sage-3: #C4CEBC;
+  --color-sage-5: #3D5A2E;
+  --color-lemongrass: #C5E84D;
+  --color-moss: #4A6741;
+  --color-gold: #8B6914;
+  --color-earth: #5C3D2E;
+  --color-sun: #E8B931;
+  --color-sand: #D4A574;
 }
 
 :root {

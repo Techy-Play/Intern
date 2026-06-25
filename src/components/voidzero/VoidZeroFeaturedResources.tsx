@@ -68,7 +68,7 @@ export function VoidZeroFeaturedResources() {
           }
         }
       `}</style>
-      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-10 divide-y md:divide-y-0 md:divide-x divide-stroke h-auto md:h-[32.5rem]">
+      <VoidZeroBorder theme="light" containerClassName="grid grid-cols-1 md:grid-cols-10 divide-y md:divide-y-0 md:divide-x divide-stroke h-auto md:h-[32.5rem]" tickSize={7}>
         <div className="flex flex-col md:col-span-4 bg-white">
           <div className="p-5 md:p-10 grow-0 md:grow flex flex-col gap-6 md:gap-10 md:h-72 justify-center md:justify-start">
             <h3 className="marketing-heading">
@@ -86,7 +86,7 @@ export function VoidZeroFeaturedResources() {
             </div>
           </div>
         </div>
-        
+
         <div className="col-span-1 md:col-span-6 md:border-t-0 relative bg-white">
           <section className="carousel is-ltr is-effect-slide resources-carousel py-10 pb-30 md:pb-10 h-full flex flex-col" dir="ltr" aria-label="Gallery" tabIndex={0}>
             <div className="carousel__viewport pointer-events-none-img flex-grow w-full cursor-grab active:cursor-grabbing" ref={emblaRef}>
@@ -110,10 +110,10 @@ export function VoidZeroFeaturedResources() {
               <ol className="carousel__pagination flex justify-start gap-2">
                 {slides.map((_, index) => (
                   <li key={index} className="carousel__pagination-item">
-                    <button 
-                      type="button" 
+                    <button
+                      type="button"
                       className={`carousel__pagination-button w-2 h-2 rounded-full transition-colors ${activeSlide === index ? 'bg-primary' : 'bg-[#e5e4e7] hover:bg-grey'}`}
-                      aria-label={`Navigate to slide ${index + 1}`} 
+                      aria-label={`Navigate to slide ${index + 1}`}
                       aria-pressed={activeSlide === index}
                       onClick={() => scrollToSlide(index)}
                     ></button>
@@ -121,7 +121,7 @@ export function VoidZeroFeaturedResources() {
                 ))}
               </ol>
             </div>
-            
+
             <div className="carousel__liveregion sr-only" aria-live="polite" aria-atomic="true">
               Item {activeSlide + 1} of {slides.length}
             </div>

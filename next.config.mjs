@@ -7,6 +7,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   reactStrictMode: true,
   allowedDevOrigins: ['192.168.1.30', '192.168.56.1'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'spadewp.wpenginepowered.com',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
