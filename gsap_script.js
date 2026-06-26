@@ -1,0 +1,1275 @@
+﻿!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/69385e16d68663814109c132/6965e4c297e4c3f1db1f3a4d_Favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/69385e16d68663814109c132/6965e4c6280325ed15aa9417_webclip.png" rel="apple-touch-icon"/><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Social & Review Data API for Enterprises | Datashake",
+  "description": "Access 150+ social media and review sources through one reliable API. Get 5+ years of historical data instantly with 98.3% uptime. Trusted by enterprise brands.",
+  "url": "/",
+  "inLanguage": "en",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Datashake",
+    "applicationCategory": "BusinessApplication",
+    "description": "Enterprise social media and review data API providing access to 150+ sources with 5+ years of historical data and 98.3% uptime",
+    "offers": {
+      "@type": "Offer",
+      "description": "Credit-based pricing model with volume discounts and no per-seat fees"
+    },
+    "featureList": [
+      "150+ social media and review sources",
+      "5+ years of historical data access",
+      "98.3% uptime reliability",
+      "Real-time data collection",
+      "Archive search with instant results",
+      "Enterprise security and compliance",
+      "Multi-language and global coverage",
+      "Normalized and analysis-ready data"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "4"
+    }
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of data does Datashake collect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Everything publicly available, with the depth your use case needs. Social posts, reviews, forums, news, and e-commerce data from 150+ sources. Complete threads, engagement metrics, 5+ years of history. All normalized and analysis-ready."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Datashake different from other social listening tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We're infrastructure, not an end-user platform. You get the raw data layer (150+ sources vs. typical 20-30) with deeper coverage, faster access, and no per-seat fees. We replace multiple vendor relationships with one reliable integration that powers your products and analytics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Datashake access private social media content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, we only collect publicly available data accessible without login."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can I access historical data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instantly. Our archive search returns 5+ years of historical data in seconds with no advance setup required. If a topic becomes relevant today, you can analyze years of conversation history immediately, plus capture real-time discussions as they unfold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What sources does Datashake cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Major social platforms, 100+ review sites, news outlets, forums, and e-commerce channels. Multi-language with global coverage. We add new sources based on customer needs and make them automatically available to everyone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does pricing work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use a credit-based model where you pay only for data consumed. Your per-mention cost decreases automatically as volume grows, with no per-seat fees. Get in touch for a custom proposal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need technical expertise to use Datashake?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Datashake is designed for technical teams building data products or analytics workflows, with integration via API, webhooks, or direct feeds. We're not a dashboard tool, but we do provide ready-made templates if you're building visualizations on top of our data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Datashake handle enterprise-scale needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We're built to handle hundreds of millions of daily fetches with 98.3% uptime, dedicated support, custom SLAs, and compliance-ready infrastructure. Enterprise customers rely on us to power mission-critical workflows across global markets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if you don't cover a source I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Just tell us. We regularly add sources based on customer requests and make them available to all customers automatically, with no re-engineering required and no extra costs. Many of our current sources exist because customers asked for them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most teams are collecting data within days. We configure your sources, set up API access, and provide technical documentation to get you running quickly. Standard implementations move fast, while complex custom integrations take a bit longer – but we prioritize speed either way."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I try Datashake first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer a free benchmark test using your actual queries to show you what you're missing compared to your current tools."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Datashake compliant with data privacy regulations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We collect only public data and maintain compliance-ready infrastructure with encryption at every step."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What support do you provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Get direct access to real humans who understand data infrastructure challenges. Enterprise customers receive priority support, custom SLAs, and direct access to our data engineering team. We're invested in your long-term success, not just your initial setup."
+        }
+      }
+    ]
+  }
+}
+</script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5XJ5TST');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Whatsapp widget -->
+<script> (function() { function init() { var css = document.createElement('style'); css.textContent = '\ @keyframes ds-wa-fadein { \ from { opacity: 0; transform: translateY(16px); } \ to { opacity: 1; transform: translateY(0); } \ } \ .ds-wa-widget { \ position: fixed; \ bottom: 24px; \ right: 24px; \ z-index: 9999; \ display: flex; \ align-items: center; \ gap: 12px; \ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; \ animation: ds-wa-fadein 0.5s ease forwards; \ opacity: 0; \ } \ .ds-wa-label { \ background: #fff; \ color: #1a1a1a; \ padding: 10px 16px; \ border-radius: 10px; \ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); \ font-size: 14px; \ font-weight: 500; \ line-height: 1.4; \ white-space: nowrap; \ position: relative; \ } \ .ds-wa-label::after { \ content: ""; \ position: absolute; \ right: -6px; \ top: 50%; \ transform: translateY(-50%); \ width: 0; \ height: 0; \ border-top: 6px solid transparent; \ border-bottom: 6px solid transparent; \ border-left: 6px solid #fff; \ } \ .ds-wa-close { \ position: absolute; \ top: -6px; \ right: -6px; \ width: 18px; \ height: 18px; \ border-radius: 50%; \ background: #e0e0e0; \ border: none; \ cursor: pointer; \ display: flex; \ align-items: center; \ justify-content: center; \ font-size: 10px; \ color: #666; \ line-height: 1; \ padding: 0; \ transition: background 0.2s ease; \ } \ .ds-wa-close:hover { \ background: #ccc; \ } \ .ds-wa-btn { \ width: 60px; \ height: 60px; \ min-width: 60px; \ border-radius: 50%; \ background: #25D366; \ border: none; \ cursor: pointer; \ display: flex; \ align-items: center; \ justify-content: center; \ box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35); \ transition: transform 0.2s ease, box-shadow 0.2s ease; \ text-decoration: none; \ } \ .ds-wa-btn:hover { \ transform: scale(1.08); \ box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45); \ } \ .ds-wa-btn svg { \ width: 32px; \ height: 32px; \ fill: #fff; \ }'; document.head.appendChild(css); var widget = document.createElement('div'); widget.className = 'ds-wa-widget'; widget.innerHTML = '\ <div class="ds-wa-label" id="ds-wa-label">\ Chat with us through WhatsApp!\ <button class="ds-wa-close" aria-label="Dismiss">\u00D7</button>\ </div>\ <a href="https://wa.me/13025101955" target="_blank" rel="noopener noreferrer" class="ds-wa-btn" aria-label="Chat on WhatsApp">\ <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">\ <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>\ </svg>\ </a>'; document.body.appendChild(widget); widget.querySelector('.ds-wa-close').addEventListener('click', function() { document.getElementById('ds-wa-label').style.display = 'none'; }); } if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); } })(); </script>
+<!-- End Whatsapp widget --><!-- Flowbase Booster [Tab Rotation] -->
+<script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-tab-rotation-webflow@1.2.0/dist/tab-rotation.min.js" type="text/javascript"></script>
+
+</head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+  :root {
+    --font-from: 16;
+    --font-to: 16;
+    --vw-from: calc(1440 / 100);
+    --vw-to: calc(1920 / 100);
+    --coefficient: calc((var(--font-to) - var(--font-from)) / (var(--vw-to) - var(--vw-from)));
+    --base: calc((var(--font-from) - var(--vw-from) * var(--coefficient)) / 16);
+  }
+
+  html {
+    font-size: calc(var(--base) * 1rem + var(--coefficient) * 1vw);
+  }
+
+  @media screen and (max-width: 1440px) {
+    :root {
+      --font-from: 13;
+      --font-to: 16;
+      --vw-from: calc(960 / 100);
+      --vw-to: calc(1440 / 100);
+      }
+  }
+
+  @media screen and (max-width: 960px) {
+    :root {
+      --font-from: 12;
+      --font-to: 16;
+      --vw-from: calc(479 / 100);
+      --vw-to: calc(960 / 100);
+      }
+  }
+
+  @media screen and (max-width: 479px) {
+    :root {
+      --font-from: 12;
+      --font-to: 16;
+      --vw-from: calc(1 / 100);
+      --vw-to: calc(479 / 100);
+      }
+  }
+</style>
+
+
+
+<style>
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+svg {
+	width: 100%;
+  height: 100%;
+ }
+ 
+.logo-item .image-auto.is-active {
+	opacity: 0;
+  transition: opacity 300ms ease;
+ }
+ 
+.logo-item {
+	background-color: transparent;
+  transition: background-color 300ms ease;
+ }
+ 
+.logo-item .arrow-link{
+	opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+ }
+ 
+.logo-item:hover .image-auto.is-active {
+	opacity: 1;
+  transition: opacity 300ms ease;
+ }
+ 
+.logo-item:hover {
+	background-color: #fafafa;
+  transition: background-color 300ms ease;
+ }
+
+.logo-item:hover .arrow-link{
+	opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms ease, transform 300ms ease;
+ }
+ 
+
+ 
+.wf-design-mode {
+a[href="#"], a[href=""] {
+outline: 3px dashed red;
+outline-offset: 3px;
+}
+}
+
+.w-code-block,
+.w-code-block pre,
+.w-code-block code {
+  background-color: #f2f2f2 !important;
+  color: #666666 !important;
+  padding: 1rem !important;
+  font-size: 0.875rem !important;
+
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+ 
+
+.blog-item.w-dyn-item:nth-child(3n) .blog-link {
+  border-right: none !important;
+}
+
+.field-select {
+  appearance: none;
+  background: url(https://cdn.prod.website-files.com/69385e16d68663814109c132/695260ac2ce4e55c4c87d751_Select-Icon.svg) no-repeat right 12px center;
+  background-color: white;
+  background-size: 20px;
+  padding-right: 1.25rem;
+
+}
+
+textarea {
+	resize: none;
+ }
+ 
+@media screen and (min-width: 991px) { 
+[grid-border="bottom"]
+  > [data-wf--benefit-box--variant="space-big"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+  }
+}
+@media screen and (min-width: 991px) { 
+[grid-border="bottom"]
+  > [data-wf--benefit-box--variant="space-big-last"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 991px) {
+
+[grid-border="right"] [data-wf--benefit-box--variant="horizontal-heading"]:nth-child(3) {
+  border-right: none;
+}
+
+@media screen and (min-width: 991px) { 
+[grid-border="right"] [data-wf--benefit-box--variant="horizontal-heading"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+[grid-border="1row-last"] .grid-item.is-member:last-child {
+  border-right: none;
+}
+
+.text-size-small[data-tag-color="orange"] {
+  color: #FF930F;
+ }
+ 
+.text-size-small[data-tag-color="green"] {
+  color: #3FE844;
+ }
+ 
+.text-size-small[data-tag-color="purple"] {
+  color: #A72BFF;
+ }
+ 
+.text-size-small[data-tag-color="blue"] {
+  color: #3981FF;
+ }
+ 
+.text-size-small[data-tag-color="red"] {
+  color: #ff1f1f;
+ }
+ 
+.text-size-small[data-tag-color="gold"] {
+  color: #bfa019;
+ }
+ 
+.blog-item,
+.case-studies-item {
+	background-color: white;
+  transition: background-color 300ms ease;
+ }
+ 
+.blog-item:hover,
+.case-studies-item:hover {
+	background-color: #fafafa;
+  transition: background-color 300ms ease;
+ }
+ 
+.sort-field {
+  appearance: none;
+  background: url(https://cdn.prod.website-files.com/69385e16d68663814109c132/695260ac2ce4e55c4c87d751_Select-Icon.svg) no-repeat right 12px center;
+  background-color: white;
+  background-size: 20px;
+  padding-right: 1.25rem;
+
+}
+
+.search-field:focus-within .icon-24px.is-absolute {
+  color: #666;
+  transition: color 200ms ease;
+}
+
+[data-wf--button-arrow--variant="base"] {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="base"]:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="base"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="base"]:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"] {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"]:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="footer"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"]:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+.button.is-submit {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+.button.is-submit:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+.button.is-submit .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+.button.is-submit:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"] {
+	background-color: #0d0d0d;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"]:hover {
+	background-color: #262626;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="full-width"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"]:hover .icon-32px {
+	background-color: #333333;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"] {
+	background-color: white;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"]:hover {
+	background-color: #f2f2f2;
+  transition: background-color 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"]:hover .icon-32px {
+	background-color: #E6E6E6;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"] {
+	background-color: #3981FF;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"]:hover {
+	background-color: #0054E5;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="blue"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"]:hover .icon-32px {
+	background-color: #1A65E8;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"] {
+	background-color: #FF930F;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"]:hover {
+	background-color: #E57E00;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="orange"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"]:hover .icon-32px {
+	background-color: #E88B1A;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+   
+[data-wf--button-outline--variant="black"] {
+	background-color: #0d0d0d;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-outline--variant="black"]:hover {
+	background-color: #262626;
+  transition: background-color 200ms ease;
+ }
+   
+  
+.social-icon .icon-24px.is-social {
+	color: #666666;
+  transition: color 200ms ease;
+ }
+ 
+.social-icon:hover .icon-24px.is-social {
+	color: #3FE844;
+  transition: color 200ms ease;
+ }
+ 
+[blog-border="no-image"] .blog-item:first-child .blog-link {
+  border-top: none !important;
+}
+ 
+.nav_brand:hover .green-logo {
+	transform: rotate(360deg);
+  transition: transform 500ms ease;
+ }
+	
+=
+
+.filter-container::-webkit-scrollbar {
+  width: 6px;        /* tanak scrollbar */
+}
+
+.tab-step-menu::-webkit-scrollbar {
+  width: 6px;        /* tanak scrollbar */
+}
+
+.filter-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-step-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-container::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;  /* brand dark */
+}
+
+.tab-step-menu::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;  /* brand dark */
+}
+
+.filter-container::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+.tab-step-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+
+.filter-container {
+  scrollbar-width: thin;
+  scrollbar-color: #bfbfbf transparent;
+}
+
+.tab-step-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #bfbfbf transparent;
+}
+
+/* Desktop - fancy dijagonalni pattern */
+[data-wf--button-outline--variant="base"],
+[data-wf--button-outline--variant="small"],
+[data-wf--button-outline--variant="full-width"],
+.button.is-secondary.small-2.no-link,
+.button.is-secondary.small {
+  background-image: repeating-linear-gradient(-13deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 18px, #D9D9D9 18px), repeating-linear-gradient(77deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 15px, #D9D9D9 18px), repeating-linear-gradient(167deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 15px, #D9D9D9 18px), repeating-linear-gradient(257deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 18px, #D9D9D9 18px);
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  color: #666;
+  transition: color 300ms ease;
+  border: none;
+}
+
+[data-wf--button-outline--variant="base"]:hover,
+[data-wf--button-outline--variant="small"]:hover,
+[data-wf--button-outline--variant="full-width"]:hover,
+.button.is-secondary.small:hover{
+  background-image: repeating-linear-gradient(-13deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(77deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(167deg, #D9D9D9, #D9D9D9 11px, transparent 0px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(257deg, #D9D9D9, #D9D9D9 11px, transparent 0px, transparent 0px, #D9D9D9 0px);
+  color: #0d0d0d;
+}
+
+@media screen and (min-width: 991px) { 
+.case-studies-list > .w-dyn-item:nth-child(3n) .blog-wrapper {
+  border-right: none;
+  }
+  .case-studies-list > .w-dyn-item:nth-last-child(-n + 3) .blog-wrapper {
+  border-bottom: none;
+  }
+
+}
+
+
+</style></div><main class="main-wrapper"><div data-w-id="396176c6-906a-9f74-c6d0-8a4663dfdea9" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component w-nav"><div class="nav_container"><a href="/" aria-current="page" class="nav_brand w-nav-brand w--current"><div class="green-logo w-embed"><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.6302 0H14.6702V7.81303H18.6302V0Z" fill="#3FE844"/>
+<path d="M26.8891 10.4685L25.6011 6.61615L19.3742 8.71152L20.6621 12.5639L26.8891 10.4685Z" fill="#3FE844"/>
+<path d="M18.755 17.0969H14.7951V28.0086H18.755V17.0969Z" fill="#3FE844"/>
+<path d="M11.3504 14.5378L10.6019 10.5936L9.22558e-05 12.6186L0.748558 16.5627L11.3504 14.5378Z" fill="#3FE844"/>
+<path d="M14.3405 17.4597L11.2549 14.9028L2.80142 25.1701L5.88696 27.7271L14.3405 17.4597Z" fill="#3FE844"/>
+<path d="M21.2513 13.1566L18.5369 16.0823L24.2857 21.4507L27.0001 18.5251L21.2513 13.1566Z" fill="#3FE844"/>
+<path d="M4.68544 1.13842L2.46859 4.43037L11.471 10.5322L13.6879 7.24021L4.68544 1.13842Z" fill="#3FE844"/>
+</svg></div><div class="text-logo w-embed"><svg width="115" height="18" viewBox="0 0 115 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M114.367 12.7908C113.719 15.6225 111.607 17.3504 108.439 17.3504C104.528 17.3504 102.2 14.7586 102.2 10.7511C102.2 6.83947 104.48 4.24774 108.391 4.24774C111.799 4.24774 114.439 6.35952 114.463 11.447H105.2C105.416 13.8467 106.808 15.0466 108.487 15.0466C109.903 15.0466 110.935 14.2547 111.367 12.7908H114.367ZM111.343 9.4072C110.959 7.72737 109.999 6.5515 108.415 6.5515C106.712 6.5515 105.608 7.60739 105.272 9.4072H111.343Z" fill="#0D0D0D"/>
+<path d="M89.8404 16.9423V0.0960693H92.8161V9.2871L97.1837 4.75158H100.951L97.3276 8.63916L101.911 16.9183H98.5995L95.2879 10.583L92.8161 13.1747V16.9423H89.8404Z" fill="#0D0D0D"/>
+<path d="M80.2239 17.3742C77.7761 17.3742 75.9043 15.8144 75.9043 13.5586C75.9043 7.84724 84.2795 11.0629 84.2795 7.89524C84.2795 6.86335 83.1996 6.52738 82.2157 6.52738C81.2318 6.52738 79.8399 6.91134 79.408 8.54317H76.2643C76.9122 4.91955 80.2719 4.27162 82.2637 4.27162C84.4954 4.27162 87.1832 5.01554 87.1832 7.94323V16.8943H84.3275V15.0225H84.2555C83.4635 16.6543 82.1917 17.3742 80.2239 17.3742ZM80.8238 15.1665C82.5276 15.1665 84.2555 14.0866 84.2555 11.4229V10.6789H84.1835C82.9356 12.3588 78.928 11.1829 78.928 13.5346C78.928 14.4705 79.6 15.1665 80.8238 15.1665Z" fill="#0D0D0D"/>
+<path d="M62.7231 16.9183V0.0960693H65.6748V6.88735H65.7468C66.4427 5.03955 67.8825 4.22363 69.6583 4.22363C72.2501 4.22363 74.0019 6.02344 74.0019 8.92714V16.9183H70.9302V9.55107C70.9302 7.82325 69.9703 6.83936 68.5545 6.83936C66.7786 6.83936 65.7947 8.54318 65.7947 10.295V16.9183H62.7231Z" fill="#0D0D0D"/>
+<path d="M55.2038 17.2543C52.852 17.2543 49.8284 16.6304 49.3484 12.7908H52.1321C52.5401 14.6866 54.0759 15.0225 55.2758 15.0225C56.7876 15.0225 57.7475 14.4226 57.7475 13.4387C57.7475 12.7908 57.3396 12.2148 55.7797 11.9269L53.9319 11.6149C52.1321 11.2789 49.8284 10.319 49.8284 7.94329C49.8523 5.25557 52.6601 4.27167 54.8678 4.27167C57.3156 4.24768 60.0993 5.08759 60.5792 8.59122H57.6755C57.3396 7.17537 56.4516 6.38345 54.8918 6.38345C53.8359 6.38345 52.804 6.8634 52.804 7.8473C52.804 8.44723 53.164 9.02317 54.7718 9.33514L57.0276 9.74309C59.1874 10.1511 60.6032 11.1589 60.6272 13.3907C60.5552 16.2464 57.9635 17.2543 55.2038 17.2543Z" fill="#0D0D0D"/>
+<path d="M40.6414 17.3742C38.1936 17.3742 36.3218 15.8144 36.3218 13.5586C36.3218 7.84724 44.697 11.0629 44.697 7.89524C44.697 6.86335 43.6171 6.52738 42.6332 6.52738C41.6493 6.52738 40.2574 6.91134 39.8255 8.54317H36.6818C37.3297 4.91955 40.6894 4.27162 42.6812 4.27162C44.9129 4.27162 47.6007 5.01554 47.6007 7.94323V16.8943H44.745V15.0225H44.673C43.881 16.6543 42.6092 17.3742 40.6414 17.3742ZM41.2413 15.1665C42.9451 15.1665 44.673 14.0866 44.673 11.4229V10.6789H44.601C43.3531 12.3588 39.3455 11.1829 39.3455 13.5346C39.3455 14.4705 40.0175 15.1665 41.2413 15.1665Z" fill="#0D0D0D"/>
+<path d="M32.1368 16.9424C30.289 16.9424 29.1611 16.6064 29.1611 14.4946V7.27138H26.9534V4.60766H29.1851V0.840057H32.1848V4.60766H34.6566V7.27138H32.1368V14.1347H34.5606V16.9424H32.1368Z" fill="#0D0D0D"/>
+<path d="M18.496 17.3742C16.0483 17.3742 14.1765 15.8144 14.1765 13.5586C14.1765 7.84724 22.5516 11.0629 22.5516 7.89524C22.5516 6.86335 21.4717 6.52738 20.4878 6.52738C19.5039 6.52738 18.1121 6.91134 17.6801 8.54317H14.5364C15.1844 4.91955 18.544 4.27162 20.5358 4.27162C22.7676 4.27162 25.4553 5.01554 25.4553 7.94323V16.8943H22.5996V15.0225H22.5276C21.7357 16.6543 20.4638 17.3742 18.496 17.3742ZM19.0959 15.1665C20.7998 15.1665 22.5276 14.0866 22.5276 11.4229V10.6789H22.4556C21.2077 12.3588 17.2001 11.1829 17.2001 13.5346C17.2001 14.4705 17.8721 15.1665 19.0959 15.1665Z" fill="#0D0D0D"/>
+<path d="M6.11945 14.8785C8.23122 14.8785 9.19112 13.0067 9.19112 10.775C9.19112 8.51921 8.11124 6.7194 6.07145 6.7194C4.17565 6.7194 3.09577 8.32723 3.09577 10.775C3.09577 13.2227 4.17565 14.8785 6.11945 14.8785ZM12.2148 16.9183H9.26311V15.1905H9.11913C8.35121 16.5824 7.07934 17.3743 5.27953 17.3743C2.03988 17.3743 9.35793e-05 14.5906 9.35793e-05 10.775C9.35793e-05 6.76739 2.06388 4.27166 5.25554 4.27166C7.03135 4.27166 8.4232 5.08757 9.19112 6.45542H9.26311V0.000106812H12.2148V16.9183Z" fill="#0D0D0D"/>
+</svg></div></a><nav role="navigation" fs-scrolldisable-element="preserve" class="nav_menu w-nav-menu"><div class="flex-h is-menu"><div data-hover="true" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="text-block">Product</div></div><nav class="dropdown-list w-dropdown-list"><div class="dropdown-container"><div class="text-wrapper padding--5rem background-color-white"><div class="grid-1col"><a data-wf--dropdown-item--variant="base" href="/platform" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f72f77ae84cbdda60514b_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Platform</div><div class="text-size-regular text-color-grey breaking-no-wrap">Explore Datashake</div></div></a><a data-wf--dropdown-item--variant="base" href="/enterprise" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f73f4ecb0ad342279c6f9_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Enterprise</div><div class="text-size-regular text-color-grey breaking-no-wrap">Built for scale and compliance</div></div></a><a data-wf--dropdown-item--variant="base" href="/why-datashake" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fd6144754d3af93bf2522_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Why Datashake</div><div class="text-size-regular text-color-grey breaking-no-wrap">See why teams choose us</div></div></a></div></div></div></nav></div><div data-hover="true" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="text-block">Solutions</div></div><nav class="dropdown-list is-solution w-dropdown-list"><div class="dropdown-container"><div class="text-wrapper padding--5rem background-color-white"><div class="grid-2col gap-1rem"><a data-wf--dropdown-item--variant="solution" href="/industry/cx-platforms" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7648758258315edacf34_Customer.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Customer Experience Tools</div><div class="text-size-regular text-color-grey breaking-no-wrap">Power complete feedback intelligence</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/retail" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f76586e0697704383a7f8_Retail.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Retail</div><div class="text-size-regular text-color-grey breaking-no-wrap">Track product performance at scale</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/social-listening" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f76639705a8e5b6829eb5_Social.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Social Listening</div><div class="text-size-regular text-color-grey breaking-no-wrap">Capture every mention across sources</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/pharmaceutical" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f766f655fcc9f92cd97b0_Pharmaceutical.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Pharmaceutical</div><div class="text-size-regular text-color-grey breaking-no-wrap">Unlock patient insights compliantly</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/reputation-and-review-management" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7679f97a0549faf533b3_Reputataion.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Reputation &amp; Review Management</div><div class="text-size-regular text-color-grey breaking-no-wrap">Protect brand trust automatically</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/finance" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f76814598a49a990adb85_Finance.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Finance</div><div class="text-size-regular text-color-grey breaking-no-wrap">Strengthen due diligence with behavioral data</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/marketing-automation" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f768c19761d095c55df4a_Marketing.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Marketing Automation</div><div class="text-size-regular text-color-grey breaking-no-wrap">Fuel campaigns with authentic social proof</div></div></a><a data-wf--dropdown-item--variant="solution" href="/industry/agencies" class="dropdown-item w-variant-b0e33356-61af-46d6-9693-970be62d76e5 w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7696f3954786e6327188_Agencies.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Agencies</div><div class="text-size-regular text-color-grey breaking-no-wrap">Deliver insights without data overhead</div></div></a></div></div></div></nav></div><div data-hover="true" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="text-block">Resources</div></div><nav class="dropdown-list w-dropdown-list"><div class="dropdown-container"><div class="text-wrapper padding--5rem background-color-white"><div class="grid-1col"><a data-wf--dropdown-item--variant="base" href="/blog" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7508a1c44f588d5784eb_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Blog</div><div class="text-size-regular text-color-grey breaking-no-wrap">Insights on public data infrastructure</div></div></a><a data-wf--dropdown-item--variant="base" href="/dashboard-template" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7525f738456aed5590a9_tEMPLATE.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Dashboard template library</div><div class="text-size-regular text-color-grey breaking-no-wrap">Industry-ready analytics templates</div></div></a><a data-wf--dropdown-item--variant="base" href="/resources/social-data-coverage-report-2026" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/69c3e9912c34b76aed113aad_Frame%2036420.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">2026 Social Data Coverage Report</div><div class="text-size-regular text-color-grey breaking-no-wrap">Get your free report</div></div></a><a data-wf--dropdown-item--variant="base" href="/datasets" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695f7508a1c44f588d5784eb_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Datasets</div><div class="text-size-regular text-color-grey breaking-no-wrap">Ready-to-buy social data</div></div></a></div></div></div></nav></div><div data-hover="true" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="text-block">Company</div></div><nav class="dropdown-list w-dropdown-list"><div class="dropdown-container"><div class="text-wrapper padding--5rem background-color-white"><div class="grid-1col"><a data-wf--dropdown-item--variant="base" href="/about-us" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fd665e46fe59b284adc9f_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">About</div><div class="text-size-regular text-color-grey breaking-no-wrap">Meet the team behind Datashake</div></div></a><a data-wf--dropdown-item--variant="base" href="/contact-us" class="dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fd67c61a3dc10c5d8d68d_Frame%2036432.svg" loading="lazy" alt="" class="icon-40px"/><div class="flex-v gap-0"><div class="text-size-regular">Contact</div><div class="text-size-regular text-color-grey breaking-no-wrap">Talk to our data experts</div></div></a></div></div></div></nav></div></div><div class="button-group is-mobile"><a data-wf--button-outline--variant="small" href="https://dashboard.datashake.com/signin" class="button is-secondary w-variant-ed755dd4-e243-6f3d-3de8-5c3c56ff051d w-inline-block"><div class="text-block-2">Login</div></a><div class="mobile-hide"><a data-wf--button-outline--variant="black" href="/demo" class="button is-secondary w-variant-00492a0f-afc9-7604-6e8c-562fb3305df4 w-inline-block"><div class="text-block-2">Book a call</div></a></div></div></nav><div class="mobile-group"><div class="mobile-visible"><a href="/demo" class="button is-secondary black mobile-32px w-inline-block"><div>Book a call</div></a></div><div fs-scrolldisable-element="toggle" class="nav_button w-nav-button"><div class="menu-wrapper"><div data-w-id="4d4d0f5d-be8b-112a-4432-ea14ae130d0f" class="menu-line is-top"></div><div data-w-id="5cb87cda-9ca6-3b92-54f3-d2376f3785d1" class="menu-line"></div></div></div></div></div></div><div class="hero-section bottom-border"><div class="padding-global"><div class="container-large side-border"><div class="spacer-medium"></div><div class="grid-2col"><div class="text-wrapper padding-3rem"><div class="flex-v gap-full min-gap-6rem mobile-2rem"><div class="flex-v"><div class="eyebrow-main"><div class="text-size-small text-color-grey"><a href="https://www.datashake.com/resources/social-data-coverage-report-2026" target="_blank" class="blog-link">The Social Data Coverage Report 2026 is here ⚡</a></div></div><div class="rotate-wrapper"><h1 class="heading-style-h1 is-48px">One API. One schema. Cleaned, normalized. Search and filter across</h1><div class="rotate-absolute"><div class="rotate-list"><div class="rotate-item hide"><div class="h1-rotate">customer conversations</div></div><div class="rotate-item"><div class="h1-rotate">social media</div></div><div class="rotate-item"><div class="h1-rotate">review sites</div></div><div class="rotate-item"><div class="h1-rotate">app stores</div></div><div class="rotate-item"><div class="h1-rotate">forums</div></div><div class="rotate-item"><div class="h1-rotate">e-commerce platforms</div></div><div class="rotate-item"><div class="h1-rotate">ratings directories</div></div><div class="rotate-item"><div class="h1-rotate">150+ sources</div></div></div></div></div></div><div class="flex-v gap-2rem"><div class="text-wrapper size-450px"><div class="text-size-large text-color-grey">Replace multiple vendors with one partner you can trust for comprehensive, fast and scalable data from 150+ sources.</div></div><div class="button-group"><a data-wf--button-arrow--variant="base" href="/demo" class="button w-inline-block"><div>Book a demo</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a><a data-wf--button-outline--variant="base" href="/platform" class="button is-secondary w-inline-block"><div class="text-block-2">Explore the platform</div></a></div></div></div></div><div class="image-wrapper border-left z-index-1"><div class="lottie-wrapper"><div lottie-hero="" data-w-id="4889cfa1-aca5-6206-15a9-1ce9d761dd59" data-is-ix2-target="1" class="lottie-hero" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a8c18bb5e32c024ab3933_970%2001%20BGa2.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div><div class="lottie-opt w-embed w-script"><script>
+// Pauzuj Lottie na startu, pa pokreni posle load-a
+document.addEventListener('DOMContentLoaded', function() {
+  const lottieElements = document.querySelectorAll('[lottie-hero]'); // Webflow Lottie elementi
+  
+  lottieElements.forEach(el => {
+    if (el.lottie) {
+      el.lottie.pause(); // Zaustavi odmah
+    }
+  });
+  
+  // Pokreni nakon što se strana učita
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      lottieElements.forEach(el => {
+        if (el.lottie) {
+          el.lottie.play();
+        }
+      });
+    }, 500);
+  });
+});
+</script></div></div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6938803c45536fc95cbcf5fb_Hero-Image.webp" loading="lazy" sizes="(max-width: 1390px) 100vw, 1390px" srcset="https://cdn.prod.website-files.com/69385e16d68663814109c132/6938803c45536fc95cbcf5fb_Hero-Image-p-500.webp 500w, https://cdn.prod.website-files.com/69385e16d68663814109c132/6938803c45536fc95cbcf5fb_Hero-Image-p-800.webp 800w, https://cdn.prod.website-files.com/69385e16d68663814109c132/6938803c45536fc95cbcf5fb_Hero-Image-p-1080.webp 1080w, https://cdn.prod.website-files.com/69385e16d68663814109c132/6938803c45536fc95cbcf5fb_Hero-Image.webp 1390w" alt="User reviews and social media post excerpts showing reactions to new iPhone features and Nike Air Max launch, with a search result count of 384,589 and export options." class="image-lottie"/></div></div></div></div></div><section data-wf--logo-section--variant="base" class="logo-section"><div class="padding-global"><div class="container-large bottom-border"><div class="spacer-small"></div><div class="text-wrapper text-align-center mobile-padding"><div class="text-size-regular text-color-grey">Powering data intelligence for leading platforms &amp; global brands</div></div><div class="spacer-small"></div><div class="grid-6col"><a href="/industry/cx-platforms" class="logo-item w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fde2155874d4fd12d0c4d_Qualtrics-Grey.svg" loading="lazy" alt="Qualtrics logo" class="image-auto"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fde2155874d4fd12d0c4d_Qualtrics-Grey.svg" loading="lazy" alt="Qualtrics logo" class="image-auto is-active"/></div><div class="text-size-small text-color-grey text-align-center">Customer experience</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a><a href="/industry/reputation-and-review-management" class="logo-item is-last w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fdf576971eabc9e19d43a_Yext-Grey.svg" loading="lazy" alt="Yext logo" class="image-auto"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fd9af4bcc36dc8291d618_Yext-Logo.svg" loading="lazy" alt="Yext logo" class="image-auto is-active"/></div><div class="text-size-small text-color-grey text-align-center">Reputation management</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a><a href="/industry/retail" class="logo-item w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6938845d5dc733d389b6a1ea_Logo-item.svg" loading="lazy" alt="The Home Depot logo" class="image-auto is-active"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fdfa1c2e0872bf1a3fae2_Home-Grey.svg" loading="lazy" alt="The Home Depot logo" class="image-auto"/></div><div class="text-size-small text-color-grey text-align-center">Retail</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a><a href="/industry/marketing-automation" class="logo-item is-last w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a373d7cf15783304feb66_Bright-Color.svg" loading="lazy" alt="Brightlocal logo" class="image-auto is-active h-35px"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a3746c87f28ab9e71429c_Bright-Logo.svg" loading="lazy" alt="Brightlocal logo" class="image-auto h-35px"/></div><div class="text-size-small text-color-grey text-align-center">Marketing automation</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a><a href="/industry/agencies" class="logo-item w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a36646b979b2b9ba7d7c1_Epicor-Logo.svg" loading="lazy" alt="Epicor logo" class="image-auto"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a36ca255645d4685a09f1_Epicor-Color.svg" loading="lazy" alt="Epicor logo" class="image-auto is-active"/><div class="spacer-xsmall"></div></div><div class="text-size-small text-color-grey text-align-center">Agencies</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a><a href="/industry/social-listening" class="logo-item is-last desktop-hide-border w-inline-block"><div class="logo-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fd9e04757b43e0508f8c6_Talkwalker-Logo.svg" loading="lazy" alt="Talkwalker logo" class="image-auto is-active"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695fdfe525c4cfc78899d65d_Talkwalker-Grey.svg" loading="lazy" alt="Talkwalker logo" class="image-auto"/></div><div class="text-size-small text-color-grey text-align-center">Social listening</div><div class="arrow-link"><div class="icon-20px w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5833 6.30048L5 15.8838L4.11621 15L13.6995 5.41669H6.66667V4.16669H15.8333V13.3334H14.5833V6.30048Z" fill="black"/>
+</svg></div></div></a></div><div class="divider-wrapper"></div></div></div></section><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><div class="section-regular-padding"><div class="padding-global"><div class="container-large border-top-no"><div class="text-wrapper padding-3rem"><div class="flex-v gap-1-5rem"><div data-wf--eyebrow--variant="base" class="eyebrow"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6969128db4c4691effcdf50f_Red-eyebrow-right.svg" loading="lazy" alt="" class="icon-14px"/><div class="text-size-regular text-color-grey">The Problem</div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6969128626f2de4821c55b3c_Red-Eyebrow-left.svg" loading="lazy" alt="" class="icon-14px"/></div><div class="text-wrapper size-600px"><h2 class="heading-style-h2">You’re making decisions on incomplete data foundations</h2><div class="spacer-tiny"></div><div class="text-size-large is-24px text-color-grey">Public data powers modern business decisions, yet most teams rely on fragile, stitched-together systems to collect it.</div></div></div></div><div class="gap-3col container-size border-bottom-1"><div class="divider-horizontal-wrapper mobile-hide"><section data-wf--lines-divider--variant="horizontal-10rem" class="divider-section w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="padding-global w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="container-large w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="divider-wrapper w-variant-57186190-fa15-1d28-97ff-40641a937e97"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 is-horizontal"/></div></div></div></section></div><div class="flex-v _100"><div class="image-wrapper"><div class="border-line"></div><div data-w-id="1b6c52d9-b0f4-fe8a-a3d9-cd0f7869612c" data-is-ix2-target="1" class="lottie-problem" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696e2008c36915c99df29c73_970%2027.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"></div><div class="border-line"></div></div><div class="flex-h gap-full padding-3rem"><div class="text-wrapper size-600px"><div class="text-size-large text-color-grey">Juggling multiple providers means your team is always fixing something. Different data formats drain engineering hours, coverage gaps mean missing critical data daily. And when a provider&#x27;s API changes or a platform goes down, your entire pipeline breaks – taking insights and decisions with it.</div></div></div></div><div class="divider-horizontal-wrapper right-side mobile-hide"><section data-wf--lines-divider--variant="horizontal-10rem" class="divider-section w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="padding-global w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="container-large w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="divider-wrapper w-variant-57186190-fa15-1d28-97ff-40641a937e97"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 is-horizontal"/></div></div></div></section></div></div></div></div></div><div class="section-regular-padding"><div class="padding-global"><div class="container-large border-top-no"><div class="text-wrapper padding-3rem"><div class="flex-v gap-1-5rem"><div data-wf--eyebrow--variant="base" class="eyebrow"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939491eb3d2b172910b35cc_Eyebrow-Icon.svg" loading="lazy" alt="" class="icon-14px"/><div class="text-size-regular text-color-grey">The Solution</div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693949364cde9b1d0482c0ed_Eyebrow-Icon-2.svg" loading="lazy" alt="" class="icon-14px"/></div><div class="text-wrapper size-600px"><h2 class="heading-style-h2">Get the most complete data to power your insights</h2><div class="spacer-tiny"></div><div class="text-size-large is-24px">Datashake provides the reliable foundation of public data that your business has always needed.</div></div></div></div><div class="gap-3col container-size"><div class="divider-horizontal-wrapper mobile-hide"><section data-wf--lines-divider--variant="horizontal-10rem" class="divider-section w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="padding-global w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="container-large w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="divider-wrapper w-variant-57186190-fa15-1d28-97ff-40641a937e97"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 is-horizontal"/></div></div></div></section></div><div class="flex-v _100"><div class="image-wrapper"><div data-w-id="575a5d0e-acf5-7714-ca98-ee29afdcba4a" data-is-ix2-target="1" class="lottie-solution" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6979d00e00698ff2f4735b37_970%2002.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="29.033333333333335" data-loading="eager" data-ix2-initial-state="0"></div></div><div class="flex-h gap-full padding-3rem"><div class="text-wrapper size-600px"><div class="text-size-large text-color-grey">We unify 150+ social media and online review sources into one resilient API, standardizing formats and absorbing platform shifts so your pipelines never fail. Data arrives analysis-ready while your team expands coverage without compounding complexity. Infrastructure engineered for the decisions that define your businesses success.</div></div><div class="button-wrapper"><a data-wf--button-arrow--variant="base" href="/demo" class="button w-inline-block"><div>See Datashake in action</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div></div><div class="divider-horizontal-wrapper right-side mobile-hide"><section data-wf--lines-divider--variant="horizontal-10rem" class="divider-section w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="padding-global w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="container-large w-variant-57186190-fa15-1d28-97ff-40641a937e97"><div class="divider-wrapper w-variant-57186190-fa15-1d28-97ff-40641a937e97"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-57186190-fa15-1d28-97ff-40641a937e97 is-horizontal"/></div></div></div></section></div></div><div class="grid-5col"><div class="grid-item"><div class="flex-v horizontal-mode"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6954225ff03c26feba9890d0_Uptime-Icon.svg" loading="lazy" alt="" class="icon-40px"/><div class="text-size-large text-weight-medium">98.3% uptime</div></div><div class="flex-v"><div class="text-size-medium text-color-grey">Proven reliability across sources with proactive monitoring</div></div></div><div class="grid-item"><div class="flex-v horizontal-mode"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/69542268db277324767e7b27_Security-Icon.svg" loading="lazy" alt="" class="icon-40px"/><div class="text-size-large text-weight-medium">Enterprise security</div></div><div class="flex-v"><div class="text-size-medium text-color-grey">Encryption at every step with compliance-ready infrastructure</div></div></div><div class="grid-item"><div class="flex-v horizontal-mode"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6954227c05f17176c82af1b1_Scale-Icon.svg" loading="lazy" alt="" class="icon-40px"/><div class="text-size-large text-weight-medium">Massive scale</div></div><div class="flex-v"><div class="text-size-medium text-color-grey">Scale your workflow to hundreds of millions of daily fetches</div></div></div><div class="grid-item"><div class="flex-v horizontal-mode"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6954228708675a34854006f1_Industry-Icon.svg" loading="lazy" alt="" class="icon-40px"/><div class="text-size-large text-weight-medium">Industry standard</div></div><div class="flex-v"><div class="text-size-medium text-color-grey">Proven reliability across sources with proactive monitoring</div></div></div><div class="grid-item last"><div class="flex-v last-5 horizontal-mode last-2"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/69542291ef3d3221396413bf_Coverage-Icon.svg" loading="lazy" alt="" class="icon-40px last-3"/><div class="text-size-large text-weight-medium last-4">Earned media coverage</div></div><div class="flex-v last-5"><div class="text-size-medium text-color-grey last-7">Detect conversations outside channels you own</div></div></div></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><section class="section-regular-padding"><div class="padding-global"><div class="container-large"><div class="cta-container h-430px"><div class="flex-v gap-2rem size-700px align-center z-index-1"><h2 class="heading-style-h2 text-align-center">What would you build with unlimited access to public conversation data?</h2><div class="type-wrapper"><div class="type-text"><div class="typed-words"></div></div><div class="type-embed w-embed w-script"><style>
+.typed-words::after {
+  content: "|";
+  display: inline;
+  animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+<script>
+  var typed = new Typed(".typed-words", {
+  strings: ["Real-time crisis detection system", "Competitive intelligence dashboard", "Customer sentiment tracker", "Trend forecasting engine", "Brand health monitor", "Product feedback aggregator", "Market research platform", "Global reputation management system", "Adverse event detection", "Early warning system", "Customer experience improvements", "Detect product quality issues", "Track competitor pricing", "Map customer journeys", "Monitor KOL conversations", "Identify emerging trends",],
+  typeSpeed: 45,
+  backSpeed: 25,
+  backDelay: 400,
+  startDelay: 250,
+  loop: true,
+  showCursor: false,
+  cursorChar: "|",
+  attr: null,
+});
+</script></div></div></div><div class="background-image height-50"><div class="canvas"></div></div></div></div></div></section><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><section class="section-regular-padding"><div class="padding-global"><div class="container-large"><div class="container-wrapper mobile-bottom-padding-0"><div class="grid-2col gap-5rem"><div class="flex-v gap-12px"><h2 class="heading-style-h2">Your most reliable source of social &amp; review data at scale</h2><div class="flex-v gap-1-25rem"><div class="text-size-large text-color-grey">Datashake powers the next generation of data-driven solutions — from customer experience and trend analytics to KYC and competitive monitoring.</div><div class="flex-v"><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_23919" fill="white">
+<path d="M0 0H32V32H0V0Z"/>
+</mask>
+<path d="M0 0H32V32H0V0Z" fill="#ECFDEC"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM32 0H32.25V-0.25H32V0ZM32 32V32.25H32.25V32H32ZM0 32H-0.25V32.25H0V32ZM0 0H-0.25V2.66667H0H0.25V0H0ZM0 8H-0.25V13.3333H0H0.25V8H0ZM0 18.6667H-0.25V24H0H0.25V18.6667H0ZM0 29.3333H-0.25V32H0H0.25V29.3333H0ZM0 32V32.25H2.66667V32V31.75H0V32ZM8 32V32.25H13.3333V32V31.75H8V32ZM18.6667 32V32.25H24V32V31.75H18.6667V32ZM29.3333 32V32.25H32V32V31.75H29.3333V32ZM32 32H32.25V29.3333H32H31.75V32H32ZM32 24H32.25V18.6667H32H31.75V24H32ZM32 13.3333H32.25V8H32H31.75V13.3333H32ZM32 2.66666H32.25V0H32H31.75V2.66666H32ZM32 0V-0.25H29.3333V0V0.25H32V0ZM24 0V-0.25H18.6667V0V0.25H24V0ZM13.3333 0V-0.25H8V0V0.25H13.3333V0ZM2.66666 0V-0.25H0V0V0.25H2.66666V0ZM0 0V-0.5H-0.5V0H0ZM32 0H32.5V-0.5H32V0ZM32 32V32.5H32.5V32H32ZM0 32H-0.5V32.5H0V32ZM0 0H-0.5V2.66667H0H0.5V0H0ZM0 8H-0.5V13.3333H0H0.5V8H0ZM0 18.6667H-0.5V24H0H0.5V18.6667H0ZM0 29.3333H-0.5V32H0H0.5V29.3333H0ZM0 32V32.5H2.66667V32V31.5H0V32ZM8 32V32.5H13.3333V32V31.5H8V32ZM18.6667 32V32.5H24V32V31.5H18.6667V32ZM29.3333 32V32.5H32V32V31.5H29.3333V32ZM32 32H32.5V29.3333H32H31.5V32H32ZM32 24H32.5V18.6667H32H31.5V24H32ZM32 13.3333H32.5V8H32H31.5V13.3333H32ZM32 2.66666H32.5V0H32H31.5V2.66666H32ZM32 0V-0.5H29.3333V0V0.5H32V0ZM24 0V-0.5H18.6667V0V0.5H24V0ZM13.3333 0V-0.5H8V0V0.5H13.3333V0ZM2.66666 0V-0.5H0V0V0.5H2.66666V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_23919)"/>
+<rect x="11" y="10.7725" width="10.8333" height="10.8333" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 8.5H23.5V23.5H18.5V22.6667H13.5V23.5H8.5V8.5ZM19.4866 13.5019L18.4602 12.7884L15.2477 17.4092L13.4442 15.8204L12.6179 16.7583L15.4735 19.2741L19.4866 13.5019Z" fill="#3FE844"/>
+</svg></div><div class="text-size-medium">Collect, normalize, and deliver data from different sources</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_23919" fill="white">
+<path d="M0 0H32V32H0V0Z"/>
+</mask>
+<path d="M0 0H32V32H0V0Z" fill="#ECFDEC"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM32 0H32.25V-0.25H32V0ZM32 32V32.25H32.25V32H32ZM0 32H-0.25V32.25H0V32ZM0 0H-0.25V2.66667H0H0.25V0H0ZM0 8H-0.25V13.3333H0H0.25V8H0ZM0 18.6667H-0.25V24H0H0.25V18.6667H0ZM0 29.3333H-0.25V32H0H0.25V29.3333H0ZM0 32V32.25H2.66667V32V31.75H0V32ZM8 32V32.25H13.3333V32V31.75H8V32ZM18.6667 32V32.25H24V32V31.75H18.6667V32ZM29.3333 32V32.25H32V32V31.75H29.3333V32ZM32 32H32.25V29.3333H32H31.75V32H32ZM32 24H32.25V18.6667H32H31.75V24H32ZM32 13.3333H32.25V8H32H31.75V13.3333H32ZM32 2.66666H32.25V0H32H31.75V2.66666H32ZM32 0V-0.25H29.3333V0V0.25H32V0ZM24 0V-0.25H18.6667V0V0.25H24V0ZM13.3333 0V-0.25H8V0V0.25H13.3333V0ZM2.66666 0V-0.25H0V0V0.25H2.66666V0ZM0 0V-0.5H-0.5V0H0ZM32 0H32.5V-0.5H32V0ZM32 32V32.5H32.5V32H32ZM0 32H-0.5V32.5H0V32ZM0 0H-0.5V2.66667H0H0.5V0H0ZM0 8H-0.5V13.3333H0H0.5V8H0ZM0 18.6667H-0.5V24H0H0.5V18.6667H0ZM0 29.3333H-0.5V32H0H0.5V29.3333H0ZM0 32V32.5H2.66667V32V31.5H0V32ZM8 32V32.5H13.3333V32V31.5H8V32ZM18.6667 32V32.5H24V32V31.5H18.6667V32ZM29.3333 32V32.5H32V32V31.5H29.3333V32ZM32 32H32.5V29.3333H32H31.5V32H32ZM32 24H32.5V18.6667H32H31.5V24H32ZM32 13.3333H32.5V8H32H31.5V13.3333H32ZM32 2.66666H32.5V0H32H31.5V2.66666H32ZM32 0V-0.5H29.3333V0V0.5H32V0ZM24 0V-0.5H18.6667V0V0.5H24V0ZM13.3333 0V-0.5H8V0V0.5H13.3333V0ZM2.66666 0V-0.5H0V0V0.5H2.66666V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_23919)"/>
+<rect x="11" y="10.7725" width="10.8333" height="10.8333" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 8.5H23.5V23.5H18.5V22.6667H13.5V23.5H8.5V8.5ZM19.4866 13.5019L18.4602 12.7884L15.2477 17.4092L13.4442 15.8204L12.6179 16.7583L15.4735 19.2741L19.4866 13.5019Z" fill="#3FE844"/>
+</svg></div><div class="text-size-medium">Focus on getting insights, not managing infrastructure.</div></div></div><div class="spacer-xsmall"></div><div class="button-wrapper"><a data-wf--button-arrow--variant="base" href="/demo" class="button w-inline-block"><div>Book a demo</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div></div></div><div id="w-node-_8aa866e9-8bf4-ea5a-6200-102a6ebb9776-4109c1d2" class="background-image position-right-bottom width-50 align-bottom"><div class="lottie" data-w-id="b7366197-95d3-f449-dec6-82478cd289d4" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6979cfb36d4b9fc339404334_970%2004.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="8.233333333333333" data-loading="eager"></div></div></div></div></div></section><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><div class="section-regular-padding"><div class="padding-global"><div class="container-large"><div class="tabs-container"><div fb-tabs-progress="true" fb-tabs="true" fb-tabs-speed="8000" data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs-benefits w-tabs"><div class="tabs-benefits-menu w-tab-menu"><a data-w-tab="Tab 1" class="tab-menu-item w-inline-block w-tab-link w--current"><div class="flex-h gap-12px z-index-1"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.3343 0.277832L2.63281 18.6666H11.6676V27.7222L25.3692 9.33332H16.3343V0.277832Z" fill="#FFD521"/>
+</svg></div><div>Speed</div></div><div class="tab-progress"></div></a><a data-w-tab="Tab 2" class="tab-menu-item w-inline-block w-tab-link"><div class="flex-h gap-12px z-index-1"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.9982 2.3335C12.1152 2.3335 10.3364 2.77958 8.76172 3.57184L13.9689 12.2504C13.9786 12.2503 13.9884 12.2502 13.9982 12.2502C14.008 12.2502 14.0178 12.2503 14.0276 12.2504L19.2346 3.57187C17.66 2.77959 15.8812 2.3335 13.9982 2.3335Z" fill="#3981FF"/>
+<path d="M12.4698 13.1504C12.3298 13.402 12.25 13.6918 12.25 14.0002C12.25 14.9666 13.0335 15.7502 14 15.7502C14.9665 15.7502 15.75 14.9666 15.75 14.0002C15.75 13.6918 15.6702 13.402 15.5302 13.1504L17.4301 9.98392C18.5457 10.9474 19.25 12.3712 19.25 13.9586C19.25 16.8582 16.8995 19.2086 14 19.2086C11.1005 19.2086 8.75 16.8582 8.75 13.9586C8.75 12.371 9.45431 10.9474 10.5699 9.98389L12.4698 13.1504Z" fill="#3981FF"/>
+<path d="M20.7389 4.47366L18.3431 8.46667C19.9619 9.74781 21.0026 11.7314 21.0026 13.9587C21.0026 17.8247 17.8686 20.9587 14.0026 20.9587C10.1366 20.9587 7.0026 17.8247 7.0026 13.9587C7.0026 11.7314 8.04328 9.74777 9.66215 8.46663L7.26634 4.47363C4.28314 6.58689 2.33594 10.0662 2.33594 14.0002C2.33594 20.4435 7.55928 25.6669 14.0026 25.6669C20.4459 25.6669 25.6693 20.4435 25.6693 14.0002C25.6693 10.0662 23.7221 6.58692 20.7389 4.47366Z" fill="#3981FF"/>
+</svg></div><div>Depth</div></div><div class="tab-progress is-blue"></div></a><a data-w-tab="Tab 3" class="tab-menu-item w-inline-block w-tab-link"><div class="flex-h gap-12px z-index-1"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0026 25.6668C20.4459 25.6668 25.6693 20.4434 25.6693 14.0002C25.6693 7.55684 20.4459 2.3335 14.0026 2.3335C7.55928 2.3335 2.33594 7.55684 2.33594 14.0002C2.33594 20.4434 7.55928 25.6668 14.0026 25.6668ZM10.5109 10.5059L9.3384 12.8334L5.08968 9.6483C6.70164 6.35297 10.0873 4.0835 14.003 4.0835C14.8327 4.0835 15.6386 4.1854 16.409 4.3774L15.1717 9.33344L10.5109 10.5059ZM18.6718 17.5002L17.5052 19.8335H14.0052L11.6718 16.3335L12.9657 15.0443L15.2325 15.189L18.6718 17.5002Z" fill="#FF930F"/>
+</svg></div><div>Coverage</div></div><div class="tab-progress is-orange"></div></a><a data-w-tab="Tab 4" class="tab-menu-item w-inline-block w-tab-link"><div class="flex-h gap-12px z-index-1"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.2474 14C5.2474 9.1675 9.1649 5.25 13.9974 5.25C17.9042 5.25 21.2152 7.8111 22.3386 11.3482L24.0065 10.8185C22.659 6.57578 18.6886 3.5 13.9974 3.5C8.49306 3.5 3.97797 7.73541 3.53334 13.125H1.16406V14.875H3.53334C3.97797 20.2645 8.49306 24.5 13.9974 24.5C18.6886 24.5 22.659 21.4242 24.0065 17.1815L22.3386 16.6518C21.2152 20.1889 17.9042 22.75 13.9974 22.75C9.1649 22.75 5.2474 18.8324 5.2474 14Z" fill="#A72BFF"/>
+<path d="M14 7C10.134 7 7 10.134 7 14C7 17.866 10.134 21 14 21C17.5697 21 20.5153 18.328 20.9459 14.875H26.8333V13.125H20.9459C20.5153 9.67198 17.5697 7 14 7Z" fill="#A72BFF"/>
+</svg></div><div>Relevance</div></div><div class="tab-progress is-purple"></div></a></div><div class="tabs-benefits-content w-tab-content"><div data-w-tab="Tab 1" class="tab-content-item w-tab-pane w--tab-active"><div class="grid-2col"><div class="flex-v gap-full padding-3rem"><div class="flex-v gap-1-25rem"><div class="sub-headline"><div class="icon-40px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_32550" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFFBE9"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FFD521" mask="url(#path-1-inside-1_6111_32550)"/>
+<path d="M22.0019 8.23816L10.2578 24H18.0019V31.7619L29.7461 16H22.0019V8.23816Z" fill="#FFD521"/>
+</svg></div><div class="text-size-medium">Speed</div></div><h3 class="heading-style-h3">Get answers in seconds</h3><div class="text-size-large text-color-grey">Access 5+ years of historical data instantly through archive search, or collect fresh conversations in real-time when you need current information. Get data how you need it, when you need it — whether you&#x27;re analyzing long-term trends or responding to emerging issues.</div></div><div class="flex-v"><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4557_94818" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFFBE9"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FFD521" mask="url(#path-1-inside-1_4557_94818)"/>
+<rect x="14" y="13.7266" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FFD521"/>
+</svg></div><div class="text-size-medium">Archive search returns results in seconds</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4557_94818" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFFBE9"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FFD521" mask="url(#path-1-inside-1_4557_94818)"/>
+<rect x="14" y="13.7266" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FFD521"/>
+</svg></div><div class="text-size-medium">Real-time collection for emerging topics</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4557_94818" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFFBE9"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FFD521" mask="url(#path-1-inside-1_4557_94818)"/>
+<rect x="14" y="13.7266" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FFD521"/>
+</svg></div><div class="text-size-medium">5+ years of historical depth available instantly</div></div></div></div><div class="image-container left-border mobile-no-border background-color-grey"><div class="lottie-tab" data-w-id="6b1d0c7e-75d0-befa-7774-274cd6a92c4e" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a41dafd8cb083ec1b61f7_970%2015%20BGs.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"></div></div></div></div><div data-w-tab="Tab 2" class="tab-content-item w-tab-pane"><div class="grid-2col"><div class="flex-v gap-full padding-3rem"><div class="flex-v gap-1-25rem"><div class="sub-headline"><div class="icon-40px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34144" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#EBF2FF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3981FF" mask="url(#path-1-inside-1_6111_34144)"/>
+<path d="M19.9984 10.0001C18.3844 10.0001 16.8597 10.3825 15.51 11.0616L19.9733 18.5003C19.9816 18.5002 19.99 18.5001 19.9984 18.5001C20.0068 18.5001 20.0152 18.5002 20.0236 18.5003L24.4868 11.0616C23.1371 10.3825 21.6124 10.0001 19.9984 10.0001Z" fill="#3981FF"/>
+<path d="M18.6884 19.2716C18.5684 19.4873 18.5 19.7357 18.5 20C18.5 20.8284 19.1716 21.5 20 21.5C20.8284 21.5 21.5 20.8284 21.5 20C21.5 19.7357 21.4316 19.4873 21.3116 19.2716L22.9401 16.5575C23.8963 17.3834 24.5 18.6037 24.5 19.9644C24.5 22.4497 22.4853 24.4644 20 24.4644C17.5147 24.4644 15.5 22.4497 15.5 19.9644C15.5 18.6036 16.1037 17.3834 17.0599 16.5575L18.6884 19.2716Z" fill="#3981FF"/>
+<path d="M25.7762 11.8346L23.7226 15.2572C25.1102 16.3553 26.0022 18.0555 26.0022 19.9646C26.0022 23.2783 23.3159 25.9646 20.0022 25.9646C16.6885 25.9646 14.0022 23.2783 14.0022 19.9646C14.0022 18.0555 14.8942 16.3553 16.2818 15.2572L14.2283 11.8346C11.6712 13.646 10.0022 16.6282 10.0022 20.0002C10.0022 25.523 14.4793 30.0002 20.0022 30.0002C25.525 30.0002 30.0022 25.523 30.0022 20.0002C30.0022 16.6282 28.3332 13.646 25.7762 11.8346Z" fill="#3981FF"/>
+</svg></div><div class="text-size-medium">Depth</div></div><h3 class="heading-style-h3">Make confident decisions with complete data</h3><div class="text-size-large text-color-grey">Capture full threads, replies, engagement metadata, and complete conversation history. Get everything you need to spot emerging trends, detect crisis signals, and analyze industry-wide patterns at scale. We collect all available data points, from posts and comments to metadata and user insights.</div></div><div class="flex-v"><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34154" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#EBF2FF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3981FF" mask="url(#path-1-inside-1_6111_34154)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3981FF"/>
+</svg></div><div class="text-size-medium">Complete conversation threads and replies</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34154" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#EBF2FF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3981FF" mask="url(#path-1-inside-1_6111_34154)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3981FF"/>
+</svg></div><div class="text-size-medium">Engagement data and metadata</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34154" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#EBF2FF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3981FF" mask="url(#path-1-inside-1_6111_34154)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3981FF"/>
+</svg></div><div class="text-size-medium">Data volume for industry-wide trend and benchmark analysis</div></div></div></div><div id="w-node-_6b23d65c-665e-2a91-4d85-1f9d9908eccb-4109c1d2" class="image-container left-border mobile-no-border background-color-grey"><div class="lottie-tab" data-w-id="5c45c7fa-ec42-1234-edf2-34bf0e49ae44" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696e2148e3ed09dbc4bf5caa_970%2016.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"></div></div></div></div><div data-w-tab="Tab 3" class="tab-content-item w-tab-pane"><div class="grid-2col"><div class="flex-v gap-full padding-3rem"><div class="flex-v gap-1-25rem"><div class="sub-headline"><div class="icon-40px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34279" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFF4E7"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FF930F" mask="url(#path-1-inside-1_6111_34279)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0022 30.0002C25.525 30.0002 30.0022 25.523 30.0022 20.0002C30.0022 14.4774 25.525 10.0002 20.0022 10.0002C14.4793 10.0002 10.0022 14.4774 10.0022 20.0002C10.0022 25.523 14.4793 30.0002 20.0022 30.0002ZM17.0093 17.0052L16.0043 19.0001L12.3625 16.2701C13.7442 13.4455 16.6462 11.5002 20.0025 11.5002C20.7137 11.5002 21.4045 11.5876 22.0648 11.7522L21.0043 16.0002L17.0093 17.0052ZM24.0044 23.0002L23.0044 25.0002H20.0044L18.0044 22.0002L19.1134 20.8952L21.0564 21.0192L24.0044 23.0002Z" fill="#FF930F"/>
+</svg></div><div class="text-size-medium">Coverage</div></div><h3 class="heading-style-h3">Scale your coverage without scaling complexity</h3><div class="text-size-large text-color-grey">Access review sites, social platforms, forums, and e-commerce channels without shopping for multiple vendors. Get data from billions of public conversations across sources, all through one trusted partner. When we add new sources based on customer needs, they become available to you automatically, without re-engineering or additional integration work.</div></div><div class="flex-v"><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34287" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFF4E7"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FF930F" mask="url(#path-1-inside-1_6111_34287)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FF930F"/>
+</svg></div><div class="text-size-medium">150+ sources and growing, across review sites, social platforms, forums</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34287" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFF4E7"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FF930F" mask="url(#path-1-inside-1_6111_34287)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FF930F"/>
+</svg></div><div class="text-size-medium">Multi-language and regional coverage globally</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34287" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#FFF4E7"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#FF930F" mask="url(#path-1-inside-1_6111_34287)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#FF930F"/>
+</svg></div><div class="text-size-medium">New sources added as you need them</div></div></div></div><div class="image-container left-border mobile-no-border background-color-grey"><div class="lottie-tab" data-w-id="e648bebf-becb-c261-2476-8ab61d6bf40b" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696e2223dc911cd0de7ccf2e_970%2017.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"></div></div></div></div><div data-w-tab="Tab 4" class="tab-content-item w-tab-pane"><div class="grid-2col"><div class="flex-v gap-full padding-3rem"><div class="flex-v gap-1-25rem"><div class="sub-headline"><div class="icon-40px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34948" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#F6EAFF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#A72BFF" mask="url(#path-1-inside-1_6111_34948)"/>
+<path d="M12.4978 20C12.4978 15.8579 15.8557 12.5 19.9978 12.5C23.3465 12.5 26.1845 14.6952 27.1474 17.727L28.577 17.273C27.422 13.6364 24.0188 11 19.9978 11C15.2798 11 11.4097 14.6304 11.0286 19.25H8.9978V20.75H11.0286C11.4097 25.3696 15.2798 29 19.9978 29C24.0188 29 27.422 26.3636 28.577 22.727L27.1474 22.273C26.1845 25.3048 23.3465 27.5 19.9978 27.5C15.8557 27.5 12.4978 24.1421 12.4978 20Z" fill="#A72BFF"/>
+<path d="M20 14C16.6863 14 14 16.6863 14 20C14 23.3137 16.6863 26 20 26C23.0597 26 25.5845 23.7097 25.9536 20.75H31V19.25H25.9536C25.5845 16.2903 23.0597 14 20 14Z" fill="#A72BFF"/>
+</svg></div><div class="text-size-medium">Relevance</div></div><h3 class="heading-style-h3">Find what matters, filter what doesn&#x27;t</h3><div class="text-size-large text-color-grey">Make better decisions with <strong>relevant</strong> data, not just <em>more</em> data. Precise search and filtering capabilities help you quickly find the results you’re after. We deliver clean, analysis-ready data so you can gather the strongest insights.</div></div><div class="flex-v"><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34957" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#F6EAFF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#A72BFF" mask="url(#path-1-inside-1_6111_34957)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#A72BFF"/>
+</svg></div><div class="text-size-medium">Archive search returns results in seconds</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34957" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#F6EAFF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#A72BFF" mask="url(#path-1-inside-1_6111_34957)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#A72BFF"/>
+</svg></div><div class="text-size-medium">Date range, language, and source type filtering</div></div><div class="horizontal-item"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6111_34957" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0H40V40H0V0Z" fill="#F6EAFF"/>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#A72BFF" mask="url(#path-1-inside-1_6111_34957)"/>
+<rect x="14" y="13.7271" width="13" height="13" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#A72BFF"/>
+</svg></div><div class="text-size-medium">Advanced duplicate detection for clean results</div></div></div></div><div class="image-container left-border mobile-no-border background-color-grey"><div class="lottie-tab" data-w-id="9e678126-d682-6fec-60d9-8b2b8e7ef272" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696e22ebe10c2764a91943b4_970%2018.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager"></div></div></div></div></div></div></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><div class="section-regular-padding"><div class="padding-global"><div class="container-large"><div class="container-wrapper background-color-green"><div class="grid-2col gap-5rem z-index-1"><div class="flex-v gap-full"><div class="flex-v gap-1-25rem"><div data-wf--eyebrow--variant="green-text" class="eyebrow"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939491eb3d2b172910b35cc_Eyebrow-Icon.svg" loading="lazy" alt="" class="icon-14px"/><div class="text-size-regular text-color-grey w-variant-f8a50641-aa57-80d3-a416-ec1402ea3069">Free Benchmark Trial</div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693949364cde9b1d0482c0ed_Eyebrow-Icon-2.svg" loading="lazy" alt="" class="icon-14px"/></div><h2 class="heading-style-h2 text-color-white">Test your use case with Datashake <span class="text-color-green">— for free.</span></h2></div><div class="text-wrapper size-450px"><div class="flex-v gap-1-25rem"><div class="text-size-large text-color-white">We’ll run your search to show you how Datashake uncovers more data.</div><div class="button-wrapper"><a data-wf--button-arrow--variant="white" href="/demo" class="button w-variant-82c6ba88-b95b-60ae-eeae-5a37ce83812c w-inline-block"><div>Start your free benchmark check</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div></div></div><div class="flex-v gap-3rem"><div class="text-wrapper"><div class="text-size-large is-24px text-color-white">Detect data gaps in your infrastructure and expand your data coverage seamlessly.</div></div><div class="grid-2col left-bottom-border"><div class="grid-item is-blur"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_25475" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_25475)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3FE844"/>
+</svg></div><div class="text-size-large text-color-white text-weight-medium">Free, no-commitment benchmark test</div></div><div class="grid-item is-blur"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_25475" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_25475)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3FE844"/>
+</svg></div><div class="text-size-large text-color-white text-weight-medium">Investigate any search request and topic</div></div><div class="grid-item is-blur"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_25475" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_25475)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3FE844"/>
+</svg></div><div class="text-size-large text-color-white text-weight-medium">Compare results side-by-side</div></div><div class="grid-item is-blur"><div class="icon-32px w-embed"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_6110_25475" fill="white">
+<path d="M0 0H40V40H0V0Z"/>
+</mask>
+<path d="M0 0V-0.25H-0.25V0H0ZM40 0H40.25V-0.25H40V0ZM40 40V40.25H40.25V40H40ZM0 40H-0.25V40.25H0V40ZM0 0H-0.25V3.33333H0H0.25V0H0ZM0 10H-0.25V16.6667H0H0.25V10H0ZM0 23.3333H-0.25V30H0H0.25V23.3333H0ZM0 36.6667H-0.25V40H0H0.25V36.6667H0ZM0 40V40.25H3.33333V40V39.75H0V40ZM10 40V40.25H16.6667V40V39.75H10V40ZM23.3333 40V40.25H30V40V39.75H23.3333V40ZM36.6667 40V40.25H40V40V39.75H36.6667V40ZM40 40H40.25V36.6667H40H39.75V40H40ZM40 30H40.25V23.3333H40H39.75V30H40ZM40 16.6667H40.25V10H40H39.75V16.6667H40ZM40 3.33333H40.25V0H40H39.75V3.33333H40ZM40 0V-0.25H36.6667V0V0.25H40V0ZM30 0V-0.25H23.3333V0V0.25H30V0ZM16.6667 0V-0.25H10V0V0.25H16.6667V0ZM3.33333 0V-0.25H0V0V0.25H3.33333V0ZM0 0V-0.5H-0.5V0H0ZM40 0H40.5V-0.5H40V0ZM40 40V40.5H40.5V40H40ZM0 40H-0.5V40.5H0V40ZM0 0H-0.5V3.33333H0H0.5V0H0ZM0 10H-0.5V16.6667H0H0.5V10H0ZM0 23.3333H-0.5V30H0H0.5V23.3333H0ZM0 36.6667H-0.5V40H0H0.5V36.6667H0ZM0 40V40.5H3.33333V40V39.5H0V40ZM10 40V40.5H16.6667V40V39.5H10V40ZM23.3333 40V40.5H30V40V39.5H23.3333V40ZM36.6667 40V40.5H40V40V39.5H36.6667V40ZM40 40H40.5V36.6667H40H39.5V40H40ZM40 30H40.5V23.3333H40H39.5V30H40ZM40 16.6667H40.5V10H40H39.5V16.6667H40ZM40 3.33333H40.5V0H40H39.5V3.33333H40ZM40 0V-0.5H36.6667V0V0.5H40V0ZM30 0V-0.5H23.3333V0V0.5H30V0ZM16.6667 0V-0.5H10V0V0.5H16.6667V0ZM3.33333 0V-0.5H0V0V0.5H3.33333V0Z" fill="#3FE844" mask="url(#path-1-inside-1_6110_25475)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 11H29V29H23V28H17V29H11V11ZM24.1839 17.0023L22.9523 16.1461L19.0972 21.6911L16.933 19.7845L15.9415 20.91L19.3682 23.9289L24.1839 17.0023Z" fill="#3FE844"/>
+</svg></div><div class="text-size-large text-color-white text-weight-medium">Expand your current source coverage</div></div></div></div></div><div class="background-image height-30"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/69398bd82470e86fed86a813_Squares-Background-Green.svg" loading="lazy" alt="" class="image-full"/></div></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><div class="section-regular-padding"><div class="padding-global"><div class="container-large border-top-no"><div class="text-wrapper padding-3rem"><div class="grid-2col"><div class="flex-v gap-1-5rem"><div data-wf--eyebrow--variant="base" class="eyebrow"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939491eb3d2b172910b35cc_Eyebrow-Icon.svg" loading="lazy" alt="" class="icon-14px"/><div class="text-size-regular text-color-grey">Power Your Data</div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693949364cde9b1d0482c0ed_Eyebrow-Icon-2.svg" loading="lazy" alt="" class="icon-14px"/></div><div class="text-wrapper size-550px"><h2 class="heading-style-h2">What global companies use Datashake for</h2></div></div><div id="w-node-_119ca602-91a6-d907-c05b-f7b0b0785bbc-4109c1d2" class="text-align-left position-bottom"><div class="text-size-medium text-color-grey">From trend detection and crisis monitoring to competitive intelligence and risk assessment — we support all your use cases with the most comprehensive data coverage available.</div></div></div></div><div class="gap-3col container-size"></div><div class="grid-3col side-3rem"><section data-wf--lines-divider--variant="horizontal-3rem" class="divider-section w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="padding-global w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="container-large w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="divider-wrapper w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76 is-horizontal"/></div></div></div></section><div class="grid-3col tablet-2col"><div data-wf--benefit-illustration--variant="base" class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b2752e7826c75201aa9c2_Crisis-Illustration.svg" loading="lazy" alt="illustration depicting crises and risk monitoring from social platforms" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Crisis Monitoring &amp; Risk Detection</div><div class="text-size-regular text-color-grey">Detect potential crises before they escalate. Monitor reputation threats, product issues, and negative sentiment spikes in real-time across all channels. </div></div></div><div class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693aaa22543d41b64af90bdb_Benefit-Illustration.svg" loading="lazy" alt="illustration depicting predicted data volumes" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Trend Detection</div><div class="text-size-regular text-color-grey">Identify emerging trends before they become mainstream. Track conversation volume and topic evolution across any source you need.</div></div></div><div data-wf--benefit-illustration--variant="last-item" class="grid-item is-illustration w-variant-05670d57-361d-5c0a-7d05-958ebd236565"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a45da0f1229f20a28f1e4_RPFS-Illustration.webp" loading="lazy" alt="Diagram listing review sites and social media platforms with related content types, including E-Commerce, Product, Service, Physical Shop, Posts, User Profiles, Videos, and Reviews." sizes="100vw" srcset="https://cdn.prod.website-files.com/69385e16d68663814109c132/696a45da0f1229f20a28f1e4_RPFS-Illustration-p-500.webp 500w, https://cdn.prod.website-files.com/69385e16d68663814109c132/696a45da0f1229f20a28f1e4_RPFS-Illustration.webp 880w" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Win Competitive RFPs</div><div class="text-size-regular text-color-grey">Win enterprise contracts with deep coverage from 150+ sources that becomes the deciding factor in RFP evaluations. </div></div></div><div data-wf--benefit-illustration--variant="base" class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b280abb79699bcdc60aed_Deals-Illustration.svg" loading="lazy" alt="illustration showing deal closure increases with Datashake API" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Close More Deals</div><div class="text-size-regular text-color-grey">Close more deals when you integrate Datashake data. Get access to coverage that becomes undeniable competitive differentiation</div></div></div><div data-wf--benefit-illustration--variant="base" class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b283e2069033d2ea99e8f_Competitive-Illustration.svg" loading="lazy" alt="illustration showing competitive analysis of data streams" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Competitive Analysis</div><div class="text-size-regular text-color-grey">Track competitive activity across all channels simultaneously. Monitor pricing, promotions, product launches, and more to compete smarter.</div></div></div><div data-wf--benefit-illustration--variant="last-item" class="grid-item is-illustration w-variant-05670d57-361d-5c0a-7d05-958ebd236565"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695441357de4841a1da03c74_Retain-Illustration.webp" loading="lazy" alt="Map of North America with orange rectangular markers indicating locations across the United States, Mexico, and the Caribbean." sizes="100vw" srcset="https://cdn.prod.website-files.com/69385e16d68663814109c132/695441357de4841a1da03c74_Retain-Illustration-p-500.webp 500w, https://cdn.prod.website-files.com/69385e16d68663814109c132/695441357de4841a1da03c74_Retain-Illustration-p-800.webp 800w, https://cdn.prod.website-files.com/69385e16d68663814109c132/695441357de4841a1da03c74_Retain-Illustration.webp 880w" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Retain Enterprise Customers</div><div class="text-size-regular text-color-grey">Retains your most valuable enterprise customers by delivering the comprehensive data your clients need across global markets.</div></div></div><div data-wf--benefit-illustration--variant="base" class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/69544152ed6bbdf3beee0095_Due-Illustration.webp" loading="lazy" alt="Task labeled &#x27;Hire 2 software engineers to improve face ID&#x27; marked as approved, linked to a social media comment from 4 days ago stating &#x27;iPhone 17 face ID feels much slower than my 14 Pro.&#x27;" sizes="100vw" srcset="https://cdn.prod.website-files.com/69385e16d68663814109c132/69544152ed6bbdf3beee0095_Due-Illustration-p-500.webp 500w, https://cdn.prod.website-files.com/69385e16d68663814109c132/69544152ed6bbdf3beee0095_Due-Illustration.webp 880w" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Due Diligence &amp; KYC</div><div class="text-size-regular text-color-grey">Finance teams strengthen KYC processes and risk assessment with comprehensive social and review data. </div></div></div><div data-wf--benefit-illustration--variant="base" class="grid-item is-illustration"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b2866ae8a9eeb03279bd4_Compliance-Illustration.svg" loading="lazy" alt="illustration depicting abstract data streams being scanned" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Regulatory Compliance</div><div class="text-size-regular text-color-grey">Pharmaceutical companies monitor adverse events and post-market surveillance through complete coverage that manual monitoring can&#x27;t match.</div></div></div><div data-wf--benefit-illustration--variant="last-item" class="grid-item is-illustration w-variant-05670d57-361d-5c0a-7d05-958ebd236565"><div class="image-wrapper grid-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695441741c57ad046429eddb_Client-Illustration.webp" loading="lazy" alt="Report highlighting great customer response to new features with 11,234 mentions and suggested marketing actions." sizes="100vw" srcset="https://cdn.prod.website-files.com/69385e16d68663814109c132/695441741c57ad046429eddb_Client-Illustration-p-500.webp 500w, https://cdn.prod.website-files.com/69385e16d68663814109c132/695441741c57ad046429eddb_Client-Illustration.webp 880w" class="image-full"/></div><div class="flex-v gap-12px padding-1-5rem"><div class="text-size-large is-24px text-weight-medium">Client Reporting</div><div class="text-size-regular text-color-grey">Agencies deliver stronger client insights with comprehensive data coverage, flexible access, and predictable pricing.</div></div></div></div><section data-wf--lines-divider--variant="horizontal-3rem" class="divider-section w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="padding-global w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="container-large w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><div class="divider-wrapper w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76 min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full w-variant-7b4483c0-d2fa-7ade-19a2-926e1e169f76 is-horizontal"/></div></div></div></section></div><div class="button-wrapper _100"><a data-wf--button-arrow--variant="full-width" href="/demo" class="button w-variant-a45c2ae7-5b32-e5d0-fefa-bea5a4b302ad w-inline-block"><div>Book a demo</div><div class="icon-32px w-variant-a45c2ae7-5b32-e5d0-fefa-bea5a4b302ad w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><section class="section-regular-padding"><div class="padding-global"><div class="container-large"><div class="testimonial-container"><a href="#" class="testimonial-link active w-inline-block"><div class="text-size-large text-color-blue text-weight-medium is-vertical">Tech Lead</div><div class="text-size-medium text-color-blue is-vertical">Review Management Services</div></a><div class="tab-content active"><div class="tab-content-wrapper"><div class="text-wrapper width-900px"><div class="text-size-large is-32px text-color-blue">&quot;We’ve been using Datashake for over six years, and it’s been a big part of our business growth during that time. It has really helped improve our operations by providing consistent, reliable data that we can easily plug into our workflows.&quot;</div></div><div class="background-image width-20"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b2bad262f15e43a700997_Testimonial-Background.svg" loading="lazy" alt="" class="image-full"/></div><div class="flex-v gap-0-5rem size-400px"><div class="text-size-large text-color-blue text-weight-medium">Tech Lead</div><div class="text-size-medium text-color-blue">Review Management Services</div></div></div></div><a href="#" class="testimonial-link is-orange w-inline-block"><div class="text-size-large text-color-orange text-weight-medium text-vertical">Arkadiusz</div><div class="text-size-medium text-color-orange text-vertical">Software Engineering Manager, Software development</div></a><div class="tab-content is-orange"><div class="tab-content-wrapper active"><div class="text-wrapper width-900px"><div class="text-size-large is-32px text-color-orange">“Datashake delivers exceptional value through their unique features and flexible APIs. Their team is highly collaborative and responsive, making them a pleasure to work with. I highly recommend their services.”</div></div><div class="background-image width-20"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b30c87d7515b5b57b7614_Testimonial-Orange-BG.svg" loading="lazy" alt="" class="image-full"/></div><div class="flex-v gap-0-5rem size-400px"><div class="text-size-large text-color-orange text-weight-medium">Arkadiusz</div><div class="text-size-medium text-color-orange">Software Engineering Manager, Software development</div></div></div></div><a href="#" class="testimonial-link is-purple w-inline-block"><div class="text-size-large text-color-purple text-weight-medium text-vertical">Founder &amp; Product Lead</div><div class="text-size-medium text-color-purple text-vertical">Review Management Software</div></a><div class="tab-content is-purple"><div class="tab-content-wrapper active"><div class="text-wrapper width-900px"><div class="text-size-large is-32px text-color-purple">“Working with Datashake has been a game-changer for our review management platform. Their review aggregation service covers 100+ sites and saves us a huge amount of development time and maintenance. Instead of constantly building and updating our own integrations, we can stay focused on making a great product.”</div></div><div class="background-image width-20"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b315a3bebea2f490621a6_Testimonial-Purple-BG.svg" loading="lazy" alt="" class="image-full"/></div><div class="flex-v gap-0-5rem size-400px"><div class="text-size-large text-weight-medium text-color-purple">Founder &amp; Product Lead</div><div class="text-size-medium text-color-purple">Review Management Software</div></div></div></div><a href="#" class="testimonial-link is-yellow w-inline-block"><div class="text-size-large text-color-yellow text-weight-medium text-vertical">Senior Technical Partner Manager</div><div class="text-size-medium text-color-yellow text-vertical">Brand Digital Presence &amp; Marketing Software</div></a><div class="tab-content is-yellow"><div class="tab-content-wrapper active"><div class="text-wrapper width-900px"><div class="text-size-large is-32px text-color-yellow">“Partnering with Datashake has been a great experience. Their customer success team is responsive, knowledgeable, and always quick to help. They’re open to evolving the product as our needs grow, and their framework makes scaling up or down extremely easy.”</div></div><div class="background-image width-20"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693b31cfb5fed498f4de1233_Testimonial-Yellow-BG.svg" loading="lazy" alt="" class="image-full"/></div><div class="flex-v gap-0-5rem size-400px"><div class="text-size-large text-color-yellow">Senior Technical Partner Manager</div><div class="text-size-medium text-color-yellow">Brand Digital Presence &amp; Marketing Software</div></div></div></div></div></div></div></section><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><div class="section-regular-padding"><div class="padding-global"><div class="container-large side-border"><div class="grid-2col faq-size"><div class="text-wrapper padding-3rem"><div class="flex-v gap-1-25rem"><div data-wf--eyebrow--variant="base" class="eyebrow"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939491eb3d2b172910b35cc_Eyebrow-Icon.svg" loading="lazy" alt="" class="icon-14px"/><div class="text-size-regular text-color-grey">FAQs</div><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693949364cde9b1d0482c0ed_Eyebrow-Icon-2.svg" loading="lazy" alt="" class="icon-14px"/></div><h2 class="heading-style-h2">Your questions, <br/>answered</h2></div></div><div class="faq-container"><div class="faq-slot"><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">What types of data does Datashake collect?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Everything publicly available, with the depth your use case needs. Social posts, reviews, forums, news, and e-commerce data from 150+ sources. Complete threads, engagement metrics, 5+ years of history. All normalized and analysis-ready.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">How is Datashake different from other social listening tools?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">We&#x27;re infrastructure, not an end-user platform. You get the raw data layer (150+ sources vs. typical 20-30) with deeper coverage, faster access, and no per-seat fees. We replace multiple vendor relationships with one reliable integration that powers your products and analytics.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">Can Datashake access private social media content?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">No, we only collect publicly available data accessible without login. </div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">How quickly can I access historical data?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Instantly. Our archive search returns 5+ years of historical data in seconds with no advance setup required. If a topic becomes relevant today, you can analyze years of conversation history immediately, plus capture real-time discussions as they unfold.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">What sources does Datashake cover?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Major social platforms, 100+ review sites, news outlets, forums, and e-commerce channels. Multi-language with global coverage. We add new sources based on customer needs and make them automatically available to everyone.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">How does pricing work?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">We use a credit-based model where you pay only for data consumed. Your per-mention cost decreases automatically as volume grows, with no per-seat fees. Get in touch for a custom proposal.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">Do I need technical expertise to use Datashake?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Yes. Datashake is designed for technical teams building data products or analytics workflows, with integration via API, webhooks, or direct feeds. We&#x27;re not a dashboard tool, but we do provide ready-made templates if you&#x27;re building visualizations on top of our data.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">Can Datashake handle enterprise-scale needs?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Absolutely. We&#x27;re built to handle hundreds of millions of daily fetches with 98.3% uptime, dedicated support, custom SLAs, and compliance-ready infrastructure. Enterprise customers rely on us to power mission-critical workflows across global markets.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">What if you don&#x27;t cover a source I need?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Just tell us. We regularly add sources based on customer requests and make them available to all customers automatically, with no re-engineering required and no extra costs. Many of our current sources exist because customers asked for them.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">How long does setup take?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Most teams are collecting data within days. We configure your sources, set up API access, and provide technical documentation to get you running quickly. Standard implementations move fast, while complex custom integrations take a bit longer – but we prioritize speed either way.</div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">Can I try Datashake first?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Yes. We offer a free benchmark test using your actual queries to show you what you&#x27;re missing compared to your current tools. </div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">Is Datashake compliant with data privacy regulations?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Yes. We collect only public data and maintain compliance-ready infrastructure with encryption at every step. </div></div></div><div data-wf--faq-item--variant="base" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item"><div class="faq-question"><div class="text-size-large is-faq">What support do you provide?</div><div class="faq-icon"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer"><div class="text-size-regular text-color-grey space-top">Get direct access to real humans who understand data infrastructure challenges. Enterprise customers receive priority support, custom SLAs, and direct access to our data engineering team. We&#x27;re invested in your long-term success, not just your initial setup.</div></div></div><div data-wf--faq-item--variant="last" data-w-id="bd1ab2f2-9df6-ec97-18cc-3ddf75c04d47" class="faq-item w-variant-834a9556-05dc-3ae1-a803-45668a31e4e4"><div class="faq-question w-variant-834a9556-05dc-3ae1-a803-45668a31e4e4"><div class="text-size-large is-faq">Who uses Datashake?</div><div class="faq-icon w-variant-834a9556-05dc-3ae1-a803-45668a31e4e4"><div class="icon-28px w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 14.875H3.5V13.125H13.125V3.5H14.875V13.125H24.5V14.875H14.875V24.5H13.125V14.875Z" fill="#0D0D0D"/>
+</svg></div></div></div><div class="faq-answer w-variant-834a9556-05dc-3ae1-a803-45668a31e4e4"><div class="text-size-regular text-color-grey space-top w-variant-834a9556-05dc-3ae1-a803-45668a31e4e4">-Software companies building customer experience platforms, competitive intelligence tools, and analytics products<br/>- Enterprise brands monitoring reputation and detecting emerging trends<br/>-Agencies delivering comprehensive data-driven client reporting<br/>-Finance teams conducting due diligence and risk assessment<br/>-Pharma companies tracking adverse events for regulatory compliance<br/>-Any organization that needs reliable data infrastructure at scale</div></div></div></div></div></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><section data-wf--cta-section--variant="base" class="section-regular-padding"><div class="padding-global"><div class="container-large side-border"><div class="cta-container h-550px background-color-green"><div class="text-wrapper size-550px align-center z-index-1 mobile-padding"><div class="flex-v gap-1-25rem align-center"><h2 class="heading-style-h2 text-align-center">Book a call with one of our data experts</h2><div class="text-size-medium text-align-center text-weight-medium">Schedule a quick call to see how Datashake can power your platform’s next leap</div><div class="text-size-medium text-color-grey text-align-center">Trusted by enterprise brands and data platforms worldwide</div><div class="button-wrapper"><div class="spacer-small"></div><a data-wf--button-arrow--variant="base" href="/demo" class="button w-inline-block"><div>Book a demo</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div></div><div class="background-image"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/695442158ff7e237e5f5e875_CTA-Background.webp" loading="lazy" alt="White background with thin dashed green lines connecting small solid green rectangles in a stepped pattern across the image." class="image-full"/></div></div></div></div></section><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section><footer class="footer-section"><div class="padding-global"><div class="container-large side-border"><div class="newsletter-wrapper"><div class="text-size-large is-24px font-alt">Get social data insights delivered fresh</div><div data-form-type="newsletter" class="hubspot-wrapper"><div class="newsletter-code w-embed w-script"><div data-form-type="newsletter">
+  <script src="https://js-eu1.hsforms.net/forms/embed/developer/147277152.js" defer></script>
+  <div
+    class="hs-form-html"
+    data-region="eu1"
+    data-form-id="3db10fa7-218c-43e8-b16b-79619374952b"
+    data-portal-id="147277152">
+  </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+  /* Newsletter forma - INLINE layout */
+  [data-form-type="newsletter"] .newsletter-code {
+    --hsf-field-label__font-family: 'Inter', sans-serif;
+    --hsf-field-label__font-size: 18px;
+    --hsf-field-label__color: #666666;
+    --hsf-default-background__padding: 0px;
+    
+    --hsf-field-input__font-family: 'Inter', sans-serif;
+    --hsf-field-input__font-size: 18px;
+    --hsf-field-input__height: 50px;
+    --hsf-field-input__color: #0D0D0D;
+    --hsf-field-input__background-color: #FFFFFF;
+    --hsf-field-input__border-color: #D9D9D9;
+    --hsf-field-input__border-width: 0.5px;
+    --hsf-field-input__border-style: dashed;
+    --hsf-field-input__padding: 12px 16px;
+    --hsf-field-input__border-radius: 0px;
+    
+    --hsf-field-textarea__font-family: 'Inter', sans-serif;
+    --hsf-field-textarea__color: #0D0D0D;
+    --hsf-field-textarea__background-color: #FFFFFF;
+    --hsf-field-textarea__border-color: #D9D9D9;
+    --hsf-field-textarea__border-width: 0.5px;
+    --hsf-field-textarea__border-style: dashed;
+    --hsf-field-textarea__padding: 12px 16px;
+    --hsf-field-textarea__border-radius: 0px;
+    
+    --hsf-button__font-family: 'Inter', sans-serif;
+    --hsf-button__font-size: 18px;
+    --hsf-button__color: #0D0D0D;
+    --hsf-button__background-color: #3FE844;
+    --hsf-button__border-radius: 0px;
+    --hsf-button__padding: 20px;
+    --hsf-button__box-shadow: none;
+    --hsf-button__font-weight: 400;
+    --hsf-button__width: 100%;
+  }
+  
+  [data-hsfc-id=Renderer] .hsfc-EmailField>*:not(:last-child) {
+  	margin: 0px;
+   }
+   
+   .hsfc-ErrorAlert {
+   	position: absolute;
+   }
+  
+  /* Focus state */
+  [data-form-type="newsletter"] .hs-input:focus,
+  [data-form-type="newsletter"] .hs-fieldtype-textarea textarea:focus {
+    border: 1px solid #3FE844 !important;
+    outline: none;
+  }
+  
+  /* GRID LAYOUT - samo za newsletter */
+  [data-form-type="newsletter"] .hsfc-Step__Content {
+    display: grid !important;
+    grid-template-columns: 0.45fr 0.3fr 0.25fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+    align-items: end !important; 
+  }
+  
+  [data-form-type="newsletter"] .hsfc-Step__Content > *:first-child {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+  }
+  
+  [data-form-type="newsletter"] .hsfc-Step__Content .hs_submit,
+  [data-form-type="newsletter"] .hsfc-Step__Content .hs-submit {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    align-self: end !important; 
+  }
+  
+  [data-form-type="newsletter"] .hsfc-Step__Content .hs-button,
+  [data-form-type="newsletter"] .hsfc-Step__Content input[type="submit"].hs-button,
+  [data-form-type="newsletter"] .hsfc-Step__Content .hsfc-Button {
+    width: 100% !important;
+    height: 48px !important; 
+    padding: 12px 40px !important;
+    box-sizing: border-box !important;
+  }
+  
+  [data-form-type="newsletter"] [data-hsfc-id=Renderer] .hsfc-Button {
+    width: 100% !important;
+  }
+  
+  [data-form-type="newsletter"] .hsfc-NavigationRow__Buttons {
+    margin-bottom: 1.25rem;
+  }
+ [data-form-type="newsletter"] .hsfc-ReCaptchaV2{
+  transform: scale(.76);
+    transform-origin: left bottom;
+    }
+  @media (max-width: 768px) {
+ /*   [data-form-type="newsletter"] .hsfc-Step__Content {
+      grid-template-columns: 1fr !important;
+      display: block !important;
+    }
+    
+    [data-form-type="newsletter"] .hsfc-Step__Content > *:first-child {
+      grid-column: 1 !important;
+      grid-row: 1 !important;
+    }
+    
+    [data-form-type="newsletter"] .hsfc-Step__Content .hs_submit,
+    [data-form-type="newsletter"] .hsfc-Step__Content .hs-submit {
+      grid-column: 1 !important;
+      grid-row: 2 !important;
+    }
+  }*/
+[data-form-type="newsletter"] .hsfc-Step__Content {
+display:flex !important;
+flex-wrap:wrap;
+gap:0px !important;
+}
+[data-hsfc-id=Renderer] .hsfc-NavigationRow{
+margin-top : 0!important;
+}
+[data-form-type="newsletter"] .hsfc-Step__Content > div:first-child{
+width:100%;
+margin-bottom:0;
+}
+[data-form-type="newsletter"] .hsfc-Step__Content > div:not(:first-child){
+width:50%;
+}
+}
+  @media (max-width: 480px) {
+
+[data-hsfc-id=Renderer] .hsfc-Row, [data-hsfc-id=Renderer] .hsfc-NavigationRow{
+width:100% !important;
+}
+}
+  </style>
+</div></div></div></div><div class="grid-2col first-0-4fr"><div class="footer-column _25"><div class="padding-3rem"><div class="flex-v gap-2rem"><a href="/" aria-current="page" class="footer-logo w-inline-block w--current"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/693864b3bf7cdd4a83615647_Datashake-logo.svg" loading="lazy" alt="Datashake logo"/></a><div class="social-wrapper"><a href="https://www.linkedin.com/company/atdatashake" target="_blank" class="social-icon w-inline-block"><div class="icon-24px is-social w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.65 3H4.35C3.99196 3 3.64858 3.14223 3.39541 3.39541C3.14223 3.64858 3 3.99196 3 4.35V19.65C3 20.008 3.14223 20.3514 3.39541 20.6046C3.64858 20.8578 3.99196 21 4.35 21H19.65C20.008 21 20.3514 20.8578 20.6046 20.6046C20.8578 20.3514 21 20.008 21 19.65V4.35C21 3.99196 20.8578 3.64858 20.6046 3.39541C20.3514 3.14223 20.008 3 19.65 3ZM8.4 18.3H5.7V10.2H8.4V18.3ZM7.05 8.625C6.74056 8.61616 6.4406 8.51632 6.18758 8.33797C5.93456 8.15962 5.7397 7.91066 5.62737 7.6222C5.51503 7.33374 5.49019 7.01857 5.55595 6.71607C5.6217 6.41358 5.77515 6.13716 5.9971 5.92138C6.21906 5.70559 6.49968 5.55999 6.80391 5.50278C7.10814 5.44556 7.42248 5.47927 7.70766 5.59969C7.99284 5.7201 8.23622 5.92189 8.40737 6.17983C8.57853 6.43778 8.66987 6.74044 8.67 7.05C8.66289 7.47331 8.4885 7.8766 8.18495 8.17173C7.88139 8.46685 7.47335 8.62982 7.05 8.625ZM18.3 18.3H15.6V14.034C15.6 12.756 15.06 12.297 14.358 12.297C14.1522 12.3107 13.9511 12.3649 13.7663 12.4566C13.5815 12.5482 13.4166 12.6755 13.2811 12.831C13.1457 12.9866 13.0422 13.1674 12.9768 13.363C12.9114 13.5586 12.8853 13.7652 12.9 13.971C12.8955 14.0129 12.8955 14.0551 12.9 14.097V18.3H10.2V10.2H12.81V11.37C13.0733 10.9695 13.435 10.6433 13.8605 10.4227C14.286 10.2021 14.761 10.0944 15.24 10.11C16.635 10.11 18.264 10.884 18.264 13.404L18.3 18.3Z" fill="currentcolor"/>
+</svg></div></a><a href="https://www.facebook.com/datashake" target="_blank" class="social-icon w-inline-block"><div class="icon-24px is-social w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.58404 21.706V15.0561H7.52015V12H9.58404V10.6833C9.58404 7.27944 11.124 5.70333 14.464 5.70333C15.0963 5.70333 16.1879 5.82722 16.6363 5.95111V8.71944C16.4001 8.69556 15.9879 8.68333 15.4801 8.68333C13.8401 8.68333 13.2079 9.30333 13.2079 10.9194V12H16.4763L15.9163 15.0556H13.2124V21.9277C18.1637 21.3279 22 17.112 22 12C22 6.47722 17.5228 2 12 2C6.47722 2 2 6.47722 2 12C2 16.6899 5.22813 20.6253 9.58404 21.706Z" fill="currentcolor"/>
+</svg></div></a><a href="https://www.instagram.com/datashakehq/" target="_blank" class="social-icon w-inline-block"><div class="icon-24px is-social w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4.21173C14.5365 4.21173 14.837 4.22123 15.8389 4.267C16.4411 4.27427 17.0377 4.38499 17.6024 4.59432C18.0151 4.74662 18.3884 4.9895 18.6949 5.30509C19.0105 5.61156 19.2534 5.98488 19.4057 6.39759C19.615 6.96235 19.7257 7.55888 19.733 8.16114C19.7788 9.16295 19.7883 9.4635 19.7883 12C19.7883 14.5365 19.7788 14.837 19.733 15.8389C19.7257 16.4411 19.615 17.0377 19.4057 17.6024C19.2476 18.0122 19.0055 18.3844 18.6949 18.6949C18.3844 19.0055 18.0122 19.2476 17.6024 19.4057C17.0377 19.615 16.4411 19.7257 15.8389 19.733C14.837 19.7788 14.5365 19.7883 12 19.7883C9.4635 19.7883 9.16295 19.7788 8.16114 19.733C7.55859 19.7258 6.96176 19.6151 6.39673 19.4057C5.98433 19.2533 5.61132 19.0104 5.30509 18.6949C4.9895 18.3884 4.74662 18.0151 4.59432 17.6024C4.38499 17.0377 4.27427 16.4411 4.267 15.8389C4.22123 14.837 4.21173 14.5365 4.21173 12C4.21173 9.4635 4.22123 9.16295 4.267 8.16114C4.27427 7.55888 4.38499 6.96235 4.59432 6.39759C4.74662 5.98488 4.9895 5.61156 5.30509 5.30509C5.61156 4.9895 5.98488 4.74662 6.39759 4.59432C6.96235 4.38499 7.55888 4.27427 8.16114 4.267C9.16295 4.22123 9.4635 4.21173 12 4.21173ZM12 2.5C9.42032 2.5 9.09645 2.51123 8.08341 2.557C7.29535 2.57272 6.51567 2.72194 5.7775 2.99832C5.1433 3.2371 4.56886 3.61141 4.09427 4.09514C3.61096 4.56956 3.23695 5.14369 2.99832 5.7775C2.72224 6.51572 2.57331 7.2954 2.55786 8.08341C2.51036 9.09645 2.5 9.42032 2.5 12C2.5 14.5797 2.51123 14.9035 2.557 15.9166C2.57272 16.7046 2.72194 17.4843 2.99832 18.2225C3.2371 18.8567 3.61141 19.4311 4.09514 19.9057C4.56956 20.389 5.14369 20.763 5.7775 21.0017C6.51572 21.2778 7.2954 21.4267 8.08341 21.4421C9.09645 21.4896 9.42032 21.5 12 21.5C14.5797 21.5 14.9035 21.4888 15.9166 21.443C16.7046 21.4273 17.4843 21.2781 18.2225 21.0017C18.8538 20.7576 19.4271 20.3843 19.9057 19.9057C20.3843 19.4271 20.7576 18.8538 21.0017 18.2225C21.2778 17.4843 21.4267 16.7046 21.4421 15.9166C21.4896 14.9035 21.5 14.5797 21.5 12C21.5 9.42032 21.4888 9.09645 21.443 8.08341C21.4273 7.29535 21.2781 6.51567 21.0017 5.7775C20.7629 5.1433 20.3886 4.56886 19.9049 4.09427C19.4304 3.61096 18.8563 3.23695 18.2225 2.99832C17.4843 2.72224 16.7046 2.57331 15.9166 2.55786C14.9035 2.51036 14.5797 2.5 12 2.5ZM12 7.12132C11.0351 7.12132 10.0918 7.40745 9.28955 7.94352C8.48725 8.4796 7.86194 9.24155 7.49269 10.133C7.12343 11.0245 7.02682 12.0054 7.21506 12.9518C7.40331 13.8982 7.86796 14.7675 8.55025 15.4497C9.23255 16.132 10.1018 16.5967 11.0482 16.7849C11.9946 16.9732 12.9755 16.8766 13.867 16.5073C14.7585 16.1381 15.5204 15.5127 16.0565 14.7105C16.5926 13.9082 16.8787 12.9649 16.8787 12C16.8787 10.7061 16.3647 9.46518 15.4497 8.55025C14.5348 7.63532 13.2939 7.12132 12 7.12132ZM12 15.167C11.3736 15.167 10.7613 14.9812 10.2405 14.6332C9.71973 14.2852 9.31382 13.7906 9.07412 13.2119C8.83442 12.6333 8.7717 11.9965 8.8939 11.3822C9.0161 10.7678 9.31772 10.2035 9.76063 9.76063C10.2035 9.31772 10.7678 9.0161 11.3822 8.8939C11.9965 8.7717 12.6333 8.83442 13.2119 9.07412C13.7906 9.31382 14.2852 9.71973 14.6332 10.2405C14.9812 10.7613 15.167 11.3736 15.167 12C15.167 12.8399 14.8333 13.6455 14.2394 14.2394C13.6455 14.8333 12.8399 15.167 12 15.167ZM17.0713 5.78873C16.8458 5.78873 16.6254 5.85559 16.4379 5.98085C16.2505 6.10612 16.1043 6.28416 16.0181 6.49247C15.9318 6.70078 15.9092 6.92999 15.9532 7.15113C15.9972 7.37227 16.1057 7.5754 16.2652 7.73483C16.4246 7.89426 16.6277 8.00284 16.8489 8.04682C17.07 8.09081 17.2992 8.06823 17.5075 7.98195C17.7158 7.89567 17.8939 7.74955 18.0191 7.56208C18.1444 7.37461 18.2113 7.1542 18.2113 6.92873C18.2113 6.62638 18.0912 6.33642 17.8774 6.12263C17.6636 5.90883 17.3736 5.78873 17.0713 5.78873Z" fill="currentcolor"/>
+</svg></div></a><a href="https://x.com/DatashakeHQ" target="_blank" class="social-icon w-inline-block"><div class="icon-24px is-social w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5652 3.25H20.5319L14.0505 10.6628L21.6753 20.75H15.7052L11.0291 14.6322L5.67867 20.75H2.71018L9.64264 12.8212L2.32812 3.25H8.44986L12.6766 8.84192L17.5652 3.25ZM16.524 18.9731H18.1679L7.55663 4.93359H5.79257L16.524 18.9731Z" fill="currentcolor"/>
+</svg></div></a></div></div></div><div class="flex-v gap-0"><div class="text-wrapper padding-3rem align-bottom"><div class="button-wrapper _100"><a data-wf--button-arrow--variant="footer" href="/demo" class="button w-variant-932e8262-cacb-2729-f58c-5e6fa142efd5 w-inline-block"><div>Book a demo</div><div class="icon-32px w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 8H8.5V18.5H22.4395L19.1895 15.25L20.25 14.1895L25.3105 19.25L20.25 24.3105L19.1895 23.25L22.4395 20H7V8Z" fill="currentcolor"/>
+</svg></div></a></div></div><div class="copyright-wrapper"><div class="text-size-small z-index-1">All Rights Reserved © Datashake</div></div></div></div><div class="footer-column"><div class="flex-h gap-full align-top mobile-h"><div class="footer-links-wrapper"><div class="text-size-medium">Solutions</div><div class="flex-v gap-1rem"><a href="/industry/cx-platforms" class="footer-link">Customer Experience Tools</a><a href="/industry/social-listening" class="footer-link">Social Listening</a><a href="/industry/reputation-and-review-management" class="footer-link">Reputation &amp; Review Management</a><a href="/industry/marketing-automation" class="footer-link">Marketing Automation</a><a href="/industry/retail" class="footer-link">Retail</a><a href="/industry/pharmaceutical" class="footer-link">Pharmaceutical</a><a href="/industry/finance" class="footer-link">Finance</a><a href="/industry/agencies" class="footer-link">Agencies</a></div></div><div class="footer-links-wrapper"><div class="text-size-medium">Product</div><div class="flex-v gap-1rem"><a href="/platform" class="footer-link">Platform</a><a href="/enterprise" class="footer-link">Enterprise</a><a href="/why-datashake" class="footer-link">Why Datashake</a><a href="https://status.datashake.com/" target="_blank" class="footer-link">Status</a></div></div><div class="footer-links-wrapper"><div class="text-size-medium">Company</div><div class="flex-v gap-1rem"><a href="/about-us" class="footer-link">About</a><a href="/blog" class="footer-link">Blog</a><a href="/demo" class="footer-link">Book a Demo</a><a href="/contact-us" class="footer-link">Contact</a></div></div><div class="footer-links-wrapper"><div class="text-size-medium">Legal</div><div class="flex-v gap-1rem"><a href="/terms-of-service" class="footer-link">Terms of Service</a><a href="/privacy-policy" class="footer-link">Privacy Policy</a></div></div></div></div></div><div class="background-image height-300px"><div class="canvas-footer"></div></div></div></div><section data-wf--lines-divider--variant="base" class="divider-section"><div class="padding-global"><div class="container-large"><div class="divider-wrapper"><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6941785a4b1f2df4106341e2_Line-Divider.svg" loading="lazy" alt="" class="image-full min-height-4rem"/><img src="https://cdn.prod.website-files.com/69385e16d68663814109c132/6939575c46881e7082982980_Divider-Horizontal.svg" loading="lazy" alt="" class="image-full is-horizontal"/></div></div></div></section></footer></main></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69385e16d68663814109c132" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/69385e16d68663814109c132/js/webflow.01b582c3.8d07032b34e8c391.js" type="text/javascript" integrity="sha384-CoGf55jGF/KMl18FH2rWizKM7oLL57tTu1lnG06dtOEMw/YvmiUAZDq/mObAwvNd" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript">

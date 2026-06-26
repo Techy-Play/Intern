@@ -1,0 +1,652 @@
+﻿
+  :root {
+    --font-from: 16;
+    --font-to: 16;
+    --vw-from: calc(1440 / 100);
+    --vw-to: calc(1920 / 100);
+    --coefficient: calc((var(--font-to) - var(--font-from)) / (var(--vw-to) - var(--vw-from)));
+    --base: calc((var(--font-from) - var(--vw-from) * var(--coefficient)) / 16);
+  }
+
+  html {
+    font-size: calc(var(--base) * 1rem + var(--coefficient) * 1vw);
+  }
+
+  @media screen and (max-width: 1440px) {
+    :root {
+      --font-from: 13;
+      --font-to: 16;
+      --vw-from: calc(960 / 100);
+      --vw-to: calc(1440 / 100);
+      }
+  }
+
+  @media screen and (max-width: 960px) {
+    :root {
+      --font-from: 12;
+      --font-to: 16;
+      --vw-from: calc(479 / 100);
+      --vw-to: calc(960 / 100);
+      }
+  }
+
+  @media screen and (max-width: 479px) {
+    :root {
+      --font-from: 12;
+      --font-to: 16;
+      --vw-from: calc(1 / 100);
+      --vw-to: calc(479 / 100);
+      }
+  }
+</style>
+
+
+
+<style>
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+svg {
+	width: 100%;
+  height: 100%;
+ }
+ 
+.logo-item .image-auto.is-active {
+	opacity: 0;
+  transition: opacity 300ms ease;
+ }
+ 
+.logo-item {
+	background-color: transparent;
+  transition: background-color 300ms ease;
+ }
+ 
+.logo-item .arrow-link{
+	opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+ }
+ 
+.logo-item:hover .image-auto.is-active {
+	opacity: 1;
+  transition: opacity 300ms ease;
+ }
+ 
+.logo-item:hover {
+	background-color: #fafafa;
+  transition: background-color 300ms ease;
+ }
+
+.logo-item:hover .arrow-link{
+	opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms ease, transform 300ms ease;
+ }
+ 
+
+ 
+.wf-design-mode {
+a[href="#"], a[href=""] {
+outline: 3px dashed red;
+outline-offset: 3px;
+}
+}
+
+.w-code-block,
+.w-code-block pre,
+.w-code-block code {
+  background-color: #f2f2f2 !important;
+  color: #666666 !important;
+  padding: 1rem !important;
+  font-size: 0.875rem !important;
+
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+ 
+
+.blog-item.w-dyn-item:nth-child(3n) .blog-link {
+  border-right: none !important;
+}
+
+.field-select {
+  appearance: none;
+  background: url(https://cdn.prod.website-files.com/69385e16d68663814109c132/695260ac2ce4e55c4c87d751_Select-Icon.svg) no-repeat right 12px center;
+  background-color: white;
+  background-size: 20px;
+  padding-right: 1.25rem;
+
+}
+
+textarea {
+	resize: none;
+ }
+ 
+@media screen and (min-width: 991px) { 
+[grid-border="bottom"]
+  > [data-wf--benefit-box--variant="space-big"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+  }
+}
+@media screen and (min-width: 991px) { 
+[grid-border="bottom"]
+  > [data-wf--benefit-box--variant="space-big-last"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 991px) {
+
+[grid-border="right"] [data-wf--benefit-box--variant="horizontal-heading"]:nth-child(3) {
+  border-right: none;
+}
+
+@media screen and (min-width: 991px) { 
+[grid-border="right"] [data-wf--benefit-box--variant="horizontal-heading"]:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+[grid-border="1row-last"] .grid-item.is-member:last-child {
+  border-right: none;
+}
+
+.text-size-small[data-tag-color="orange"] {
+  color: #FF930F;
+ }
+ 
+.text-size-small[data-tag-color="green"] {
+  color: #3FE844;
+ }
+ 
+.text-size-small[data-tag-color="purple"] {
+  color: #A72BFF;
+ }
+ 
+.text-size-small[data-tag-color="blue"] {
+  color: #3981FF;
+ }
+ 
+.text-size-small[data-tag-color="red"] {
+  color: #ff1f1f;
+ }
+ 
+.text-size-small[data-tag-color="gold"] {
+  color: #bfa019;
+ }
+ 
+.blog-item,
+.case-studies-item {
+	background-color: white;
+  transition: background-color 300ms ease;
+ }
+ 
+.blog-item:hover,
+.case-studies-item:hover {
+	background-color: #fafafa;
+  transition: background-color 300ms ease;
+ }
+ 
+.sort-field {
+  appearance: none;
+  background: url(https://cdn.prod.website-files.com/69385e16d68663814109c132/695260ac2ce4e55c4c87d751_Select-Icon.svg) no-repeat right 12px center;
+  background-color: white;
+  background-size: 20px;
+  padding-right: 1.25rem;
+
+}
+
+.search-field:focus-within .icon-24px.is-absolute {
+  color: #666;
+  transition: color 200ms ease;
+}
+
+[data-wf--button-arrow--variant="base"] {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="base"]:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="base"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="base"]:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"] {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"]:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="footer"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="footer"]:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+.button.is-submit {
+	background-color: #3FE844;
+  color: #0D0D0D;
+  transition: background-color 200ms ease, color 200ms ease;
+ }
+ 
+.button.is-submit:hover {
+	background-color: #2FAE33;
+  color: white;
+  transition: background-color 300ms ease, color 300ms ease;
+ }
+ 
+ 
+.button.is-submit .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+.button.is-submit:hover .icon-32px {
+	background-color: #28912B;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"] {
+	background-color: #0d0d0d;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"]:hover {
+	background-color: #262626;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="full-width"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="full-width"]:hover .icon-32px {
+	background-color: #333333;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"] {
+	background-color: white;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"]:hover {
+	background-color: #f2f2f2;
+  transition: background-color 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="white"]:hover .icon-32px {
+	background-color: #E6E6E6;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"] {
+	background-color: #3981FF;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"]:hover {
+	background-color: #0054E5;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="blue"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="blue"]:hover .icon-32px {
+	background-color: #1A65E8;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"] {
+	background-color: #FF930F;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"]:hover {
+	background-color: #E57E00;
+  transition: background-color 300ms ease;
+ }
+ 
+ 
+[data-wf--button-arrow--variant="orange"] .icon-32px {
+	background-color: transparent;
+  transform: rotate(0deg);
+  transition: background-color 200ms ease, transform 200ms ease;
+ }
+ 
+[data-wf--button-arrow--variant="orange"]:hover .icon-32px {
+	background-color: #E88B1A;
+  transform: rotate(-90deg);
+  transition: background-color 300ms ease, transform 300ms ease;
+ }
+ 
+   
+[data-wf--button-outline--variant="black"] {
+	background-color: #0d0d0d;
+  transition: background-color 200ms ease;
+ }
+ 
+[data-wf--button-outline--variant="black"]:hover {
+	background-color: #262626;
+  transition: background-color 200ms ease;
+ }
+   
+  
+.social-icon .icon-24px.is-social {
+	color: #666666;
+  transition: color 200ms ease;
+ }
+ 
+.social-icon:hover .icon-24px.is-social {
+	color: #3FE844;
+  transition: color 200ms ease;
+ }
+ 
+[blog-border="no-image"] .blog-item:first-child .blog-link {
+  border-top: none !important;
+}
+ 
+.nav_brand:hover .green-logo {
+	transform: rotate(360deg);
+  transition: transform 500ms ease;
+ }
+	
+=
+
+.filter-container::-webkit-scrollbar {
+  width: 6px;        /* tanak scrollbar */
+}
+
+.tab-step-menu::-webkit-scrollbar {
+  width: 6px;        /* tanak scrollbar */
+}
+
+.filter-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-step-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-container::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;  /* brand dark */
+}
+
+.tab-step-menu::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;  /* brand dark */
+}
+
+.filter-container::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+.tab-step-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+
+.filter-container {
+  scrollbar-width: thin;
+  scrollbar-color: #bfbfbf transparent;
+}
+
+.tab-step-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #bfbfbf transparent;
+}
+
+/* Desktop - fancy dijagonalni pattern */
+[data-wf--button-outline--variant="base"],
+[data-wf--button-outline--variant="small"],
+[data-wf--button-outline--variant="full-width"],
+.button.is-secondary.small-2.no-link,
+.button.is-secondary.small {
+  background-image: repeating-linear-gradient(-13deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 18px, #D9D9D9 18px), repeating-linear-gradient(77deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 15px, #D9D9D9 18px), repeating-linear-gradient(167deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 15px, #D9D9D9 18px), repeating-linear-gradient(257deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 18px, #D9D9D9 18px);
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  color: #666;
+  transition: color 300ms ease;
+  border: none;
+}
+
+[data-wf--button-outline--variant="base"]:hover,
+[data-wf--button-outline--variant="small"]:hover,
+[data-wf--button-outline--variant="full-width"]:hover,
+.button.is-secondary.small:hover{
+  background-image: repeating-linear-gradient(-13deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(77deg, #D9D9D9, #D9D9D9 11px, transparent 11px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(167deg, #D9D9D9, #D9D9D9 11px, transparent 0px, transparent 0px, #D9D9D9 0px), repeating-linear-gradient(257deg, #D9D9D9, #D9D9D9 11px, transparent 0px, transparent 0px, #D9D9D9 0px);
+  color: #0d0d0d;
+}
+
+@media screen and (min-width: 991px) { 
+.case-studies-list > .w-dyn-item:nth-child(3n) .blog-wrapper {
+  border-right: none;
+  }
+  .case-studies-list > .w-dyn-item:nth-last-child(-n + 3) .blog-wrapper {
+  border-bottom: none;
+  }
+
+}
+
+
+
