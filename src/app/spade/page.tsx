@@ -18,13 +18,13 @@ export default function SpadePage() {
   return (
     <div className="spade-page">
       <SpadeHeader />
-      <main>
+      <main className="px-5 lg:px-8">
         <HeroSection />
         <LogoCloud />
         <ScrollReveal />
         <RiskAuth />
         <RewardsSection />
-        <AnalyticsAI />
+        {/* <AnalyticsAI /> */}
         <UserExperience />
         <IndustrySection />
         <Testimonials />

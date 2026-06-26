@@ -128,9 +128,11 @@ export default function Navbar() {
               >
                 <div className="flex flex-col px-6 pb-6 sm:px-8 sm:pb-8 pt-2">
                   <div className="mt-2 sm:mt-6 grid gap-6 sm:gap-8 grid-cols-1 min-[960px]:grid-cols-2">
-                    <nav className="flex flex-col gap-2.5 sm:gap-2 text-[1.4rem] sm:text-[1.15rem] font-[500] text-[#1a1a1a]">
+                    <nav className="flex flex-col gap-2.5 sm:gap-2 text-[1.4rem] sm:text-[1.15rem] font-[500] text-[#1a1a1a] group">
                       {menuItems.map((item) => (
-                        <div key={item} className="cursor-pointer hover:text-black/70 transition-colors w-max" onClick={() => setIsMenuOpen(false)}>{item}</div>
+                        <div key={item} className="cursor-pointer transition-colors duration-300 w-max group-hover:text-black/30 hover:!text-[#1a1a1a]" onClick={() => setIsMenuOpen(false)}>
+                          {item}
+                        </div>
                       ))}
                     </nav>
 

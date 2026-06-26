@@ -37,7 +37,7 @@ export default function ScrollReveal() {
   const slide2Y = progress < 0.4 ? 40 : Math.max(0, 40 * (1 - (progress - 0.4) / 0.2));
 
   return (
-    <section className="relative overflow-visible bg-white text-black pt-0 pb-0 px-5 lg:px-8">
+    <section className="relative overflow-visible bg-white text-black pt-0 pb-0">
       <div ref={sectionRef}>
         <div className="h-[380vh] max-md:-mx-5 max-md:mt-4">
           <div className="sticky top-0 flex min-h-screen flex-col items-center justify-center overflow-hidden">

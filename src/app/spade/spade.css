@@ -305,16 +305,49 @@
   font-family: 'SpadeHeading', 'APK Protocol', sans-serif;
   font-weight: 700;
   font-size: clamp(2.5rem, 4vw, 4rem);
-  line-height: 1;
   letter-spacing: -0.03em;
 }
-
 .text-11px-stat-description {
-  font-family: 'SpadeMono', 'KH Teka Mono', monospace;
-  font-weight: 400;
-  font-size: 0.6875rem;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  --tw-tracking: .12em;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-family: var(--font-polarMono), ui-monospace;
+  --mobile: 10;
+  --desktop: 11;
+  --min-ts: 1.25;
+  --max-ts: 1.333;
+  --min-vp: 480;
+  --max-vp: 1280;
+  --min: var(--mobile);
+  --max: var(--desktop);
+  --scale-diff: calc(var(--max-ts) - var(--min-ts));
+  --vp-diff: calc(var(--max-vp) - var(--min-vp));
+  --vi-multiplier: calc((var(--max) - var(--min)) / var(--vp-diff));
+  --base-offset: calc(var(--min) - (var(--vi-multiplier) * var(--min-vp)));
+  --mobile-font-size: calc(var(--mobile) / 16 * 1rem);
+  --desktop-font-size: calc(var(--desktop) / 16 * 1rem);
+}
+
+.leading-tight {
+  --tw-leading: var(--leading-tight, 1.25);
+  line-height: var(--leading-tight, 1.25);
+}
+@supports (font-size:clamp(1rem, 1vi, 1rem)) {
+  .text-11px-stat-description {
+      font-size: clamp(min(var(--mobile-font-size), var(--desktop-font-size)), calc((var(--vi-multiplier) * 100vi) + (var(--base-offset) / 16 * 1rem)), max(var(--mobile-font-size), var(--desktop-font-size)));
+  }
+}
+.text-20px-stat {
+  font-family: var(--font-naNSuperX, 'naNSuperX'), ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  font-variation-settings: "slnt" 0, "ital" 0;
+  --tw-leading: 1.1;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 520;
+  line-height: 1.1;
 }
 
 .text-10px-stat-description {

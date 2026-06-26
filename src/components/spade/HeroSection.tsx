@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-    <section id="" className="relative overflow-hidden bg-white text-black pt-0 pb-0 px-5 lg:px-8">
+    <section id="" className="relative overflow-hidden bg-white text-black pt-0 pb-0">
       <div className="lg:-mt-[1.375rem]">
         <div 
           className="relative bg-sage-1 py-14 max-md:-mx-5 md:py-20 lg:pt-26 lg:pb-26 xl:pb-32" 
@@ -18,8 +18,7 @@ export default function HeroSection() {
           <div className="mx-auto flex w-full max-w-[66.75rem] flex-col items-center px-5 text-center lg:px-12">
             <h1 className="text-84px-heading">The data &amp; AI platform for modern finance</h1>
             
-            <div className="relative flex pointer-events-none w-full max-w-[56.25rem] sm:-mt-5 lg:-mt-8" style={{ aspectRatio: '900/435', width: '100%', height: 'auto' }}>
-            </div>
+
 
             <div className="prose mt-6 w-full max-w-[27.75rem] opacity-80">
               <p className="text-16px-body" style={{ fontFamily: 'polar' }}>Spade takes messy transaction data and turns it into structured, verified records — with AI agents that help you use it everywhere it matters.</p>
