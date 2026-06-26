@@ -213,7 +213,7 @@ export default function Testimonials() {
 
                         {/* Stat Cards */}
                         {slide.stats.map((stat, idx) => (
-                          <div key={idx} className="relative flex flex-col justify-between gap-y-12 p-4 md:px-6 md:py-5 w-1/3 shrink-0 max-md:hidden lg:w-1/4">
+                          <div key={idx} className={`relative flex flex-col justify-between gap-y-12 p-4 md:px-6 md:py-5 w-1/3 shrink-0 xl:w-1/4 ${idx > 0 ? 'max-xl:hidden' : 'max-md:hidden'}`}>
                             <div className="pointer-events-none absolute inset-0 z-[2]">
                               <div className="absolute top-0 left-0 border-white/10 bg-black" style={{ clipPath: 'polygon(0px 0px, 100% 0px, 0px 100%)', width: '12px', height: '12px' }}></div>
                               <div className="absolute top-0 right-0 border-white/10 bg-black" style={{ clipPath: 'polygon(0px 0px, 100% 0px, 100% 100%)', width: '12px', height: '12px' }}></div>
