@@ -66,7 +66,17 @@ const projects = [
     textGradient: "from-indigo-400 to-violet-500",
     bgGradient: "from-indigo-500/10 to-violet-500/5",
   },
+  {
+    title: "Datashake Landing Page",
+    description: "The complete implementation of the Datashake landing page featuring complex layouts, SVG animations, and responsive interactions.",
+    href: "/datashake",
+    glow: "hover:shadow-[0_0_40px_-10px_rgba(20,184,166,0.4)]",
+    borderHover: "group-hover:border-teal-500/50",
+    textGradient: "from-teal-400 to-cyan-500",
+    bgGradient: "from-teal-500/10 to-cyan-500/5",
+  },
 ];
+
 
 export default function HomePage() {
   return (
