@@ -65,7 +65,7 @@ export function VoidZeroBorder({
         }} />
       )}
       <div
-        className={`relative mx-auto w-full md:w-[calc(100%-2rem)] max-w-[1440px] ${topBorderClass} border-x-0 md:border-x ${borderColor} ${tickClass} ${containerClassName}`}
+        className={`relative mx-auto w-full md:w-[calc(100%-3.75rem)] max-w-[1440px] ${topBorderClass} border-x-0 md:border-x ${borderColor} ${tickClass} ${containerClassName}`}
       >
         {children}
       </div>
