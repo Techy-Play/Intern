@@ -1,8 +1,9 @@
 import { VoidZeroBorder } from "@/components/voidzero/VoidZeroBorder";
+import { ViteHeroSlider } from "./ViteHeroSlider";
 
 export default function ViteHero() {
   return (
-    <div className="min-h-screen bg-white w-full overflow-x-hidden font-apk font-medium">
+    <div className="min-h-screen bg-white w-full overflow-x-hidden font-apk font-medium py-10 md:py-20">
       <VoidZeroBorder
         theme="light"
         showTopBorder={false}
@@ -27,7 +28,7 @@ export default function ViteHero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="self-stretch text-center text-balance text-nickel font-apk font-medium">
+            <p className="self-stretch text-center text-balance text-nickel md:text-lg m-0">
               Manage your runtime, package manager, and frontend stack with one tool.
             </p>
 
@@ -90,15 +91,12 @@ export default function ViteHero() {
         </div>
       </VoidZeroBorder>
 
-      {/* Terminal Image Placeholder Section */}
-      <section className="w-full border-t border-[#e5e4e7] flex justify-center pt-10 sm:pt-20">
-        <div className="w-full relative flex justify-center">
-          {/* Image Placeholder */}
-          <div className="w-full h-[30rem] sm:h-[40rem] bg-gray-100 border-y border-gray-200 flex items-center justify-center text-gray-400">
-            Image Placeholder
-          </div>
-        </div>
-      </section>
+      <VoidZeroBorder theme="light" containerClassName="overflow-hidden">
+        {/* Terminal / Slider Section */}
+        <section className="w-full border-t border-[#e5e4e7] h-auto pb-10 bg-wine bg-[url('/assets/terminal-background.jpg')] bg-cover bg-top flex justify-center pt-28 overflow-clip">
+          <ViteHeroSlider />
+        </section>
+      </VoidZeroBorder>
     </div>
   );
 }

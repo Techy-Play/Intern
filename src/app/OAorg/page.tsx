@@ -7,12 +7,12 @@ export default function OAorgPage() {
 
       {/* Section 1: Hero */}
       <VoidZeroBorder theme="light" showTopBorder={false} containerClassName="bg-white" tickSize={7}>
-        <div className="px-10 pt-20 pb-12">
-          <div className="flex flex-col gap-6 max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-normal text-black tracking-tight leading-[1.1]">
+        <div className="px-10 pt-32 md:pt-48 pb-12">
+          <div className="flex flex-col gap-10 max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-normal text-black tracking-tight leading-[1.3]">
               Crowdsourcing justice <br /> in every company OA
             </h1>
-            <p className="text-lg md:text-xl text-gray-800 font-medium tracking-tight">
+            <p className="text-lg md:text-xl text-gray-800 font-medium tracking-tight leading-loose">
               The petition platform that ends <br /> cheating in tech hiring..
             </p>
           </div>
